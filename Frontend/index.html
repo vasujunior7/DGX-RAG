@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackRX - Document Processing Platform</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+
+      .header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .header p {
+        font-size: 1.2em;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+
+      .card h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px 16px;
+        border: 2px solid #e1e8ed;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #3498db;
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+      }
+
+      .questions-container {
+        max-height: 300px;
+        overflow-y: auto;
+      }
+
+      .question-item {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+      }
+
+      .question-item input {
+        flex: 1;
+      }
+
+      .btn {
+        background: linear-gradient(45deg, #3498db, #2980b9);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+      }
+
+      .btn:active {
+        transform: translateY(0);
+      }
+
+      .btn-secondary {
+        background: #e74c3c;
+      }
+
+      .btn-secondary:hover {
+        box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
+      }
+
+      .btn-add {
+        background: #27ae60;
+        margin-top: 10px;
+      }
+
+      .btn-add:hover {
+        box-shadow: 0 8px 25px rgba(39, 174, 96, 0.3);
+      }
+
+      .loading {
+        display: none;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .loading.show {
+        display: block;
+      }
+
+      .spinner {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 10px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .results {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        display: none;
+      }
+
+      .results.show {
+        display: block;
+      }
+
+      .answer-item {
+        background: #f8f9fa;
+        border-left: 4px solid #3498db;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .answer-item h4 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .answer-item p {
+        line-height: 1.6;
+        color: #555;
+      }
+
+      .error {
+        background: #e74c3c;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        display: none;
+      }
+
+      .error.show {
+        display: block;
+      }
+
+      .success {
+        background: #27ae60;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        display: none;
+      }
+
+      .success.show {
+        display: block;
+      }
+
+      .footer {
+        background: rgba(44, 62, 80, 0.95);
+        backdrop-filter: blur(10px);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 30px;
+      }
+
+      .footer a {
+        color: #3498db;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .main-content {
+          grid-template-columns: 1fr;
+        }
+
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .container {
+          padding: 10px;
+        }
+      }
+
+      .status-indicator {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: #27ae60;
+        border-radius: 50%;
+        margin-right: 8px;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .api-status {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: inline-block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🚀 HackRX</h1>
+        <p>AI-Powered Document Processing Platform</p>
+        <div class="api-status">
+          <span class="status-indicator"></span>
+          API Status: <span id="api-status">Checking...</span>
+        </div>
+      </div>
+
+      <div id="error-message" class="error"></div>
+      <div id="success-message" class="success"></div>
+
+      <div class="main-content">
+        <div class="card">
+          <h2>📄 Document & Questions</h2>
+          <form id="document-form">
+            <div class="form-group">
+              <label for="document-url">Document URL</label>
+              <input
+                type="url"
+                id="document-url"
+                placeholder="https://example.com/document.pdf"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Questions</label>
+              <div id="questions-container" class="questions-container">
+                <div class="question-item">
+                  <input
+                    type="text"
+                    placeholder="What is the main topic of this document?"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onclick="removeQuestion(this)"
+                  >
+                    ❌
+                  </button>
+                </div>
+              </div>
+              <button type="button" class="btn btn-add" onclick="addQuestion()">
+                ➕ Add Question
+              </button>
+            </div>
+
+            <button type="submit" class="btn" id="process-btn">
+              🔄 Process Document
+            </button>
+          </form>
+
+          <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Processing your document...</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>📊 API Information</h2>
+          <div class="form-group">
+            <label>Base URL</label>
+            <input
+              type="text"
+              id="base-url"
+              value="http://localhost:8000"
+              readonly
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Endpoint</label>
+            <input type="text" value="/api/v1/hackrx/run" readonly />
+          </div>
+
+          <div class="form-group">
+            <label>Method</label>
+            <input type="text" value="POST" readonly />
+          </div>
+
+          <div style="margin-top: 20px">
+            <a href="/docs" class="btn" target="_blank">📖 API Documentation</a>
+            <a href="/redoc" class="btn" target="_blank">📋 ReDoc</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="results" class="results">
+        <h2>🤖 AI Responses</h2>
+        <div id="answers-container"></div>
+
+        <div style="margin-top: 20px">
+          <button class="btn" onclick="exportResults()">
+            💾 Export Results
+          </button>
+          <button class="btn btn-add" onclick="clearResults()">
+            🗑️ Clear Results
+          </button>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          &copy; 2025 HackRX Platform | Built with ❤️ for document processing
+        </p>
+        <p>
+          <a href="/docs">API Docs</a> |
+          <a href="https://github.com/vasujunior7/DGX-RAG">GitHub</a> |
+          <a href="/help">Help</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Global variables
+      let currentResults = null;
+
+      // Check API status on load
+      document.addEventListener("DOMContentLoaded", function () {
+        checkApiStatus();
+        setupFormHandlers();
+      });
+
+      // Check if API is running
+      async function checkApiStatus() {
+        try {
+          const baseUrl = document.getElementById("base-url").value;
+          const response = await fetch(`${baseUrl}/api/v1/`);
+
+          if (response.ok) {
+            document.getElementById("api-status").textContent = "Online";
+            document.querySelector(".status-indicator").style.background =
+              "#27ae60";
+          } else {
+            throw new Error("API not responding");
+          }
+        } catch (error) {
+          document.getElementById("api-status").textContent = "Offline";
+          document.querySelector(".status-indicator").style.background =
+            "#e74c3c";
+          showError(
+            "API is not accessible. Please make sure the server is running."
+          );
+        }
+      }
+
+      // Setup form handlers
+      function setupFormHandlers() {
+        document
+          .getElementById("document-form")
+          .addEventListener("submit", handleFormSubmit);
+      }
+
+      // Handle form submission
+      async function handleFormSubmit(event) {
+        event.preventDefault();
+
+        const documentUrl = document.getElementById("document-url").value;
+        const questions = getQuestions();
+
+        if (questions.length === 0) {
+          showError("Please add at least one question.");
+          return;
+        }
+
+        try {
+          showLoading(true);
+          hideMessages();
+
+          const baseUrl = document.getElementById("base-url").value;
+          const response = await fetch(`${baseUrl}/api/v1/hackrx/run`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              documents: documentUrl,
+              questions: questions,
+            }),
+          });
+
+          const data = await response.json();
+
+          if (response.ok) {
+            displayResults(questions, data.answers);
+            showSuccess("Document processed successfully!");
+          } else {
+            throw new Error(data.detail || "Failed to process document");
+          }
+        } catch (error) {
+          showError("Error: " + error.message);
+        } finally {
+          showLoading(false);
+        }
+      }
+
+      // Get questions from form
+      function getQuestions() {
+        const questionInputs = document.querySelectorAll(
+          "#questions-container input"
+        );
+        return Array.from(questionInputs)
+          .map((input) => input.value.trim())
+          .filter((question) => question.length > 0);
+      }
+
+      // Add new question input
+      function addQuestion() {
+        const container = document.getElementById("questions-container");
+        const questionItem = document.createElement("div");
+        questionItem.className = "question-item";
+
+        questionItem.innerHTML = `
+                <input type="text" placeholder="Enter your question here...">
+                <button type="button" class="btn btn-secondary" onclick="removeQuestion(this)">❌</button>
+            `;
+
+        container.appendChild(questionItem);
+      }
+
+      // Remove question input
+      function removeQuestion(button) {
+        const container = document.getElementById("questions-container");
+        if (container.children.length > 1) {
+          button.parentElement.remove();
+        } else {
+          showError("You must have at least one question.");
+        }
+      }
+
+      // Display results
+      function displayResults(questions, answers) {
+        const resultsDiv = document.getElementById("results");
+        const answersContainer = document.getElementById("answers-container");
+
+        currentResults = { questions, answers, timestamp: new Date() };
+
+        answersContainer.innerHTML = "";
+
+        questions.forEach((question, index) => {
+          const answerDiv = document.createElement("div");
+          answerDiv.className = "answer-item";
+
+          answerDiv.innerHTML = `
+                    <h4>Q${index + 1}: ${question}</h4>
+                    <p><strong>Answer:</strong> ${
+                      answers[index] || "No answer provided"
+                    }</p>
+                `;
+
+          answersContainer.appendChild(answerDiv);
+        });
+
+        resultsDiv.classList.add("show");
+        resultsDiv.scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Show/hide loading
+      function showLoading(show) {
+        const loading = document.getElementById("loading");
+        const button = document.getElementById("process-btn");
+
+        if (show) {
+          loading.classList.add("show");
+          button.disabled = true;
+          button.innerHTML = "⏳ Processing...";
+        } else {
+          loading.classList.remove("show");
+          button.disabled = false;
+          button.innerHTML = "🔄 Process Document";
+        }
+      }
+
+      // Show error message
+      function showError(message) {
+        const errorDiv = document.getElementById("error-message");
+        errorDiv.textContent = message;
+        errorDiv.classList.add("show");
+
+        setTimeout(() => {
+          errorDiv.classList.remove("show");
+        }, 5000);
+      }
+
+      // Show success message
+      function showSuccess(message) {
+        const successDiv = document.getElementById("success-message");
+        successDiv.textContent = message;
+        successDiv.classList.add("show");
+
+        setTimeout(() => {
+          successDiv.classList.remove("show");
+        }, 3000);
+      }
+
+      // Hide all messages
+      function hideMessages() {
+        document.getElementById("error-message").classList.remove("show");
+        document.getElementById("success-message").classList.remove("show");
+      }
+
+      // Export results
+      function exportResults() {
+        if (!currentResults) {
+          showError("No results to export.");
+          return;
+        }
+
+        const exportData = {
+          document: document.getElementById("document-url").value,
+          processed_at: currentResults.timestamp.toISOString(),
+          qa_pairs: currentResults.questions.map((question, index) => ({
+            question: question,
+            answer: currentResults.answers[index],
+          })),
+        };
+
+        const blob = new Blob([JSON.stringify(exportData, null, 2)], {
+          type: "application/json",
+        });
+
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `hackrx-results-${Date.now()}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        showSuccess("Results exported successfully!");
+      }
+
+      // Clear results
+      function clearResults() {
+        document.getElementById("results").classList.remove("show");
+        document.getElementById("answers-container").innerHTML = "";
+        currentResults = null;
+        showSuccess("Results cleared.");
+      }
+
+      // Update base URL
+      function updateBaseUrl() {
+        const baseUrl = document.getElementById("base-url").value;
+        localStorage.setItem("hackrx-base-url", baseUrl);
+        checkApiStatus();
+      }
+
+      // Load saved base URL
+      function loadSavedBaseUrl() {
+        const saved = localStorage.getItem("hackrx-base-url");
+        if (saved) {
+          document.getElementById("base-url").value = saved;
+        }
+      }
+
+      // Load saved settings on page load
+      document.addEventListener("DOMContentLoaded", loadSavedBaseUrl);
+    </script>
+  </body>
+</html>

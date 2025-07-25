@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackRX API - Route Guide</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(45deg, #2c3e50, #3498db);
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        font-weight: 300;
+      }
+
+      .header p {
+        font-size: 1.2em;
+        opacity: 0.9;
+      }
+
+      .content {
+        padding: 40px;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .section h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+
+      .endpoint {
+        background: #f8f9fa;
+        border-left: 4px solid #3498db;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .endpoint h3 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+      }
+
+      .method {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        font-weight: bold;
+        margin-right: 10px;
+        text-transform: uppercase;
+      }
+
+      .method.get {
+        background: #28a745;
+        color: white;
+      }
+
+      .method.post {
+        background: #007bff;
+        color: white;
+      }
+
+      .url {
+        font-family: "Courier New", monospace;
+        background: #e9ecef;
+        padding: 8px 12px;
+        border-radius: 4px;
+        display: inline-block;
+        margin: 8px 0;
+      }
+
+      .description {
+        margin-top: 10px;
+        color: #6c757d;
+        line-height: 1.6;
+      }
+
+      .example {
+        background: #f1f3f4;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 15px;
+        font-family: "Courier New", monospace;
+        font-size: 0.9em;
+        overflow-x: auto;
+      }
+
+      .status {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 0.8em;
+        font-weight: bold;
+        background: #28a745;
+        color: white;
+        margin-top: 10px;
+      }
+
+      .footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #3498db;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 6px;
+        margin: 10px;
+        transition: background 0.3s;
+      }
+
+      .btn:hover {
+        background: #2980b9;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .card {
+        background: white;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .card h4 {
+        color: #3498db;
+        margin-bottom: 10px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .success {
+        border-left: 4px solid #28a745 !important;
+        background: #d4edda !important;
+      }
+
+      .error {
+        border-left: 4px solid #dc3545 !important;
+        background: #f8d7da !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🚀 HackRX API</h1>
+        <p>Complete API Route Guide & Documentation</p>
+        <div style="margin-top: 20px">
+          <span class="status">v1.0.0 - Active</span>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- API Overview -->
+        <div class="section">
+          <h2>📋 API Overview</h2>
+          <p>
+            Welcome to the HackRX API! This is a powerful FastAPI-based service
+            that provides document processing and question-answering
+            capabilities using advanced LLM integration.
+          </p>
+
+          <div class="grid">
+            <div class="card">
+              <h4>🔧 Framework</h4>
+              <p>
+                Built with FastAPI for high performance and automatic
+                documentation
+              </p>
+            </div>
+            <div class="card">
+              <h4>📊 Logging</h4>
+              <p>Comprehensive request and application logging with rotation</p>
+            </div>
+            <div class="card">
+              <h4>🤖 AI Integration</h4>
+              <p>Powered by LLM models for intelligent document analysis</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Endpoints -->
+        <div class="section">
+          <h2>🛣️ API Endpoints</h2>
+
+          <!-- Root Endpoint -->
+          <div class="endpoint">
+            <h3>
+              <span class="method get">GET</span>
+              <span class="url">/</span>
+            </h3>
+            <div class="description">
+              This page - API route guide and documentation
+            </div>
+          </div>
+
+          <!-- Help Endpoint -->
+          <div class="endpoint">
+            <h3>
+              <span class="method get">GET</span>
+              <span class="url">/help</span>
+            </h3>
+            <div class="description">
+              Basic API information and version details
+            </div>
+            <div class="example">
+              { "message": "Welcome to HackRX API", "version": "1.0.0",
+              "endpoints": { "api_v1": "/api/v1", "docs": "/docs", "redoc":
+              "/redoc" } }
+            </div>
+          </div>
+
+          <!-- V1 Root -->
+          <div class="endpoint">
+            <h3>
+              <span class="method get">GET</span>
+              <span class="url">/api/v1/</span>
+            </h3>
+            <div class="description">Version 1 API welcome message</div>
+            <div class="example">
+              { "message": "Welcome to HackRX API", "version": "v1" }
+            </div>
+          </div>
+
+          <!-- Main HackRX Endpoint -->
+          <div class="endpoint">
+            <h3>
+              <span class="method post">POST</span>
+              <span class="url">/api/v1/hackrx/run</span>
+            </h3>
+            <div class="description">
+              <strong
+                >Main endpoint for document processing and question
+                answering</strong
+              ><br />
+              Accepts a document URL and list of questions, returns AI-generated
+              answers.
+            </div>
+
+            <h4 style="margin-top: 15px; color: #2c3e50">Request Body:</h4>
+            <div class="example">
+              { "documents": "https://example.com/document.pdf", "questions": [
+              "What is the main topic of this document?", "What are the key
+              findings?", "Are there any recommendations?" ] }
+            </div>
+
+            <h4 style="margin-top: 15px; color: #2c3e50">Response:</h4>
+            <div class="example">
+              { "answers": [ "The main topic is...", "The key findings
+              include...", "The recommendations are..." ] }
+            </div>
+          </div>
+        </div>
+
+        <!-- Documentation Links -->
+        <div class="section">
+          <h2>📚 Interactive Documentation</h2>
+          <p>Explore and test the API using our interactive documentation:</p>
+
+          <div style="text-align: center; margin-top: 20px">
+            <a href="/docs" class="btn">📖 Swagger UI Documentation</a>
+            <a href="/redoc" class="btn">📋 ReDoc Documentation</a>
+          </div>
+        </div>
+
+        <!-- Quick Start -->
+        <div class="section">
+          <h2>🚀 Quick Start Example</h2>
+          <p>Here's a quick example of how to use the main API endpoint:</p>
+
+          <div class="example">
+            # Using curl curl -X POST "http://localhost:8000/api/v1/hackrx/run"
+            \ -H "Content-Type: application/json" \ -H "Authorization: Bearer
+            your-token-here" \ -d '{ "documents":
+            "https://your-document-url.pdf", "questions": [ "What is this
+            document about?", "What are the main points?" ] }' # Using Python
+            requests import requests response = requests.post(
+            "http://localhost:8000/api/v1/hackrx/run", json={ "documents":
+            "https://your-document-url.pdf", "questions": [ "What is this
+            document about?", "What are the main points?" ] },
+            headers={"Authorization": "Bearer your-token-here"} )
+            print(response.json())
+          </div>
+        </div>
+
+        <!-- API Testing -->
+        <div class="section">
+          <h2>🧪 API Testing</h2>
+          <p>Test the API endpoints directly from this page:</p>
+
+          <div class="endpoint">
+            <h3>Test HackRX Run Endpoint</h3>
+            <div style="margin-top: 15px">
+              <label
+                for="documents"
+                style="display: block; margin-bottom: 5px; font-weight: bold"
+                >Document URL:</label
+              >
+              <input
+                type="text"
+                id="documents"
+                placeholder="https://example.com/document.pdf"
+                style="
+                  width: 100%;
+                  padding: 8px;
+                  border: 1px solid #ddd;
+                  border-radius: 4px;
+                  margin-bottom: 10px;
+                "
+              />
+
+              <label
+                for="questions"
+                style="display: block; margin-bottom: 5px; font-weight: bold"
+                >Questions (one per line):</label
+              >
+              <textarea
+                id="questions"
+                rows="4"
+                placeholder="What is the main topic?&#10;What are the key findings?"
+                style="
+                  width: 100%;
+                  padding: 8px;
+                  border: 1px solid #ddd;
+                  border-radius: 4px;
+                  margin-bottom: 10px;
+                "
+              ></textarea>
+
+              <button
+                onclick="testAPI()"
+                style="
+                  background: #3498db;
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  margin-right: 10px;
+                "
+              >
+                🚀 Test API
+              </button>
+              <button
+                onclick="clearResults()"
+                style="
+                  background: #95a5a6;
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  margin-right: 10px;
+                "
+              >
+                🗑️ Clear
+              </button>
+              <button
+                onclick="loadSampleData()"
+                style="
+                  background: #f39c12;
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                "
+              >
+                📋 Load Sample
+              </button>
+            </div>
+
+            <div id="testResults" style="margin-top: 20px; display: none">
+              <h4 style="color: #2c3e50; margin-bottom: 10px">Test Results:</h4>
+              <div
+                id="resultContent"
+                class="example"
+                style="background: #f8f9fa; border: 1px solid #dee2e6"
+              ></div>
+            </div>
+
+            <div
+              id="loadingSpinner"
+              style="display: none; text-align: center; margin-top: 20px"
+            >
+              <div
+                style="
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  border: 3px solid #f3f3f3;
+                  border-top: 3px solid #3498db;
+                  border-radius: 50%;
+                  animation: spin 1s linear infinite;
+                "
+              ></div>
+              <p style="margin-top: 10px; color: #666">Testing API...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Status & Monitoring -->
+        <div class="section">
+          <h2>📊 Status & Monitoring</h2>
+          <div class="grid">
+            <div class="card">
+              <h4>🟢 Server Status</h4>
+              <p>API is running and healthy</p>
+            </div>
+            <div class="card">
+              <h4>📝 Logging</h4>
+              <p>All requests are logged in <code>/logs</code> directory</p>
+            </div>
+            <div class="card">
+              <h4>🔄 Auto-reload</h4>
+              <p>Development mode with automatic reloading enabled</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; 2025 HackRX API | Built with FastAPI | Version 1.0.0</p>
+        <p>
+          🔗 <a href="/docs" style="color: #3498db">API Documentation</a> | 🔗
+          <a href="/redoc" style="color: #3498db">Alternative Docs</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Add some interactivity
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("🚀 HackRX API Documentation Loaded");
+
+        // Add click handlers to method badges
+        document.querySelectorAll(".method").forEach(function (method) {
+          method.addEventListener("click", function () {
+            this.style.transform = "scale(1.1)";
+            setTimeout(() => {
+              this.style.transform = "scale(1)";
+            }, 200);
+          });
+        });
+      });
+
+      // API Testing Functions
+      async function testAPI() {
+        const documentsInput = document.getElementById("documents");
+        const questionsInput = document.getElementById("questions");
+        const resultDiv = document.getElementById("testResults");
+        const resultContent = document.getElementById("resultContent");
+        const loadingSpinner = document.getElementById("loadingSpinner");
+
+        // Validate inputs
+        if (!documentsInput.value.trim()) {
+          alert("Please enter a document URL");
+          return;
+        }
+
+        if (!questionsInput.value.trim()) {
+          alert("Please enter at least one question");
+          return;
+        }
+
+        // Prepare data
+        const questions = questionsInput.value
+          .split("\n")
+          .filter((q) => q.trim() !== "");
+        const requestData = {
+          documents: documentsInput.value.trim(),
+          questions: questions,
+        };
+
+        // Show loading
+        loadingSpinner.style.display = "block";
+        resultDiv.style.display = "none";
+
+        try {
+          const response = await fetch("/api/v1/hackrx/run", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(requestData),
+          });
+
+          const responseData = await response.json();
+
+          // Hide loading
+          loadingSpinner.style.display = "none";
+          resultDiv.style.display = "block";
+
+          if (response.ok) {
+            resultContent.className = "example success";
+            resultContent.innerHTML = `
+              <strong>✅ Success!</strong><br><br>
+              <strong>Request:</strong><br>
+              ${JSON.stringify(requestData, null, 2)}<br><br>
+              <strong>Response:</strong><br>
+              ${JSON.stringify(responseData, null, 2)}
+            `;
+          } else {
+            resultContent.className = "example error";
+            resultContent.innerHTML = `
+              <strong>❌ Error ${response.status}</strong><br><br>
+              <strong>Request:</strong><br>
+              ${JSON.stringify(requestData, null, 2)}<br><br>
+              <strong>Error Response:</strong><br>
+              ${JSON.stringify(responseData, null, 2)}
+            `;
+          }
+        } catch (error) {
+          // Hide loading
+          loadingSpinner.style.display = "none";
+          resultDiv.style.display = "block";
+
+          resultContent.className = "example error";
+          resultContent.innerHTML = `
+            <strong>❌ Network Error</strong><br><br>
+            <strong>Request:</strong><br>
+            ${JSON.stringify(requestData, null, 2)}<br><br>
+            <strong>Error:</strong><br>
+            ${error.message}<br><br>
+            <em>Make sure the API server is running on localhost:8000</em>
+          `;
+        }
+      }
+
+      function clearResults() {
+        document.getElementById("documents").value = "";
+        document.getElementById("questions").value = "";
+        document.getElementById("testResults").style.display = "none";
+        document.getElementById("loadingSpinner").style.display = "none";
+      }
+
+      // Sample data function
+      function loadSampleData() {
+        document.getElementById("documents").value =
+          "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+        document.getElementById("questions").value =
+          "What is this document about?\nWhat are the main sections?\nIs this a test document?";
+      }
+    </script>
+  </body>
+</html>
