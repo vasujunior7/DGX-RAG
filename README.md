@@ -27,9 +27,18 @@ HackRX/
 │   └── api/v1/               # Version 1 API endpoints
 ├── 📁 Model/                  # AI/ML models and inference
 ├── 📁 utils/                  # Utility functions and middleware
-├── 📁 templates/              # HTML templates
+├── 📁 templates/              # HTML templates and documentation
+├── 📁 Config/                 # Configuration files
+│   ├── config.json           # Main application configuration
+│   ├── api_keys.json         # API key definitions
+│   └── README.md             # Configuration documentation
+├── 📁 Test/                   # Test files and examples
+│   ├── test_auth.py          # Authentication tests
+│   ├── comprehensive_test.py # Full API tests
+│   ├── test_request.json     # Sample test data
+│   └── README.md             # Test documentation
 ├── 📁 logs/                   # Application logs
-├── 📁 Frontend/               # Frontend components (future)
+├── 📁 Frontend/               # Frontend components
 ├── 📄 requirements.txt        # Python dependencies
 └── 📄 README.md              # This file
 ```

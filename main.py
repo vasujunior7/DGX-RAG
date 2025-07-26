@@ -139,12 +139,22 @@ if __name__ == "__main__":
         # Wait a moment for FastAPI to start
         time.sleep(3)
         
-        # Open browsers in a separate thread
-        # browser_thread = threading.Thread(target=open_browsers, daemon=True)
-        # browser_thread.start()
+        print("✅ FastAPI server started successfully")
+        print("🌐 API Documentation: http://localhost:8000")
+        print("📚 Interactive Docs: http://localhost:8000/docs")
+        print("🧪 API Testing: http://localhost:8000 (scroll to API Testing section)")
+        print("\n🔑 Available API Keys:")
+        print("   Development: hackrx_2025_dev_key_123456789")
+        print("   Production:  hackrx_2025_prod_key_987654321")
+        print("   Testing:     hackrx_2025_test_key_555666777")
+        print("\n⌨️  Press Ctrl+C to stop the server")
         
-        # Run HTML server in main thread (so we can see its output)
-        # run_html_server()
+        # Keep the main thread alive
+        try:
+            while True:
+                time.sleep(1)
+        except KeyboardInterrupt:
+            print("\n🛑 Shutting down servers...")
         
     except KeyboardInterrupt:
         print("\n🛑 Shutting down servers...")

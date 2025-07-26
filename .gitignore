@@ -48,6 +48,13 @@ Thumbs.db
 .env.test.local
 .env.production.local
 
+# API Keys (keep sample keys for now, but exclude production keys)
+# Config/api_keys.json  # Uncomment this in production
+# Config/config.json    # Uncomment this in production
+
+# Test files (optional - you may want to keep these)
+# Test/
+
 # Node.js (if we add it back later)
 node_modules/
 npm-debug.log*
@@ -61,4 +68,8 @@ dist/
 # Temporary files
 *.tmp
 *.temp
-test_request.json
+
+# Test files (exclude from production)
+Test/test_*.py
+Test/comprehensive_test.py
+Test/quick_test.py

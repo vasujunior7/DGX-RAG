@@ -232,6 +232,56 @@
           </div>
         </div>
 
+        <!-- Authentication -->
+        <div class="section">
+          <h2>🔐 Authentication</h2>
+          <p>
+            The HackRX API uses Bearer token authentication for secure access to
+            endpoints.
+          </p>
+
+          <div class="grid">
+            <div class="card">
+              <h4>🔑 API Keys</h4>
+              <p>
+                Valid API keys are required for accessing protected endpoints.
+                Include your API key in the Authorization header.
+              </p>
+            </div>
+            <div class="card">
+              <h4>🛡️ Permissions</h4>
+              <p>
+                API keys have different permission levels: 'read' for data
+                access and 'write' for data processing operations.
+              </p>
+            </div>
+            <div class="card">
+              <h4>⚙️ Configuration</h4>
+              <p>
+                Authentication can be enabled/disabled via config.json. Check
+                /api/v1/auth/status for current settings.
+              </p>
+            </div>
+          </div>
+
+          <h3 style="margin-top: 20px; color: #2c3e50">Available API Keys:</h3>
+          <div class="example">
+            Development Key: hackrx_2025_dev_key_123456789 (read, write)<br />
+            Production Key: hackrx_2025_prod_key_987654321 (read, write)<br />
+            Testing Key: hackrx_2025_test_key_555666777 (read only)
+          </div>
+
+          <h3 style="margin-top: 20px; color: #2c3e50">Usage Example:</h3>
+          <div class="example">
+            curl -X POST "http://localhost:8000/api/v1/hackrx/run" \<br />
+            &nbsp;&nbsp;-H "Authorization: Bearer hackrx_2025_dev_key_123456789"
+            \<br />
+            &nbsp;&nbsp;-H "Content-Type: application/json" \<br />
+            &nbsp;&nbsp;-d '{"documents": "https://example.com/doc.pdf",
+            "questions": ["What is this about?"]}'
+          </div>
+        </div>
+
         <!-- Main Endpoints -->
         <div class="section">
           <h2>🛣️ API Endpoints</h2>
@@ -275,6 +325,37 @@
             </div>
           </div>
 
+          <!-- Authentication Endpoints -->
+          <div class="endpoint">
+            <h3>
+              <span class="method get">GET</span>
+              <span class="url">/api/v1/auth/status</span>
+            </h3>
+            <div class="description">
+              Check current authentication configuration status
+            </div>
+            <div class="example">
+              { "authentication_enabled": true, "api_key_required": true,
+              "total_active_keys": 3 }
+            </div>
+          </div>
+
+          <div class="endpoint">
+            <h3>
+              <span class="method get">GET</span>
+              <span class="url">/api/v1/auth/validate</span>
+            </h3>
+            <div class="description">
+              Validate your API key and check permissions
+              <br /><strong>Requires:</strong> Authorization: Bearer
+              &lt;api_key&gt;
+            </div>
+            <div class="example">
+              { "valid": true, "message": "API key is valid", "key_info": {
+              "name": "Development Key", "permissions": ["read", "write"] } }
+            </div>
+          </div>
+
           <!-- Main HackRX Endpoint -->
           <div class="endpoint">
             <h3>
@@ -287,7 +368,16 @@
                 answering</strong
               ><br />
               Accepts a document URL and list of questions, returns AI-generated
-              answers.
+              answers.<br />
+              <strong>Requires:</strong> Authorization: Bearer
+              &lt;api_key&gt;<br />
+              <strong>Permissions:</strong> Write access required
+            </div>
+
+            <h4 style="margin-top: 15px; color: #2c3e50">Headers:</h4>
+            <div class="example">
+              Authorization: Bearer hackrx_2025_dev_key_123456789<br />
+              Content-Type: application/json
             </div>
 
             <h4 style="margin-top: 15px; color: #2c3e50">Request Body:</h4>
@@ -344,6 +434,24 @@
           <div class="endpoint">
             <h3>Test HackRX Run Endpoint</h3>
             <div style="margin-top: 15px">
+              <label
+                for="apiKey"
+                style="display: block; margin-bottom: 5px; font-weight: bold"
+                >API Key (Authorization Bearer Token):</label
+              >
+              <input
+                type="text"
+                id="apiKey"
+                placeholder="hackrx_2025_dev_key_123456789"
+                style="
+                  width: 100%;
+                  padding: 8px;
+                  border: 1px solid #ddd;
+                  border-radius: 4px;
+                  margin-bottom: 10px;
+                "
+              />
+
               <label
                 for="documents"
                 style="display: block; margin-bottom: 5px; font-weight: bold"
@@ -499,6 +607,7 @@
 
       // API Testing Functions
       async function testAPI() {
+        const apiKeyInput = document.getElementById("apiKey");
         const documentsInput = document.getElementById("documents");
         const questionsInput = document.getElementById("questions");
         const resultDiv = document.getElementById("testResults");
@@ -525,6 +634,16 @@
           questions: questions,
         };
 
+        // Prepare headers
+        const headers = {
+          "Content-Type": "application/json",
+        };
+
+        // Add API key if provided
+        if (apiKeyInput.value.trim()) {
+          headers["Authorization"] = `Bearer ${apiKeyInput.value.trim()}`;
+        }
+
         // Show loading
         loadingSpinner.style.display = "block";
         resultDiv.style.display = "none";
@@ -532,9 +651,7 @@
         try {
           const response = await fetch("/api/v1/hackrx/run", {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
+            headers: headers,
             body: JSON.stringify(requestData),
           });
 
@@ -581,6 +698,7 @@
       }
 
       function clearResults() {
+        document.getElementById("apiKey").value = "";
         document.getElementById("documents").value = "";
         document.getElementById("questions").value = "";
         document.getElementById("testResults").style.display = "none";
@@ -589,10 +707,12 @@
 
       // Sample data function
       function loadSampleData() {
+        document.getElementById("apiKey").value =
+          "hackrx_2025_dev_key_123456789";
         document.getElementById("documents").value =
-          "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+          "https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D";
         document.getElementById("questions").value =
-          "What is this document about?\nWhat are the main sections?\nIs this a test document?";
+          "What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\nWhat is the waiting period for pre-existing diseases (PED) to be covered?\nDoes this policy cover maternity expenses, and what are the conditions?";
       }
     </script>
   </body>

@@ -1,0 +1,25 @@
+{
+    "api_keys": [
+        {
+            "key": "hackrx_2025_dev_key_123456789",
+            "name": "Development Key",
+            "created_date": "2025-07-26",
+            "permissions": ["read", "write"],
+            "active": true
+        },
+        {
+            "key": "hackrx_2025_prod_key_987654321",
+            "name": "Production Key",
+            "created_date": "2025-07-26",
+            "permissions": ["read", "write"],
+            "active": true
+        },
+        {
+            "key": "hackrx_2025_test_key_555666777",
+            "name": "Testing Key",
+            "created_date": "2025-07-26",
+            "permissions": ["read"],
+            "active": true
+        }
+    ]
+}
