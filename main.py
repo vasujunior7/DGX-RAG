@@ -8,6 +8,7 @@ import webbrowser
 from pathlib import Path
 import http.server
 import socketserver
+
 from functools import partial
 
 # Logging configuration for uvicorn
