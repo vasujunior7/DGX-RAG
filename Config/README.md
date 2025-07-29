@@ -1,42 +1,76 @@
-# Configuration Files
+# ⚙️ Configuration Management
 
-This directory contains all configuration files for the HackRX API.
+This directory contains all configuration files for the HackRX API, supporting both V1 and V2 endpoints with enhanced security and flexibility.
 
-## Files
+## 📁 Files Structure
 
-### Main Configuration
+```
+Config/
+├── config.json         # Main application configuration
+├── api_keys.json      # API key definitions and permissions
+├── .env.example       # Environment variables template
+├── logging.yaml       # Advanced logging configuration
+└── README.md          # This documentation
+```
 
-- `config.json` - Main application configuration
-- `api_keys.json` - API key definitions and permissions
+## 🔧 Configuration Details
 
-## Configuration Details
+### config.json (Main Configuration)
 
-### config.json
-
-Controls the main application behavior:
+Controls application behavior across all API versions:
 
 ```json
 {
   "api_authentication": {
-    "enabled": true, // Enable/disable authentication
-    "require_api_key": true // Require API key for protected endpoints
+    "enabled": true, // Enable/disable authentication globally
+    "require_api_key": true, // Require API key for protected endpoints
+    "api_versions": {
+      "v1": {
+        "enabled": true,
+        "rate_limit": "100/hour",
+        "features": ["basic_processing"]
+      },
+      "v2": {
+        "enabled": true,
+        "rate_limit": "200/hour",
+        "features": ["batch_processing", "metadata", "enhanced_responses"]
+      }
+    }
   },
   "logging": {
     "level": "INFO",
     "max_file_size_mb": 10,
-    "backup_count": 5
+    "backup_count": 5,
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "enable_request_logging": true,
+    "enable_performance_logging": true
   },
   "server": {
     "host": "0.0.0.0",
     "port": 8000,
-    "reload": false
+    "reload": false,
+    "workers": 1,
+    "max_request_size": "50MB",
+    "timeout": 300
+  },
+  "models": {
+    "default_model": "gemini_basic",
+    "model_timeout": 30,
+    "enable_caching": true,
+    "cache_ttl": 3600
+  },
+  "batch_processing": {
+    "enabled": true, // V2 feature
+    "max_batch_size": 10,
+    "parallel_processing": true,
+    "batch_timeout": 600
   }
 }
 ```
 
-### api_keys.json
+### api_keys.json (Authentication & Authorization)
 
-Defines all valid API keys with their permissions:
+Defines API keys with granular permissions for V1/V2 endpoints:
 
 ```json
 {
@@ -45,12 +79,81 @@ Defines all valid API keys with their permissions:
       "key": "hackrx_2025_dev_key_123456789",
       "name": "Development Key",
       "created_date": "2025-07-26",
-      "permissions": ["read", "write"],
-      "active": true
+      "permissions": ["read", "write", "v1_access", "v2_access"],
+      "rate_limits": {
+        "requests_per_hour": 500,
+        "batch_requests_per_hour": 50
+      },
+      "active": true,
+      "environment": "development"
+    },
+    {
+      "key": "hackrx_2025_prod_key_987654321",
+      "name": "Production Key",
+      "created_date": "2025-07-26",
+      "permissions": ["read", "write", "v1_access", "v2_access", "admin"],
+      "rate_limits": {
+        "requests_per_hour": 1000,
+        "batch_requests_per_hour": 100
+      },
+      "active": true,
+      "environment": "production"
+    },
+    {
+      "key": "hackrx_2025_test_key_555666777",
+      "name": "Testing Key",
+      "created_date": "2025-07-26",
+      "permissions": ["read", "v1_access"],
+      "rate_limits": {
+        "requests_per_hour": 100,
+        "batch_requests_per_hour": 0
+      },
+      "active": true,
+      "environment": "testing"
     }
   ]
 }
 ```
+
+### .env.example (Environment Template)
+
+```bash
+# Application Environment
+NODE_ENV=development
+DEBUG=true
+
+# API Configuration
+HACKRX_API_PORT=8000
+HACKRX_API_HOST=0.0.0.0
+
+# Authentication
+HACKRX_AUTH_ENABLED=true
+HACKRX_API_KEY_FILE=Config/api_keys.json
+
+# Model Configuration
+GOOGLE_API_KEY=your-google-api-key-here
+GEMINI_MODEL=gemini-1.5-flash
+MODEL_TIMEOUT=30
+
+# Database (if applicable)
+DATABASE_URL=sqlite:///hackrx.db
+
+# Redis Cache (for production)
+REDIS_URL=redis://localhost:6379
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=logs/hackrx.log
+
+# Security
+SECRET_KEY=your-secret-key-here
+CORS_ORIGINS=["http://localhost:3000", "https://yourdomain.com"]
+```
+
+]
+}
+
+````
 
 ## Available API Keys
 
@@ -81,7 +184,7 @@ For development, you can disable authentication:
     "enabled": false
   }
 }
-```
+````
 
 ### Adding New API Keys
 

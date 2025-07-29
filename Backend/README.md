@@ -1,129 +1,296 @@
-# 🔧 Backend
+# 🔧 Backend - FastAPI Application
 
-This directory contains the core FastAPI application and API implementation for the HackRX project.
+This directory contains the core FastAPI application with versioned API endpoints for the HackRX project.
 
 ## 📁 Structure
 
 ```
 Backend/
-├── main_api.py           # Main FastAPI application
+├── main_api.py           # Main FastAPI application with routing
 ├── __init__.py          # Package initialization
-└── api/                 # API version modules
+└── api/                 # Versioned API modules
     ├── __init__.py      # API package initialization
-    └── v1/              # Version 1 API endpoints
-        ├── __init__.py  # V1 package initialization
-        └── api.py       # V1 API routes and handlers
+    ├── v1/              # Version 1 API endpoints
+    │   ├── __init__.py  # V1 package initialization
+    │   └── api.py       # V1 API routes and handlers
+    └── v2/              # Version 2 API endpoints (Enhanced)
+        ├── __init__.py  # V2 package initialization
+        └── api.py       # V2 API routes with batch processing
 ```
 
 ## 🚀 Components
 
 ### `main_api.py`
 
-- **Main FastAPI application instance**
-- **Middleware configuration** (request logging)
-- **Router inclusion** (API versioning)
-- **Template rendering** (HTML guide)
-- **Application lifecycle management**
+The main FastAPI application with comprehensive configuration:
 
-**Key Features:**
+**Features:**
 
-- ✅ FastAPI app configuration with metadata
-- ✅ Request logging middleware integration
-- ✅ Jinja2 template setup for HTML responses
-- ✅ API versioning with `/api/v1` prefix
-- ✅ Root endpoint serving HTML guide
-
-### `api/v1/api.py`
-
-- **Version 1 API endpoints**
-- **Request/response models** (Pydantic)
-- **Business logic integration** (Model classes)
-- **Error handling and logging**
+- ✅ **FastAPI App Instance** - Configured with metadata and docs
+- ✅ **Authentication Middleware** - Bearer token validation
+- ✅ **Request Logging** - Comprehensive request/response logging
+- ✅ **API Versioning** - V1 and V2 router inclusion
+- ✅ **Template Rendering** - Jinja2 for HTML guide
+- ✅ **CORS Configuration** - Cross-origin request support
 
 **Endpoints:**
 
-- `GET /` - V1 welcome message
-- `POST /hackrx/run` - Main document processing endpoint
+- `GET /` - Interactive HTML API guide
+- `GET /help` - API information with V1/V2 endpoints
+- `GET /docs` - Swagger UI documentation
+- `GET /redoc` - ReDoc documentation
+
+### `api/v1/api.py` - Standard API
+
+**V1 Features:**
+
+- 🔧 **Standard Processing** - Single document processing
+- 🔐 **Authentication** - Bearer token validation
+- 📊 **Basic Logging** - Request/response logging
+- 🧠 **LLM Integration** - SampleModel for inference
+
+**V1 Endpoints:**
+
+- `GET /api/v1/` - Welcome message
+- `GET /api/v1/auth/status` - Authentication status
+- `GET /api/v1/auth/validate` - API key validation
+- `POST /api/v1/hackrx/run` - Document processing
+
+### `api/v2/api.py` - Enhanced API
+
+**V2 Features:**
+
+- 🔥 **Batch Processing** - Multiple document handling
+- 📊 **Enhanced Metadata** - Processing time, model version
+- ⚡ **Parallel Processing** - Concurrent document processing
+- 🎯 **Advanced Options** - Configurable parameters
+- 🧠 **Improved Models** - Enhanced AI processing
+
+**V2 Endpoints:**
+
+- `GET /api/v2/` - Enhanced welcome with features
+- `POST /api/v2/hackrx/run` - Enhanced document processing
+- `POST /api/v2/hackrx/batch` - Batch processing endpoint
+
+## 🔑 Authentication System
+
+### API Key Management
+
+```python
+# Located in utils/auth.py
+class AuthManager:
+    - validate_api_key()
+    - check_permissions()
+    - load_configuration()
+```
+
+### Permission Levels
+
+- **Read**: Access to GET endpoints and validation
+- **Write**: Access to POST endpoints and processing
+
+### Available Keys (Development)
+
+```
+Development: hackrx_2025_dev_key_123456789  # read + write
+Production:  hackrx_2025_prod_key_987654321 # read + write
+Testing:     hackrx_2025_test_key_555666777 # read only
+```
 
 ## 🔗 Dependencies
 
 ### Internal Dependencies
 
-- `utils.middleware` - Request logging middleware
-- `utils.logging_config` - Logging configuration
-- `Model.sample_model` - AI model integration
+- **utils.middleware** - Request logging and authentication middleware
+- **utils.logging_config** - Comprehensive logging setup
+- **utils.auth** - Authentication and API key management
+- **Model.sample_model** - AI model integration and inference
 
 ### External Dependencies
 
-- `fastapi` - Web framework
-- `pydantic` - Data validation
-- `jinja2` - Template rendering
+- **fastapi** - Modern web framework for building APIs
+- **pydantic** - Data validation and serialization
+- **jinja2** - Template engine for HTML responses
+- **uvicorn** - ASGI server for production deployment
 
-## 📊 API Versioning
+## 📊 API Versioning Strategy
 
-The backend implements API versioning to ensure backward compatibility:
+The backend implements semantic API versioning for backward compatibility:
 
-- **v1**: Current stable version
-- **Future versions**: Can be added as separate modules
+### Current Versions
 
-### Adding New API Versions
+- **V1**: Stable API with standard document processing
+- **V2**: Enhanced API with batch processing and metadata
 
-1. Create new version directory: `api/v2/`
-2. Implement routes in `api/v2/api.py`
-3. Include router in `main_api.py`:
-   ```python
-   from .api.v2.api import router as v2_router
-   app.include_router(v2_router, prefix="/api/v2", tags=["v2"])
-   ```
+### Version Features Comparison
+
+| Feature             | V1  | V2  |
+| ------------------- | --- | --- |
+| Single Document     | ✅  | ✅  |
+| Multiple Documents  | ❌  | ✅  |
+| Batch Processing    | ❌  | ✅  |
+| Response Metadata   | ❌  | ✅  |
+| Processing Options  | ❌  | ✅  |
+| Parallel Processing | ❌  | ✅  |
+
+### Adding New Versions
+
+1. Create version directory: `api/v3/`
+2. Implement enhanced routes in `api/v3/api.py`
+3. Include router in `main_api.py`
+4. Update documentation and tests
 
 ## 🛠️ Request/Response Flow
 
-1. **Request Reception**: FastAPI receives HTTP request
-2. **Middleware Processing**: Request logging middleware captures details
-3. **Route Matching**: FastAPI routes request to appropriate handler
-4. **Model Integration**: Handler calls Model classes for processing
-5. **Response Generation**: Pydantic models ensure response format
-6. **Logging**: Request completion logged with timing
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant M as Middleware
+    participant R as Router
+    participant A as Auth
+    participant H as Handler
+    participant L as LLM
 
-## 📝 Request Models
-
-### `HackRXRequest`
-
-```python
-{
-    "documents": "string",      # Document URL or content
-    "questions": ["string"]     # List of questions to answer
-}
+    C->>M: HTTP Request
+    M->>A: Validate API Key
+    A-->>M: Auth Status
+    M->>R: Route Request
+    R->>H: Handler Execution
+    H->>L: LLM Processing
+    L-->>H: AI Response
+    H-->>R: Formatted Response
+    R-->>M: HTTP Response
+    M-->>C: Final Response
 ```
 
-### `HackRXResponse`
+## 📝 Request/Response Models
+
+### V1 Models
 
 ```python
-{
-    "answers": ["string"]       # List of AI-generated answers
-}
+# V1 Request
+class HackRXRequest(BaseModel):
+    documents: str              # Single document URL
+    questions: List[str]        # Questions list
+
+# V1 Response
+class HackRXResponse(BaseModel):
+    answers: List[str]          # AI-generated answers
+```
+
+### V2 Models
+
+```python
+# V2 Request
+class HackRXV2Request(BaseModel):
+    documents: Union[str, List[str]]  # Single or multiple documents
+    questions: List[str]              # Questions list
+    options: Optional[Dict]           # Processing options
+
+# V2 Response
+class HackRXV2Response(BaseModel):
+    answers: List[str]                # AI-generated answers
+    metadata: Dict                    # Processing metadata
+    sources: List[str]                # Source documents
 ```
 
 ## 🔧 Configuration
 
 ### Application Settings
 
-- **Title**: "HackRX API"
-- **Description**: "API for HackRX project with LLM integration"
-- **Version**: "1.0.0"
+```python
+app = FastAPI(
+    title="HackRX API",
+    description="API for HackRX project with LLM integration",
+    version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc"
+)
+```
 
 ### Middleware Stack
 
-1. **RequestLoggingMiddleware** - Logs all HTTP requests/responses
+1. **RequestLoggingMiddleware** - HTTP request/response logging
+2. **AuthenticationMiddleware** - API key validation
+3. **CORSMiddleware** - Cross-origin request handling
 
-### Template Configuration
+### Router Configuration
 
-- **Directory**: `templates/`
-- **Engine**: Jinja2
+```python
+# V1 API
+app.include_router(v1_router, prefix="/api/v1", tags=["v1"])
+
+# V2 API
+app.include_router(v2_router, prefix="/api/v2", tags=["v2"])
+```
 
 ## 🧪 Testing
 
-Test the backend components:
+### Test Backend Components
+
+```bash
+# Test V1 endpoints
+curl -X GET "http://localhost:8000/api/v1/"
+
+# Test authentication
+curl -X GET "http://localhost:8000/api/v1/auth/status"
+
+# Test V2 enhanced endpoints
+curl -X GET "http://localhost:8000/api/v2/"
+
+# Test document processing
+curl -X POST "http://localhost:8000/api/v1/hackrx/run" \
+     -H "Authorization: Bearer hackrx_2025_dev_key_123456789" \
+     -H "Content-Type: application/json" \
+     -d '{"documents": "test.pdf", "questions": ["What is this?"]}'
+```
+
+### Performance Testing
+
+```bash
+# Load testing with ab
+ab -n 100 -c 10 http://localhost:8000/api/v1/
+
+# Stress testing endpoints
+python Test/comprehensive_test.py
+```
+
+## 🚀 Deployment
+
+### Development
+
+```bash
+# Run with auto-reload
+python main.py
+```
+
+### Production
+
+```bash
+# Using Gunicorn with Uvicorn workers
+gunicorn Backend.main_api:app -w 4 -k uvicorn.workers.UvicornWorker
+```
+
+### Docker
+
+```dockerfile
+FROM python:3.12-slim
+WORKDIR /app
+COPY Backend/ ./Backend/
+COPY utils/ ./utils/
+COPY Model/ ./Model/
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+EXPOSE 8000
+CMD ["gunicorn", "Backend.main_api:app", "-k", "uvicorn.workers.UvicornWorker"]
+```
+
+## 📚 Additional Resources
+
+- **FastAPI Documentation**: https://fastapi.tiangolo.com/
+- **Pydantic Models**: https://pydantic-docs.helpmanual.io/
+- **Uvicorn Server**: https://www.uvicorn.org/
+- **API Testing**: Use the interactive docs at `/docs`
 
 ```bash
 # Test main endpoint
