@@ -27,9 +27,9 @@ venv/
 ENV/
 env/
 
-# Logs
-logs/
-*.log
+# Logs (commented out to allow pushing log files)
+# logs/
+# *.log
 
 # IDE
 .vscode/
@@ -48,12 +48,12 @@ Thumbs.db
 .env.test.local
 .env.production.local
 
-# Large files and cached data
+# Large files and cached data (allow some AURA files)
 cached_pdfs/
 *.pdf
 *.zip
 vector_store_index/
-*.faiss
+# *.faiss  # Allow FAISS files for AURA model
 *.pkl
 
 # API Keys and secrets
@@ -80,7 +80,7 @@ dist/
 *.tmp
 *.temp
 
-# Test files (exclude from production)
-Test/test_*.py
-Test/comprehensive_test.py
-Test/quick_test.py
+# Test files (allow main test files but exclude some generated ones)
+# Test/test_*.py  # Allow main test files
+# Test/comprehensive_test.py  # Allow these specific files
+# Test/quick_test.py

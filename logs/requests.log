@@ -1,0 +1,660 @@
+2025-07-28 23:47:27,669 - INFO - REQUEST: {
+  "timestamp": "2025-07-28 23:47:27",
+  "client_ip": "2409:40d4:310f:354d:e579:b404:415:3641",
+  "method": "GET",
+  "url": "https://finishing-tampa-source-retain.trycloudflare.com/api/v1/hackrx/run",
+  "status_code": 405,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-28 23:48:41,907 - INFO - REQUEST: {
+  "timestamp": "2025-07-28 23:48:41",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://finishing-tampa-source-retain.trycloudflare.com/api/v1/hackrx/run",
+  "status_code": 200,
+  "process_time": 24.1569,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Arogya%20Sanjeevani%20Policy%20-%20CIN%20-%20U10200WB1906GOI001713%201.pdf?sv=2023-01-03&st=2025-07-21T08%3A29%3A02Z&se=2025-09-22T08%3A29%3A00Z&sr=b&sp=r&sig=nzrz1K9Iurt%2BBXom%2FB%2BMPTFMFP3PRnIvEsipAX10Ig4%3D\",\"questions\":[\"When will my root canal claim of Rs 25,000 be settled?\",\"I have done an IVF for Rs 56,000. Is it covered?\",\"I did a cataract treatment of Rs 100,000. Will you settle the full Rs 100,000?\",\"Give me a list of documents to be uploaded for hospitalization for heart surgery.\"]}"
+}
+2025-07-28 23:48:59,509 - INFO - REQUEST: {
+  "timestamp": "2025-07-28 23:48:59",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://finishing-tampa-source-retain.trycloudflare.com/api/v1/hackrx/run",
+  "status_code": 200,
+  "process_time": 11.455,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Arogya%20Sanjeevani%20Policy%20-%20CIN%20-%20U10200WB1906GOI001713%201.pdf?sv=2023-01-03&st=2025-07-21T08%3A29%3A02Z&se=2025-09-22T08%3A29%3A00Z&sr=b&sp=r&sig=nzrz1K9Iurt%2BBXom%2FB%2BMPTFMFP3PRnIvEsipAX10Ig4%3D\",\"questions\":[\"I have raised a claim for hospitalization for Rs 200,000 with HDFC, and it's approved. My total expenses are Rs 250,000. Can I raise the remaining Rs 50,000 with you?\"]}"
+}
+2025-07-28 23:50:19,806 - INFO - REQUEST: {
+  "timestamp": "2025-07-28 23:50:19",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://finishing-tampa-source-retain.trycloudflare.com/api/v1/hackrx/run",
+  "status_code": 200,
+  "process_time": 77.8394,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Super_Splendor_(Feb_2023).pdf?sv=2023-01-03&st=2025-07-21T08%3A10%3A00Z&se=2025-09-22T08%3A10%3A00Z&sr=b&sp=r&sig=vhHrl63YtrEOCsAy%2BpVKr20b3ZUo5HMz1lF9%2BJh6LQ0%3D\",\"questions\":[\"What is the ideal spark plug gap recommeded\",\"Does this comes in tubeless tyre version\",\"Is it compulsoury to have a disc brake\",\"Can I put thums up instead of oil\",\"Give me JS code to generate a random number between 1 and 100\"]}"
+}
+2025-07-28 23:51:15,505 - INFO - REQUEST: {
+  "timestamp": "2025-07-28 23:51:15",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://finishing-tampa-source-retain.trycloudflare.com/api/v1/hackrx/run",
+  "status_code": 200,
+  "process_time": 71.8841,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Family%20Medicare%20Policy%20(UIN-%20UIIHLIP22070V042122)%201.pdf?sv=2023-01-03&st=2025-07-22T10%3A17%3A39Z&se=2025-08-23T10%3A17%3A00Z&sr=b&sp=r&sig=dA7BEMIZg3WcePcckBOb4QjfxK%2B4rIfxBs2%2F%2BNwoPjQ%3D\",\"questions\":[\"Is Non-infective Arthritis covered?\",\"I renewed my policy yesterday, and I have been a customer for the last 6 years. Can I raise a claim for Hydrocele?\",\"Is abortion covered?\"]}"
+}
+2025-07-28 23:53:23,547 - INFO - REQUEST: {
+  "timestamp": "2025-07-28 23:53:23",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://finishing-tampa-source-retain.trycloudflare.com/api/v1/hackrx/run",
+  "status_code": 500,
+  "process_time": 77.9595,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/indian_constitution.pdf?sv=2023-01-03&st=2025-07-28T06%3A42%3A00Z&se=2026-11-29T06%3A42%3A00Z&sr=b&sp=r&sig=5Gs%2FOXqP3zY00lgciu4BZjDV5QjTDIx7fgnfdz6Pu24%3D\",\"questions\":[\"If my car is stolen, what case will it be in law?\",\"If I am arrested without a warrant, is that legal?\",\"If someone denies me a job because of my caste, is that allowed?\",\"If the government takes my land for a project, can I stop it?\",\"If my child is forced to work in a factory, is that legal?\",\"If I am stopped from speaking at a protest, is that against my rights?\",\"If a religious place stops me from entering because I'm a woman, is that constitutional?\",\"If I change my religion, can the government stop me?\",\"If the police torture someone in custody, what right is being violated?\",\"If I'm denied admission to a public university because I'm from a backward community, can I do something?\"]}"
+}
+2025-07-28 23:53:51,458 - INFO - REQUEST: {
+  "timestamp": "2025-07-28 23:53:51",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://finishing-tampa-source-retain.trycloudflare.com/api/v1/hackrx/run",
+  "status_code": 200,
+  "process_time": 166.7998,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "Body too large or empty"
+}
+2025-07-29 14:32:28,150 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:32:28",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0522,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 14:32:29,745 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:32:29",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/favicon.ico",
+  "status_code": 404,
+  "process_time": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 14:32:53,087 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:32:53",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 422,
+  "process_time": 0.001,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":[\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\"],\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"],\"options\":{\"enable_batch_processing\":true,\"max_tokens\":2000,\"temperature\":0.1}}"
+}
+2025-07-29 14:36:01,398 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:36:01",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v1/hackrx/run",
+  "status_code": 200,
+  "process_time": 40.7324,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-29 14:36:27,434 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:36:27",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 422,
+  "process_time": 0.001,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":[\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\"],\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"],\"options\":{\"enable_batch_processing\":true,\"max_tokens\":2000,\"temperature\":0.1}}"
+}
+2025-07-29 14:37:41,302 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:37:41",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v1/hackrx/run",
+  "status_code": 200,
+  "process_time": 25.4562,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-29 14:38:56,219 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:38:56",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0421,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 14:39:02,006 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:39:02",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 422,
+  "process_time": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":[\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\"],\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-29 14:39:16,824 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:39:16",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 422,
+  "process_time": 0.002,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":[\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\"],\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-29 14:39:18,268 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:39:18",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0105,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 14:39:23,810 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:39:23",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 422,
+  "process_time": 0.001,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":[\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\"],\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-29 14:41:03,910 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:41:03",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0798,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 14:41:20,735 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:41:20",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.001,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 14:41:29,046 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:41:29",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0074,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 14:41:49,672 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:41:49",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0543,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 14:41:57,819 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:41:57",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 0.0034,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-29 14:42:25,510 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 14:42:25",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v1/hackrx/run",
+  "status_code": 200,
+  "process_time": 14.2363,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-29 23:54:21,584 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 23:54:21",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0152,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 23:54:22,034 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 23:54:22",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/favicon.ico",
+  "status_code": 404,
+  "process_time": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 23:54:43,641 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 23:54:43",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0016,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-29 23:57:20,084 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 23:57:20",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 500,
+  "process_time": 0.2765,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://lnmiit.ac.in/uploaded_files/LNMIIT%20Information%20Brochure.pdf\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-29 23:58:46,334 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 23:58:46",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 8.4677,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/EDLHLGA23009V012223.pdf\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-29 23:59:42,041 - INFO - REQUEST: {
+  "timestamp": "2025-07-29 23:59:42",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 11.9748,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/HDFHLIP23024V072223.pdf\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-30 00:00:56,195 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:00:56",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 11.1878,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/HDFHLIP23024V072223.pdf\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-30 00:01:35,000 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:01:35",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 8.118,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/HDFHLIP23024V072223.pdf\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-30 00:07:36,214 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:07:36",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 52.6053,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/CHOTGDP23004V012223.pdf\",\"questions\":[\"I had an emergency accidental hospitalization and my current insurance covered only part of the expenses. Can I claim the remaining amount from this policy?\",\"My total hospitalization expenses exceeded the sum insured under my other policy. Will this policy cover the balance amount?\",\"Can I file a claim under this plan for expenses already partially reimbursed by another insurer?\",\"If my travel insurance claim was approved for a lower amount by another company, can I claim the difference here?\",\"Does this policy allow top-up claims if my other policy's limit has been exhausted?\"]}"
+}
+2025-07-30 00:17:18,827 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:17:18",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0133,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:17:47,760 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:17:47",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 10.0966,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/CHOTGDP23004V012223.pdf\",\"questions\":[\"I had an emergency accidental hospitalization and my current insurance covered only part of the expenses. Can I claim the remaining amount from this policy?\",\"My total hospitalization expenses exceeded the sum insured under my other policy. Will this policy cover the balance amount?\",\"Can I file a claim under this plan for expenses already partially reimbursed by another insurer?\",\"If my travel insurance claim was approved for a lower amount by another company, can I claim the difference here?\",\"Does this policy allow top-up claims if my other policy's limit has been exhausted?\"]}"
+}
+2025-07-30 00:21:21,844 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:21:21",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 10.9473,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/EDLHLGA23009V012223.pdf\",\"questions\":[\"I had an emergency accidental hospitalization and my current insurance covered only part of the expenses. Can I claim the remaining amount from this policy?\",\"My total hospitalization expenses exceeded the sum insured under my other policy. Will this policy cover the balance amount?\",\"Can I file a claim under this plan for expenses already partially reimbursed by another insurer?\",\"If my travel insurance claim was approved for a lower amount by another company, can I claim the difference here?\",\"Does this policy allow top-up claims if my other policy's limit has been exhausted?\"]}"
+}
+2025-07-30 00:22:11,392 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:22:11",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 12.4979,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/CHOTGDP23004V012223.pdf\",\"questions\":[\"I had an emergency accidental hospitalization and my current insurance covered only part of the expenses. Can I claim the remaining amount from this policy?\",\"My total hospitalization expenses exceeded the sum insured under my other policy. Will this policy cover the balance amount?\",\"Can I file a claim under this plan for expenses already partially reimbursed by another insurer?\",\"If my travel insurance claim was approved for a lower amount by another company, can I claim the difference here?\",\"Does this policy allow top-up claims if my other policy's limit has been exhausted?\"]}"
+}
+2025-07-30 00:30:28,730 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:30:28",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 37.4444,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/CHOTGDP23004V012223.pdf\",\"questions\":[\"I had an emergency accidental hospitalization and my current insurance covered only part of the expenses. Can I claim the remaining amount from this policy?\",\"My total hospitalization expenses exceeded the sum insured under my other policy. Will this policy cover the balance amount?\",\"Can I file a claim under this plan for expenses already partially reimbursed by another insurer?\",\"If my travel insurance claim was approved for a lower amount by another company, can I claim the difference here?\",\"Does this policy allow top-up claims if my other policy's limit has been exhausted?\"]}"
+}
+2025-07-30 00:31:19,183 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:31:19",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 14.5169,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"documents\":\"https://hackrx.in/policies/EDLHLGA23009V012223.pdf\",\"questions\":[\"I had an emergency accidental hospitalization and my current insurance covered only part of the expenses. Can I claim the remaining amount from this policy?\",\"My total hospitalization expenses exceeded the sum insured under my other policy. Will this policy cover the balance amount?\",\"Can I file a claim under this plan for expenses already partially reimbursed by another insurer?\",\"If my travel insurance claim was approved for a lower amount by another company, can I claim the difference here?\",\"Does this policy allow top-up claims if my other policy's limit has been exhausted?\"]}"
+}
+2025-07-30 00:32:43,228 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:32:43",
+  "client_ip": "2409:40d4:3111:32c9:9c8a:df56:27dd:4194",
+  "method": "GET",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/",
+  "status_code": 200,
+  "process_time": 0.0158,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:32:43,681 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:32:43",
+  "client_ip": "2409:40d4:3111:32c9:9c8a:df56:27dd:4194",
+  "method": "GET",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/favicon.ico",
+  "status_code": 404,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:33:33,199 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:33:33",
+  "client_ip": "2409:40d4:3111:32c9:9c8a:df56:27dd:4194",
+  "method": "GET",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 405,
+  "process_time": 0.0006,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:33:44,885 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:33:44",
+  "client_ip": "2409:40d4:3111:32c9:9c8a:df56:27dd:4194",
+  "method": "GET",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 405,
+  "process_time": 0.0,
+  "user_agent": "WhatsApp/2.2527.2 W",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:33:55,613 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:33:55",
+  "client_ip": "2a09:bac1:36a0:248::19e:18",
+  "method": "GET",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 405,
+  "process_time": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:33:56,595 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:33:56",
+  "client_ip": "2a09:bac1:36a0:248::19e:18",
+  "method": "GET",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/favicon.ico",
+  "status_code": 404,
+  "process_time": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:34:17,975 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:34:17",
+  "client_ip": "2a09:bac1:36a0:248::19e:18",
+  "method": "GET",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 405,
+  "process_time": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:34:18,278 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:34:18",
+  "client_ip": "2a09:bac1:36a0:248::19e:18",
+  "method": "GET",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/favicon.ico",
+  "status_code": 404,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:34:28,089 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:34:28",
+  "client_ip": "2a09:bac1:36a0:248::19e:18",
+  "method": "GET",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/",
+  "status_code": 200,
+  "process_time": 0.0019,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:35:45,249 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:35:45",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 48.207,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Arogya%20Sanjeevani%20Policy%20-%20CIN%20-%20U10200WB1906GOI001713%201.pdf?sv=2023-01-03&st=2025-07-21T08%3A29%3A02Z&se=2025-09-22T08%3A29%3A00Z&sr=b&sp=r&sig=nzrz1K9Iurt%2BBXom%2FB%2BMPTFMFP3PRnIvEsipAX10Ig4%3D\",\"questions\":[\"When will my root canal claim of Rs 25,000 be settled?\",\"I have done an IVF for Rs 56,000. Is it covered?\",\"I did a cataract treatment of Rs 100,000. Will you settle the full Rs 100,000?\",\"Give me a list of documents to be uploaded for hospitalization for heart surgery.\"]}"
+}
+2025-07-30 00:36:53,796 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:36:53",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 67.4264,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Arogya%20Sanjeevani%20Policy%20-%20CIN%20-%20U10200WB1906GOI001713%201.pdf?sv=2023-01-03&st=2025-07-21T08%3A29%3A02Z&se=2025-09-22T08%3A29%3A00Z&sr=b&sp=r&sig=nzrz1K9Iurt%2BBXom%2FB%2BMPTFMFP3PRnIvEsipAX10Ig4%3D\",\"questions\":[\"I have raised a claim for hospitalization for Rs 200,000 with HDFC, and it's approved. My total expenses are Rs 250,000. Can I raise the remaining Rs 50,000 with you?\"]}"
+}
+2025-07-30 00:37:17,144 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:37:17",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 28.9976,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Super_Splendor_(Feb_2023).pdf?sv=2023-01-03&st=2025-07-21T08%3A10%3A00Z&se=2025-09-22T08%3A10%3A00Z&sr=b&sp=r&sig=vhHrl63YtrEOCsAy%2BpVKr20b3ZUo5HMz1lF9%2BJh6LQ0%3D\",\"questions\":[\"What is the ideal spark plug gap recommeded\",\"Does this comes in tubeless tyre version\",\"Is it compulsoury to have a disc brake\",\"Can I put thums up instead of oil\",\"Give me JS code to generate a random number between 1 and 100\"]}"
+}
+2025-07-30 00:37:36,537 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:37:36",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 18.2913,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Family%20Medicare%20Policy%20(UIN-%20UIIHLIP22070V042122)%201.pdf?sv=2023-01-03&st=2025-07-22T10%3A17%3A39Z&se=2025-08-23T10%3A17%3A00Z&sr=b&sp=r&sig=dA7BEMIZg3WcePcckBOb4QjfxK%2B4rIfxBs2%2F%2BNwoPjQ%3D\",\"questions\":[\"Is Non-infective Arthritis covered?\",\"I renewed my policy yesterday, and I have been a customer for the last 6 years. Can I raise a claim for Hydrocele?\",\"Is abortion covered?\"]}"
+}
+2025-07-30 00:37:56,972 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:37:56",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 19.2993,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "Body too large or empty"
+}
+2025-07-30 00:38:26,149 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:38:26",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 14.6943,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/indian_constitution.pdf?sv=2023-01-03&st=2025-07-28T06%3A42%3A00Z&se=2026-11-29T06%3A42%3A00Z&sr=b&sp=r&sig=5Gs%2FOXqP3zY00lgciu4BZjDV5QjTDIx7fgnfdz6Pu24%3D\",\"questions\":[\"If my car is stolen, what case will it be in law?\",\"If I am arrested without a warrant, is that legal?\",\"If someone denies me a job because of my caste, is that allowed?\",\"If the government takes my land for a project, can I stop it?\",\"If my child is forced to work in a factory, is that legal?\",\"If I am stopped from speaking at a protest, is that against my rights?\",\"If a religious place stops me from entering because I'm a woman, is that constitutional?\",\"If I change my religion, can the government stop me?\",\"If the police torture someone in custody, what right is being violated?\",\"If I'm denied admission to a public university because I'm from a backward community, can I do something?\"]}"
+}
+2025-07-30 00:39:09,415 - INFO - REQUEST: {
+  "timestamp": "2025-07-30 00:39:09",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://rpm-seeks-insider-receiver.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 29.2611,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "Body too large or empty"
+}

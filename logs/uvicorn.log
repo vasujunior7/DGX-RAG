@@ -1,0 +1,341 @@
+2025-07-25 22:36:06,764 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\saumi\\Desktop\\CODES\\HackRX']
+2025-07-25 22:36:06,764 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-07-25 22:36:06,764 - uvicorn.error - INFO - Started reloader process [16964] using StatReload
+2025-07-25 22:36:07,207 - uvicorn.error - INFO - Started server process [22732]
+2025-07-25 22:36:07,207 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:36:07,207 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:36:45,127 - uvicorn.access - INFO - 127.0.0.1:55431 - "GET / HTTP/1.1" 200
+2025-07-25 22:37:26,088 - uvicorn.access - INFO - 127.0.0.1:55453 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-25 22:40:52,106 - uvicorn.error - WARNING - StatReload detected changes in 'Backend\main_api.py'. Reloading...
+2025-07-25 22:40:52,146 - uvicorn.error - INFO - Shutting down
+2025-07-25 22:40:52,252 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 22:40:52,252 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 22:40:52,253 - uvicorn.error - INFO - Finished server process [22732]
+2025-07-25 22:41:00,646 - uvicorn.error - WARNING - StatReload detected changes in 'Backend\api\v1\api.py'. Reloading...
+2025-07-25 22:41:08,144 - uvicorn.error - WARNING - StatReload detected changes in 'utils\middleware.py'. Reloading...
+2025-07-25 22:41:08,581 - uvicorn.error - INFO - Started server process [26092]
+2025-07-25 22:41:08,581 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:41:08,581 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:41:31,350 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\saumi\\Desktop\\CODES\\HackRX']
+2025-07-25 22:41:31,351 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-07-25 22:41:31,351 - uvicorn.error - INFO - Started reloader process [22352] using StatReload
+2025-07-25 22:41:31,775 - uvicorn.error - INFO - Started server process [32416]
+2025-07-25 22:41:31,775 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:41:31,775 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:41:59,122 - uvicorn.access - INFO - 127.0.0.1:55687 - "GET / HTTP/1.1" 200
+2025-07-25 22:42:09,082 - uvicorn.access - INFO - 127.0.0.1:55699 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-25 22:43:21,400 - uvicorn.error - WARNING - StatReload detected changes in 'main.py'. Reloading...
+2025-07-25 22:43:21,496 - uvicorn.error - INFO - Shutting down
+2025-07-25 22:43:21,605 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 22:43:21,605 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 22:43:21,605 - uvicorn.error - INFO - Finished server process [32416]
+2025-07-25 22:43:22,125 - uvicorn.error - INFO - Started server process [41324]
+2025-07-25 22:43:22,125 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:43:22,125 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:43:24,607 - uvicorn.error - WARNING - StatReload detected changes in 'Backend\api\v1\api.py'. Reloading...
+2025-07-25 22:43:24,644 - uvicorn.error - INFO - Shutting down
+2025-07-25 22:43:24,753 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 22:43:24,753 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 22:43:24,753 - uvicorn.error - INFO - Finished server process [41324]
+2025-07-25 22:43:25,200 - uvicorn.error - INFO - Started server process [10912]
+2025-07-25 22:43:25,200 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:43:25,202 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:43:27,854 - uvicorn.error - WARNING - StatReload detected changes in 'Backend\main_api.py'. Reloading...
+2025-07-25 22:43:27,915 - uvicorn.error - INFO - Shutting down
+2025-07-25 22:43:28,023 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 22:43:28,023 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 22:43:28,023 - uvicorn.error - INFO - Finished server process [10912]
+2025-07-25 22:43:28,536 - uvicorn.error - INFO - Started server process [44540]
+2025-07-25 22:43:28,536 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:43:28,537 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:43:28,969 - uvicorn.error - WARNING - StatReload detected changes in 'utils\__init__.py'. Reloading...
+2025-07-25 22:43:28,974 - uvicorn.error - INFO - Shutting down
+2025-07-25 22:43:29,081 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 22:43:29,081 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 22:43:29,091 - uvicorn.error - INFO - Finished server process [44540]
+2025-07-25 22:43:29,617 - uvicorn.error - INFO - Started server process [5540]
+2025-07-25 22:43:29,617 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:43:29,617 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:43:30,067 - uvicorn.error - WARNING - StatReload detected changes in 'utils\middleware.py'. Reloading...
+2025-07-25 22:43:30,153 - uvicorn.error - INFO - Shutting down
+2025-07-25 22:43:30,261 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 22:43:30,261 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 22:43:30,261 - uvicorn.error - INFO - Finished server process [5540]
+2025-07-25 22:43:30,796 - uvicorn.error - INFO - Started server process [18768]
+2025-07-25 22:43:30,796 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:43:30,797 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:46:40,075 - uvicorn.error - WARNING - StatReload detected changes in 'Backend\main_api.py'. Reloading...
+2025-07-25 22:46:40,161 - uvicorn.error - INFO - Shutting down
+2025-07-25 22:46:40,270 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 22:46:40,270 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 22:46:40,270 - uvicorn.error - INFO - Finished server process [18768]
+2025-07-25 22:46:41,060 - uvicorn.error - INFO - Started server process [13084]
+2025-07-25 22:46:41,061 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:46:41,061 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:46:59,809 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\saumi\\Desktop\\CODES\\HackRX']
+2025-07-25 22:46:59,809 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-07-25 22:46:59,809 - uvicorn.error - INFO - Started reloader process [22396] using StatReload
+2025-07-25 22:47:00,312 - uvicorn.error - INFO - Started server process [20840]
+2025-07-25 22:47:00,312 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 22:47:00,313 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 22:48:31,250 - uvicorn.access - INFO - 127.0.0.1:56015 - "GET /?id=c61c35f0-b546-432b-a258-59705612b51d&vscodeBrowserReqId=1753463910850 HTTP/1.1" 200
+2025-07-25 22:50:12,376 - uvicorn.access - INFO - 127.0.0.1:56063 - "GET / HTTP/1.1" 200
+2025-07-25 22:50:50,522 - uvicorn.access - INFO - 127.0.0.1:56086 - "GET /docs HTTP/1.1" 200
+2025-07-25 22:50:50,887 - uvicorn.access - INFO - 127.0.0.1:56086 - "GET /openapi.json HTTP/1.1" 200
+2025-07-25 22:50:55,495 - uvicorn.access - INFO - 127.0.0.1:56086 - "GET / HTTP/1.1" 200
+2025-07-25 22:59:15,700 - uvicorn.access - INFO - 127.0.0.1:56363 - "GET /docs HTTP/1.1" 200
+2025-07-25 22:59:16,033 - uvicorn.access - INFO - 127.0.0.1:56363 - "GET /openapi.json HTTP/1.1" 200
+2025-07-25 22:59:43,042 - uvicorn.access - INFO - 127.0.0.1:56366 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-25 23:06:58,532 - uvicorn.access - INFO - 127.0.0.1:56622 - "GET / HTTP/1.1" 200
+2025-07-25 23:07:08,159 - uvicorn.access - INFO - 127.0.0.1:56623 - "GET /help HTTP/1.1" 200
+2025-07-25 23:07:16,042 - uvicorn.access - INFO - 127.0.0.1:56637 - "GET /docs HTTP/1.1" 200
+2025-07-25 23:07:16,260 - uvicorn.access - INFO - 127.0.0.1:56637 - "GET /openapi.json HTTP/1.1" 200
+2025-07-25 23:07:18,682 - uvicorn.access - INFO - 127.0.0.1:56637 - "GET /redoc HTTP/1.1" 200
+2025-07-25 23:07:19,001 - uvicorn.access - INFO - 127.0.0.1:56637 - "GET /openapi.json HTTP/1.1" 200
+2025-07-25 23:09:41,232 - uvicorn.error - WARNING - StatReload detected changes in 'Backend\main_api.py'. Reloading...
+2025-07-25 23:09:41,261 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:09:41,370 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:09:41,370 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:09:41,370 - uvicorn.error - INFO - Finished server process [20840]
+2025-07-25 23:09:42,012 - uvicorn.error - INFO - Started server process [39344]
+2025-07-25 23:09:42,012 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:09:42,013 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:10:00,573 - uvicorn.access - INFO - 127.0.0.1:56801 - "GET / HTTP/1.1" 200
+2025-07-25 23:11:29,108 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\saumi\\Desktop\\CODES\\HackRX']
+2025-07-25 23:11:29,108 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-07-25 23:11:29,108 - uvicorn.error - INFO - Started reloader process [46332] using WatchFiles
+2025-07-25 23:11:29,703 - uvicorn.error - INFO - Started server process [45796]
+2025-07-25 23:11:29,703 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:11:29,703 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:11:41,368 - uvicorn.access - INFO - 127.0.0.1:56894 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:12:21,551 - uvicorn.access - INFO - 127.0.0.1:56941 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:12:25,360 - uvicorn.access - INFO - 127.0.0.1:56952 - "GET /?id=8acf2885-9300-4976-9568-18edbecaf698&vscodeBrowserReqId=1753465345013 HTTP/1.1" 200
+2025-07-25 23:13:51,210 - uvicorn.access - INFO - 127.0.0.1:57058 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:13:57,445 - uvicorn.access - INFO - 127.0.0.1:57065 - "GET / HTTP/1.1" 200
+2025-07-25 23:15:41,274 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-25 23:15:41,346 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:15:41,455 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:15:41,455 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:15:41,455 - uvicorn.error - INFO - Finished server process [45796]
+2025-07-25 23:15:41,501 - uvicorn.error - WARNING - StatReload detected changes in 'main.py'. Reloading...
+2025-07-25 23:15:41,594 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:15:41,702 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:15:41,702 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:15:41,702 - uvicorn.error - INFO - Finished server process [39344]
+2025-07-25 23:15:42,095 - uvicorn.error - INFO - Started server process [25696]
+2025-07-25 23:15:42,095 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:15:42,095 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:15:42,352 - uvicorn.error - INFO - Started server process [33788]
+2025-07-25 23:15:42,352 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:15:42,353 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:15:54,341 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\saumi\\Desktop\\CODES\\HackRX']
+2025-07-25 23:15:54,341 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-07-25 23:15:54,342 - uvicorn.error - INFO - Started reloader process [43516] using WatchFiles
+2025-07-25 23:15:59,063 - uvicorn.access - INFO - 127.0.0.1:57174 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:15:59,922 - uvicorn.access - INFO - 127.0.0.1:57178 - "GET / HTTP/1.1" 200
+2025-07-25 23:16:00,939 - uvicorn.access - INFO - 127.0.0.1:57174 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:16:04,778 - uvicorn.access - INFO - 127.0.0.1:57174 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:16:05,730 - uvicorn.access - INFO - 127.0.0.1:57174 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:16:06,045 - uvicorn.access - INFO - 127.0.0.1:57174 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:16:07,128 - uvicorn.access - INFO - 127.0.0.1:57174 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:16:07,735 - uvicorn.access - INFO - 127.0.0.1:57174 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:16:08,297 - uvicorn.access - INFO - 127.0.0.1:57174 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:17:57,577 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-25 23:17:57,632 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:17:57,741 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:17:57,741 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:17:57,741 - uvicorn.error - INFO - Finished server process [25696]
+2025-07-25 23:17:57,820 - uvicorn.error - WARNING - StatReload detected changes in 'main.py'. Reloading...
+2025-07-25 23:17:57,914 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:17:58,021 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:17:58,021 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:17:58,021 - uvicorn.error - INFO - Finished server process [33788]
+2025-07-25 23:17:58,413 - uvicorn.error - INFO - Started server process [43936]
+2025-07-25 23:17:58,413 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:17:58,413 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:17:58,613 - uvicorn.error - INFO - Started server process [3020]
+2025-07-25 23:17:58,613 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:17:58,613 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:18:14,874 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-25 23:18:14,982 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:18:15,091 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:18:15,091 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:18:15,092 - uvicorn.error - INFO - Finished server process [43936]
+2025-07-25 23:18:15,315 - uvicorn.error - WARNING - StatReload detected changes in 'main.py'. Reloading...
+2025-07-25 23:18:15,370 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:18:15,480 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:18:15,480 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:18:15,480 - uvicorn.error - INFO - Finished server process [3020]
+2025-07-25 23:18:15,738 - uvicorn.error - INFO - Started server process [33012]
+2025-07-25 23:18:15,739 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:18:15,739 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:18:16,093 - uvicorn.error - INFO - Started server process [42088]
+2025-07-25 23:18:16,093 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:18:16,093 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:18:28,858 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-25 23:18:28,944 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:18:28,992 - uvicorn.error - WARNING - StatReload detected changes in 'main.py'. Reloading...
+2025-07-25 23:18:29,051 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:18:29,053 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:18:29,053 - uvicorn.error - INFO - Finished server process [33012]
+2025-07-25 23:18:29,098 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:18:29,208 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:18:29,208 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:18:29,209 - uvicorn.error - INFO - Finished server process [42088]
+2025-07-25 23:18:29,829 - uvicorn.error - INFO - Started server process [31196]
+2025-07-25 23:18:29,830 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:18:29,830 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:18:29,899 - uvicorn.error - INFO - Started server process [39612]
+2025-07-25 23:18:29,899 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:18:29,899 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:21:32,712 - uvicorn.access - INFO - 127.0.0.1:57426 - "GET / HTTP/1.1" 200
+2025-07-25 23:21:34,313 - uvicorn.access - INFO - 127.0.0.1:57434 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:21:39,835 - uvicorn.access - INFO - 127.0.0.1:57435 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:21:40,868 - uvicorn.access - INFO - 127.0.0.1:57435 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:21:59,216 - uvicorn.access - INFO - 127.0.0.1:57457 - "OPTIONS /api/v1/hackrx/run HTTP/1.1" 405
+2025-07-25 23:23:00,222 - uvicorn.access - INFO - 127.0.0.1:57484 - "GET / HTTP/1.1" 200
+2025-07-25 23:26:37,776 - uvicorn.access - INFO - 127.0.0.1:57646 - "GET / HTTP/1.1" 200
+2025-07-25 23:26:39,324 - uvicorn.access - INFO - 127.0.0.1:57655 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:27:04,819 - uvicorn.access - INFO - 127.0.0.1:57648 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-25 23:27:17,706 - uvicorn.access - INFO - 127.0.0.1:57656 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-25 23:27:29,416 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-25 23:27:29,512 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:27:29,620 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:27:29,620 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:27:29,621 - uvicorn.error - INFO - Finished server process [31196]
+2025-07-25 23:27:29,802 - uvicorn.error - WARNING - StatReload detected changes in 'main.py'. Reloading...
+2025-07-25 23:27:29,808 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:27:29,916 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:27:29,916 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:27:29,916 - uvicorn.error - INFO - Finished server process [39612]
+2025-07-25 23:27:30,292 - uvicorn.error - INFO - Started server process [40248]
+2025-07-25 23:27:30,292 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:27:30,293 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:27:30,626 - uvicorn.error - INFO - Started server process [29260]
+2025-07-25 23:27:30,627 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:27:30,627 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:28:06,008 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-25 23:28:06,101 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:28:06,210 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:28:06,211 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:28:06,212 - uvicorn.error - INFO - Finished server process [40248]
+2025-07-25 23:28:06,484 - uvicorn.error - WARNING - StatReload detected changes in 'main.py'. Reloading...
+2025-07-25 23:28:06,505 - uvicorn.error - INFO - Shutting down
+2025-07-25 23:28:06,612 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-25 23:28:06,612 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-25 23:28:06,612 - uvicorn.error - INFO - Finished server process [29260]
+2025-07-25 23:28:06,905 - uvicorn.error - INFO - Started server process [43300]
+2025-07-25 23:28:06,905 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:28:06,905 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:28:07,207 - uvicorn.error - INFO - Started server process [37856]
+2025-07-25 23:28:07,207 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-25 23:28:07,207 - uvicorn.error - INFO - Application startup complete.
+2025-07-25 23:28:13,963 - uvicorn.access - INFO - 127.0.0.1:57742 - "GET / HTTP/1.1" 200
+2025-07-25 23:28:24,484 - uvicorn.access - INFO - 127.0.0.1:57743 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-26 17:33:58,581 - uvicorn.access - INFO - 127.0.0.1:54646 - "GET /docs HTTP/1.1" 200
+2025-07-26 17:33:59,359 - uvicorn.access - INFO - 127.0.0.1:54646 - "GET /openapi.json HTTP/1.1" 200
+2025-07-26 17:34:11,648 - uvicorn.access - INFO - 127.0.0.1:54647 - "GET / HTTP/1.1" 200
+2025-07-26 17:34:11,921 - uvicorn.access - INFO - 127.0.0.1:54647 - "GET /favicon.ico HTTP/1.1" 404
+2025-07-26 17:34:23,318 - uvicorn.access - INFO - 127.0.0.1:54665 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-26 17:34:28,727 - uvicorn.access - INFO - 127.0.0.1:54666 - "POST /api/v1/hackrx/run HTTP/1.1" 401
+2025-07-26 17:34:40,486 - uvicorn.access - INFO - 127.0.0.1:54679 - "GET /api/v1/auth/status HTTP/1.1" 200
+2025-07-26 17:34:42,541 - uvicorn.access - INFO - 127.0.0.1:54683 - "GET /api/v1/auth/validate HTTP/1.1" 200
+2025-07-26 17:35:06,047 - uvicorn.access - INFO - 127.0.0.1:54702 - "GET /api/v1/auth/status HTTP/1.1" 200
+2025-07-26 17:35:08,134 - uvicorn.access - INFO - 127.0.0.1:54705 - "GET /api/v1/auth/validate HTTP/1.1" 200
+2025-07-26 17:35:10,191 - uvicorn.access - INFO - 127.0.0.1:54708 - "GET /api/v1/auth/validate HTTP/1.1" 401
+2025-07-26 17:35:12,232 - uvicorn.access - INFO - 127.0.0.1:54710 - "GET /api/v1/auth/validate HTTP/1.1" 401
+2025-07-26 17:35:14,282 - uvicorn.access - INFO - 127.0.0.1:54712 - "POST /api/v1/hackrx/run HTTP/1.1" 401
+2025-07-26 17:35:16,338 - uvicorn.access - INFO - 127.0.0.1:54717 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-26 17:35:18,400 - uvicorn.access - INFO - 127.0.0.1:54719 - "POST /api/v1/hackrx/run HTTP/1.1" 403
+2025-07-26 17:41:03,552 - uvicorn.access - INFO - 127.0.0.1:55066 - "GET /api/v1/auth/status HTTP/1.1" 200
+2025-07-26 17:41:05,602 - uvicorn.access - INFO - 127.0.0.1:55071 - "GET /api/v1/auth/validate HTTP/1.1" 200
+2025-07-26 18:51:38,458 - uvicorn.access - INFO - 127.0.0.1:56979 - "GET / HTTP/1.1" 200
+2025-07-26 18:51:58,184 - uvicorn.access - INFO - 127.0.0.1:56980 - "GET /docs HTTP/1.1" 200
+2025-07-26 18:51:58,351 - uvicorn.access - INFO - 127.0.0.1:56980 - "GET /openapi.json HTTP/1.1" 200
+2025-07-26 18:52:36,579 - uvicorn.access - INFO - 127.0.0.1:57012 - "GET /redoc HTTP/1.1" 200
+2025-07-26 18:52:37,117 - uvicorn.access - INFO - 127.0.0.1:57012 - "GET /openapi.json HTTP/1.1" 200
+2025-07-26 18:53:17,968 - uvicorn.access - INFO - 127.0.0.1:57015 - "GET /openapi.json HTTP/1.1" 200
+2025-07-26 18:53:18,789 - uvicorn.access - INFO - 127.0.0.1:57035 - "GET /openapi.json HTTP/1.1" 200
+2025-07-26 18:58:01,186 - uvicorn.access - INFO - 127.0.0.1:57157 - "GET /docs HTTP/1.1" 200
+2025-07-26 18:58:01,492 - uvicorn.access - INFO - 127.0.0.1:57157 - "GET /openapi.json HTTP/1.1" 200
+2025-07-26 18:58:14,392 - uvicorn.access - INFO - 127.0.0.1:57158 - "GET /openapi.json HTTP/1.1" 200
+2025-07-26 18:58:26,528 - uvicorn.access - INFO - 127.0.0.1:57180 - "GET / HTTP/1.1" 200
+2025-07-26 18:59:26,213 - uvicorn.access - INFO - 127.0.0.1:57212 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-26 19:02:41,312 - uvicorn.access - INFO - 127.0.0.1:57299 - "GET /?id=2ffa9be8-2303-4f42-8704-9347da4e6bc4&vscodeBrowserReqId=1753536760997 HTTP/1.1" 200
+2025-07-26 19:03:15,139 - uvicorn.access - INFO - 127.0.0.1:57317 - "GET /openapi.json HTTP/1.1" 200
+2025-07-28 23:24:30,271 - uvicorn.access - INFO - 127.0.0.1:59936 - "GET / HTTP/1.1" 200
+2025-07-28 23:24:30,723 - uvicorn.access - INFO - 127.0.0.1:59936 - "GET /favicon.ico HTTP/1.1" 404
+2025-07-28 23:24:37,689 - uvicorn.access - INFO - 127.0.0.1:59937 - "POST /api/v1/hackrx/run HTTP/1.1" 500
+2025-07-28 23:25:36,336 - uvicorn.access - INFO - 127.0.0.1:59985 - "POST /api/v1/hackrx/run HTTP/1.1" 500
+2025-07-28 23:25:50,479 - uvicorn.access - INFO - 127.0.0.1:59995 - "GET / HTTP/1.1" 200
+2025-07-28 23:25:52,254 - uvicorn.access - INFO - 127.0.0.1:59995 - "POST /api/v1/hackrx/run HTTP/1.1" 500
+2025-07-28 23:28:59,245 - uvicorn.access - INFO - 127.0.0.1:60181 - "GET / HTTP/1.1" 200
+2025-07-28 23:29:24,561 - uvicorn.access - INFO - 127.0.0.1:60181 - "POST /api/v1/hackrx/run HTTP/1.1" 500
+2025-07-28 23:30:17,555 - uvicorn.access - INFO - 127.0.0.1:60252 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-28 23:38:25,426 - uvicorn.access - INFO - 127.0.0.1:54368 - "GET / HTTP/1.1" 200
+2025-07-28 23:40:05,274 - uvicorn.access - INFO - 127.0.0.1:54791 - "GET / HTTP/1.1" 200
+2025-07-28 23:40:53,137 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "GET / HTTP/1.1" 200
+2025-07-28 23:40:54,456 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "GET /favicon.ico HTTP/1.1" 404
+2025-07-28 23:41:02,950 - uvicorn.access - INFO - 127.0.0.1:54916 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-28 23:41:14,954 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "GET / HTTP/1.1" 200
+2025-07-28 23:41:25,984 - uvicorn.access - INFO - 2a09:bac1:3680:248::19e:2:0 - "GET / HTTP/1.1" 200
+2025-07-28 23:41:27,102 - uvicorn.access - INFO - 2a09:bac1:3680:248::19e:2:0 - "GET /favicon.ico HTTP/1.1" 404
+2025-07-28 23:41:45,843 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-28 23:44:35,049 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "GET / HTTP/1.1" 200
+2025-07-28 23:45:03,886 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-28 23:45:57,362 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "GET /api/v1/hackrx/run HTTP/1.1" 405
+2025-07-28 23:46:03,296 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-28 23:46:13,932 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-28 23:46:27,805 - uvicorn.access - INFO - 2a09:bac1:3680:248::19e:2:0 - "GET /api/v1/ HTTP/1.1" 200
+2025-07-28 23:46:48,040 - uvicorn.access - INFO - 2a09:bac1:3680:248::19e:2:0 - "GET /api/v1/hackrx/run HTTP/1.1" 405
+2025-07-28 23:46:59,739 - uvicorn.access - INFO - 2a09:bac1:3680:248::19e:2:0 - "GET /api/v1/hackrx/run HTTP/1.1" 405
+2025-07-28 23:47:27,669 - uvicorn.access - INFO - 2409:40d4:310f:354d:e579:b404:415:3641:0 - "GET /api/v1/hackrx/run HTTP/1.1" 405
+2025-07-28 23:48:41,908 - uvicorn.access - INFO - 20.244.56.156:0 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-28 23:48:59,510 - uvicorn.access - INFO - 20.244.56.156:0 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-29 14:32:28,152 - uvicorn.access - INFO - 127.0.0.1:55259 - "GET / HTTP/1.1" 200
+2025-07-29 14:32:29,745 - uvicorn.access - INFO - 127.0.0.1:55259 - "GET /favicon.ico HTTP/1.1" 404
+2025-07-29 14:32:53,087 - uvicorn.access - INFO - 127.0.0.1:55260 - "POST /api/v2/hackrx/run HTTP/1.1" 422
+2025-07-29 14:36:01,398 - uvicorn.access - INFO - 127.0.0.1:55351 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-29 14:36:27,435 - uvicorn.access - INFO - 127.0.0.1:55411 - "POST /api/v2/hackrx/run HTTP/1.1" 422
+2025-07-29 14:37:41,302 - uvicorn.access - INFO - 127.0.0.1:55412 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-29 14:38:56,220 - uvicorn.access - INFO - 127.0.0.1:55525 - "GET / HTTP/1.1" 200
+2025-07-29 14:39:02,007 - uvicorn.access - INFO - 127.0.0.1:55526 - "POST /api/v2/hackrx/run HTTP/1.1" 422
+2025-07-29 14:39:16,824 - uvicorn.access - INFO - 127.0.0.1:55539 - "POST /api/v2/hackrx/run HTTP/1.1" 422
+2025-07-29 14:39:18,268 - uvicorn.access - INFO - 127.0.0.1:55539 - "GET / HTTP/1.1" 200
+2025-07-29 14:39:23,810 - uvicorn.access - INFO - 127.0.0.1:55540 - "POST /api/v2/hackrx/run HTTP/1.1" 422
+2025-07-29 14:41:03,910 - uvicorn.access - INFO - 127.0.0.1:55652 - "GET / HTTP/1.1" 200
+2025-07-29 14:41:20,736 - uvicorn.access - INFO - 127.0.0.1:55654 - "GET / HTTP/1.1" 200
+2025-07-29 14:41:29,047 - uvicorn.access - INFO - 127.0.0.1:55668 - "GET / HTTP/1.1" 200
+2025-07-29 14:41:49,672 - uvicorn.access - INFO - 127.0.0.1:55669 - "GET / HTTP/1.1" 200
+2025-07-29 14:41:57,819 - uvicorn.access - INFO - 127.0.0.1:55688 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-29 14:42:25,510 - uvicorn.access - INFO - 127.0.0.1:55689 - "POST /api/v1/hackrx/run HTTP/1.1" 200
+2025-07-29 23:54:21,584 - uvicorn.access - INFO - 127.0.0.1:62457 - "GET / HTTP/1.1" 200
+2025-07-29 23:54:22,034 - uvicorn.access - INFO - 127.0.0.1:62457 - "GET /favicon.ico HTTP/1.1" 404
+2025-07-29 23:54:43,641 - uvicorn.access - INFO - 127.0.0.1:62459 - "GET / HTTP/1.1" 200
+2025-07-29 23:57:20,084 - uvicorn.access - INFO - 127.0.0.1:62587 - "POST /api/v2/hackrx/run HTTP/1.1" 500
+2025-07-29 23:58:46,336 - uvicorn.access - INFO - 127.0.0.1:62645 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-29 23:59:42,042 - uvicorn.access - INFO - 127.0.0.1:62647 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:00:56,195 - uvicorn.access - INFO - 127.0.0.1:62743 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:01:35,000 - uvicorn.access - INFO - 127.0.0.1:62778 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:07:36,214 - uvicorn.access - INFO - 127.0.0.1:63001 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:17:18,827 - uvicorn.access - INFO - 127.0.0.1:63517 - "GET / HTTP/1.1" 200
+2025-07-30 00:17:47,760 - uvicorn.access - INFO - 127.0.0.1:63518 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:21:21,845 - uvicorn.access - INFO - 127.0.0.1:63672 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:22:11,392 - uvicorn.access - INFO - 127.0.0.1:63674 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:30:28,731 - uvicorn.access - INFO - 127.0.0.1:64127 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:31:19,184 - uvicorn.access - INFO - 127.0.0.1:64197 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:32:43,228 - uvicorn.access - INFO - 2409:40d4:3111:32c9:9c8a:df56:27dd:4194:0 - "GET / HTTP/1.1" 200
+2025-07-30 00:32:43,681 - uvicorn.access - INFO - 2409:40d4:3111:32c9:9c8a:df56:27dd:4194:0 - "GET /favicon.ico HTTP/1.1" 404
+2025-07-30 00:33:33,199 - uvicorn.access - INFO - 2409:40d4:3111:32c9:9c8a:df56:27dd:4194:0 - "GET /api/v2/hackrx/run HTTP/1.1" 405
+2025-07-30 00:33:44,886 - uvicorn.access - INFO - 2409:40d4:3111:32c9:9c8a:df56:27dd:4194:0 - "GET /api/v2/hackrx/run HTTP/1.1" 405
+2025-07-30 00:33:55,613 - uvicorn.access - INFO - 2a09:bac1:36a0:248::19e:18:0 - "GET /api/v2/hackrx/run HTTP/1.1" 405
+2025-07-30 00:33:56,595 - uvicorn.access - INFO - 2a09:bac1:36a0:248::19e:18:0 - "GET /favicon.ico HTTP/1.1" 404
+2025-07-30 00:34:17,975 - uvicorn.access - INFO - 2a09:bac1:36a0:248::19e:18:0 - "GET /api/v2/hackrx/run HTTP/1.1" 405
+2025-07-30 00:34:18,278 - uvicorn.access - INFO - 2a09:bac1:36a0:248::19e:18:0 - "GET /favicon.ico HTTP/1.1" 404
+2025-07-30 00:34:28,089 - uvicorn.access - INFO - 2a09:bac1:36a0:248::19e:18:0 - "GET / HTTP/1.1" 200
+2025-07-30 00:35:45,249 - uvicorn.access - INFO - 20.244.56.156:0 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:37:17,144 - uvicorn.access - INFO - 20.244.56.156:0 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:37:36,537 - uvicorn.access - INFO - 20.244.56.156:0 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:37:56,972 - uvicorn.access - INFO - 20.244.56.156:0 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:38:26,149 - uvicorn.access - INFO - 20.244.56.156:0 - "POST /api/v2/hackrx/run HTTP/1.1" 200
+2025-07-30 00:39:09,415 - uvicorn.access - INFO - 20.244.56.156:0 - "POST /api/v2/hackrx/run HTTP/1.1" 200
