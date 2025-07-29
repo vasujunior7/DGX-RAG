@@ -308,8 +308,8 @@
             </div>
             <div class="example">
               { "message": "Welcome to HackRX API", "version": "1.0.0",
-              "endpoints": { "api_v1": "/api/v1", "docs": "/docs", "redoc":
-              "/redoc" } }
+              "endpoints": { "api_v1": "/api/v1", "api_v2": "/api/v2", "docs":
+              "/docs", "redoc": "/redoc" } }
             </div>
           </div>
 
@@ -395,6 +395,102 @@
           </div>
         </div>
 
+        <!-- V2 API Endpoints -->
+        <div class="section">
+          <h2>🔥 API Version 2 Endpoints</h2>
+          <p>Enhanced API with additional features and improved performance:</p>
+
+          <!-- V2 Root -->
+          <div class="endpoint">
+            <h3>
+              <span class="method get">GET</span>
+              <span class="url">/api/v2/</span>
+            </h3>
+            <div class="description">
+              Version 2 API welcome message with enhanced features
+            </div>
+            <div class="example">
+              { "message": "Welcome to HackRX API v2", "version": "v2",
+              "features": ["enhanced_processing", "batch_queries",
+              "improved_accuracy"] }
+            </div>
+          </div>
+
+          <!-- V2 Enhanced HackRX Endpoint -->
+          <div class="endpoint">
+            <h3>
+              <span class="method post">POST</span>
+              <span class="url">/api/v2/hackrx/run</span>
+            </h3>
+            <div class="description">
+              <strong>Enhanced endpoint for advanced document processing</strong
+              ><br />
+              Supports batch processing, multiple document formats, and advanced
+              AI features.<br />
+              <strong>Requires:</strong> Authorization: Bearer
+              &lt;api_key&gt;<br />
+              <strong>Permissions:</strong> Write access required
+            </div>
+
+            <h4 style="margin-top: 15px; color: #2c3e50">Headers:</h4>
+            <div class="example">
+              Authorization: Bearer hackrx_2025_dev_key_123456789<br />
+              Content-Type: application/json
+            </div>
+
+            <h4 style="margin-top: 15px; color: #2c3e50">Request Body:</h4>
+            <div class="example">
+              { "documents": ["https://example.com/doc1.pdf",
+              "https://example.com/doc2.pdf"], "questions": [ "What are the main
+              topics across all documents?", "Compare key findings between
+              documents" ], "options": { "enable_batch_processing": true,
+              "max_tokens": 2000, "temperature": 0.1 } }
+            </div>
+
+            <h4 style="margin-top: 15px; color: #2c3e50">Response:</h4>
+            <div class="example">
+              { "answers": [ "The main topics include...", "Comparing the
+              documents reveals..." ], "metadata": { "processing_time": "2.3s",
+              "documents_processed": 2, "model_version": "v2.1" }, "sources":
+              ["doc1.pdf", "doc2.pdf"] }
+            </div>
+          </div>
+
+          <!-- V2 Batch Processing -->
+          <div class="endpoint">
+            <h3>
+              <span class="method post">POST</span>
+              <span class="url">/api/v2/hackrx/batch</span>
+            </h3>
+            <div class="description">
+              <strong
+                >Batch processing endpoint for multiple document sets</strong
+              ><br />
+              Process multiple document collections in parallel for improved
+              efficiency.<br />
+              <strong>Requires:</strong> Authorization: Bearer
+              &lt;api_key&gt;<br />
+              <strong>Permissions:</strong> Write access required
+            </div>
+
+            <h4 style="margin-top: 15px; color: #2c3e50">Request Body:</h4>
+            <div class="example">
+              { "batch_requests": [ { "documents": ["doc1.pdf"], "questions":
+              ["Question 1"] }, { "documents": ["doc2.pdf"], "questions":
+              ["Question 2"] } ], "options": { "parallel_processing": true,
+              "max_concurrent": 3 } }
+            </div>
+
+            <h4 style="margin-top: 15px; color: #2c3e50">Response:</h4>
+            <div class="example">
+              { "batch_results": [ { "answers": ["Answer 1"], "status":
+              "completed" }, { "answers": ["Answer 2"], "status": "completed" }
+              ], "summary": { "total_processed": 2, "success_rate": "100%",
+              "total_time": "3.1s" } }
+            </div>
+          </div>
+        </div>
+
         <!-- Documentation Links -->
         <div class="section">
           <h2>📚 Interactive Documentation</h2>
@@ -434,6 +530,27 @@
           <div class="endpoint">
             <h3>Test HackRX Run Endpoint</h3>
             <div style="margin-top: 15px">
+              <label
+                for="apiVersion"
+                style="display: block; margin-bottom: 5px; font-weight: bold"
+                >API Version:</label
+              >
+              <select
+                id="apiVersion"
+                style="
+                  width: 100%;
+                  padding: 8px;
+                  border: 1px solid #ddd;
+                  border-radius: 4px;
+                  margin-bottom: 10px;
+                "
+              >
+                <option value="v1">Version 1 (/api/v1/hackrx/run)</option>
+                <option value="v2">
+                  Version 2 (/api/v2/hackrx/run) - Enhanced
+                </option>
+              </select>
+
               <label
                 for="apiKey"
                 style="display: block; margin-bottom: 5px; font-weight: bold"
@@ -607,6 +724,7 @@
 
       // API Testing Functions
       async function testAPI() {
+        const apiVersionSelect = document.getElementById("apiVersion");
         const apiKeyInput = document.getElementById("apiKey");
         const documentsInput = document.getElementById("documents");
         const questionsInput = document.getElementById("questions");
@@ -625,14 +743,34 @@
           return;
         }
 
+        // Get selected API version
+        const selectedVersion = apiVersionSelect.value;
+        const apiEndpoint = `/api/${selectedVersion}/hackrx/run`;
+
         // Prepare data
         const questions = questionsInput.value
           .split("\n")
           .filter((q) => q.trim() !== "");
-        const requestData = {
-          documents: documentsInput.value.trim(),
-          questions: questions,
-        };
+
+        let requestData;
+        if (selectedVersion === "v2") {
+          // V2 API supports multiple documents and additional options
+          requestData = {
+            documents: documentsInput.value.trim(),
+            questions: questions,
+            /* options: {
+              enable_batch_processing: true,
+              max_tokens: 2000,
+              temperature: 0.1,
+            }, */
+          };
+        } else {
+          // V1 API format
+          requestData = {
+            documents: documentsInput.value.trim(),
+            questions: questions,
+          };
+        }
 
         // Prepare headers
         const headers = {
@@ -649,7 +787,7 @@
         resultDiv.style.display = "none";
 
         try {
-          const response = await fetch("/api/v1/hackrx/run", {
+          const response = await fetch(apiEndpoint, {
             method: "POST",
             headers: headers,
             body: JSON.stringify(requestData),
@@ -663,8 +801,24 @@
 
           if (response.ok) {
             resultContent.className = "example success";
-            resultContent.innerHTML = `
-              <strong>✅ Success!</strong><br><br>
+            let successMessage = `<strong>✅ Success! (${selectedVersion.toUpperCase()} API)</strong><br><br>`;
+
+            if (selectedVersion === "v2" && responseData.metadata) {
+              successMessage += `<strong>Metadata:</strong><br>`;
+              successMessage += `Processing Time: ${
+                responseData.metadata.processing_time || "N/A"
+              }<br>`;
+              successMessage += `Documents Processed: ${
+                responseData.metadata.documents_processed || "N/A"
+              }<br>`;
+              successMessage += `Model Version: ${
+                responseData.metadata.model_version || "N/A"
+              }<br><br>`;
+            }
+
+            resultContent.innerHTML =
+              successMessage +
+              `
               <strong>Request:</strong><br>
               ${JSON.stringify(requestData, null, 2)}<br><br>
               <strong>Response:</strong><br>

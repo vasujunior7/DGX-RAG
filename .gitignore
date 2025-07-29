@@ -48,6 +48,17 @@ Thumbs.db
 .env.test.local
 .env.production.local
 
+# Large files and cached data
+cached_pdfs/
+*.pdf
+*.zip
+vector_store_index/
+*.faiss
+*.pkl
+
+# API Keys and secrets
+config_with_keys.py
+
 # API Keys (keep sample keys for now, but exclude production keys)
 # Config/api_keys.json  # Uncomment this in production
 # Config/config.json    # Uncomment this in production

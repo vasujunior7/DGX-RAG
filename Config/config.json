@@ -1,11 +1,11 @@
 {
     "api_authentication": {
-        "enabled": true,
-        "require_api_key": true
+        "enabled": false,
+        "require_api_key": false
     },
     "logging": {
         "level": "INFO",
-        "max_file_size_mb": 10,
+        "max_file_size_mb": 100,
         "backup_count": 5
     },
     "server": {

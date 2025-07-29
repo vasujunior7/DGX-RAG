@@ -3,6 +3,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi import Request
 from .api.v1.api import router as v1_router
+from .api.v2.api import router as v2_router
 from utils.middleware import RequestLoggingMiddleware
 from utils.logging_config import setup_logging, get_app_logger
 
@@ -25,6 +26,7 @@ app.add_middleware(RequestLoggingMiddleware)
 
 # Include the v1 router with prefix
 app.include_router(v1_router, prefix="/api/v1", tags=["v1"])
+app.include_router(v2_router, prefix="/api/v2", tags=["v2"])
 
 # Log application startup
 app_logger.info("HackRX API application started")
@@ -43,6 +45,7 @@ def read_help():
         "version": "1.0.0",
         "endpoints": {
             "api_v1": "/api/v1",
+            "api_v2": "/api/v2",
             "docs": "/docs",
             "redoc": "/redoc"
         }
