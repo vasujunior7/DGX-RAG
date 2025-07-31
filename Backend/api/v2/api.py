@@ -9,10 +9,12 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model'))
 from sample_model import SampleModel , SampleModelPaller
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model', 'GOAT'))
+# sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model', 'GOAT'))
 
-from GOAT.inference import GOATModel
+# from GOAT.inference import GOATModel
 
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model', 'AURA'))
+from AURA.infrance import SampleModelPaller
 
 # Import logging and auth from utils
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..'))

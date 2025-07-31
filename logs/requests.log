@@ -658,3 +658,302 @@
   "authorization": "Bearer ***",
   "request_body": "Body too large or empty"
 }
+2025-07-31 18:40:42,422 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 18:40:42",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0042,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 18:40:43,329 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 18:40:43",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/favicon.ico",
+  "status_code": 404,
+  "process_time": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 18:41:11,735 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 18:41:11",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 20.0696,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-31 18:42:30,297 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 18:42:30",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 10.7112,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/hackrx_6/policies/CHOTGDP23004V012223.pdf?sv=2023-01-03&st=2025-07-30T06%3A46%3A49Z&se=2025-09-01T06%3A46%3A00Z&sr=c&sp=rl&sig=9szykRKdGYj0BVm1skP%2BX8N9%2FRENEn2k7MQPUp33jyQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-31 19:24:02,224 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:24:02",
+  "client_ip": "2409:40d4:310b:e428:1809:59e5:5be4:ccc0",
+  "method": "GET",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/",
+  "status_code": 200,
+  "process_time": 0.0747,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 19:24:02,731 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:24:02",
+  "client_ip": "2409:40d4:310b:e428:1809:59e5:5be4:ccc0",
+  "method": "GET",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/favicon.ico",
+  "status_code": 404,
+  "process_time": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 19:24:28,740 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:24:28",
+  "client_ip": "2409:40d4:310b:e428:1809:59e5:5be4:ccc0",
+  "method": "GET",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/",
+  "status_code": 200,
+  "process_time": 0.0006,
+  "user_agent": "WhatsApp/2.2527.2 W",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 19:24:38,591 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:24:38",
+  "client_ip": "2401:4900:5b8a:2661:74ba:14ff:fe01:ebce",
+  "method": "GET",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 19:24:39,283 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:24:39",
+  "client_ip": "2401:4900:5b8a:2661:74ba:14ff:fe01:ebce",
+  "method": "GET",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/favicon.ico",
+  "status_code": 404,
+  "process_time": 0.0,
+  "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 19:25:10,516 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:25:10",
+  "client_ip": "2409:40d4:310b:e428:1809:59e5:5be4:ccc0",
+  "method": "POST",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/api/v1/hackrx/run",
+  "status_code": 200,
+  "process_time": 15.8677,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}2025-07-31 19:26:59,780 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:26:59",
+  "client_ip": "2409:40d4:310b:e428:1809:59e5:5be4:ccc0",
+  "method": "POST",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 16.9921,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\",\"What is the waiting period for pre-existing diseases (PED) to be covered?\",\"Does this policy cover maternity expenses, and what are the conditions?\"]}"
+}
+2025-07-31 19:27:36,955 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:27:36",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 11.9788,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Arogya%20Sanjeevani%20Policy%20-%20CIN%20-%20U10200WB1906GOI001713%201.pdf?sv=2023-01-03&st=2025-07-21T08%3A29%3A02Z&se=2025-09-22T08%3A29%3A00Z&sr=b&sp=r&sig=nzrz1K9Iurt%2BBXom%2FB%2BMPTFMFP3PRnIvEsipAX10Ig4%3D\",\"questions\":[\"When will my root canal claim of Rs 25,000 be settled?\",\"I have done an IVF for Rs 56,000. Is it covered?\",\"I did a cataract treatment of Rs 100,000. Will you settle the full Rs 100,000?\",\"Give me a list of documents to be uploaded for hospitalization for heart surgery.\"]}"
+}
+2025-07-31 19:27:54,868 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:27:54",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 10.7438,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Arogya%20Sanjeevani%20Policy%20-%20CIN%20-%20U10200WB1906GOI001713%201.pdf?sv=2023-01-03&st=2025-07-21T08%3A29%3A02Z&se=2025-09-22T08%3A29%3A00Z&sr=b&sp=r&sig=nzrz1K9Iurt%2BBXom%2FB%2BMPTFMFP3PRnIvEsipAX10Ig4%3D\",\"questions\":[\"I have raised a claim for hospitalization for Rs 200,000 with HDFC, and it's approved. My total expenses are Rs 250,000. Can I raise the remaining Rs 50,000 with you?\"]}"
+}
+2025-07-31 19:28:19,759 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:28:19",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 21.6075,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Super_Splendor_(Feb_2023).pdf?sv=2023-01-03&st=2025-07-21T08%3A10%3A00Z&se=2025-09-22T08%3A10%3A00Z&sr=b&sp=r&sig=vhHrl63YtrEOCsAy%2BpVKr20b3ZUo5HMz1lF9%2BJh6LQ0%3D\",\"questions\":[\"What is the ideal spark plug gap recommeded\",\"Does this comes in tubeless tyre version\",\"Is it compulsoury to have a disc brake\",\"Can I put thums up instead of oil\",\"Give me JS code to generate a random number between 1 and 100\"]}"
+}
+2025-07-31 19:28:40,030 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:28:40",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 12.2852,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/Family%20Medicare%20Policy%20(UIN-%20UIIHLIP22070V042122)%201.pdf?sv=2023-01-03&st=2025-07-22T10%3A17%3A39Z&se=2025-08-23T10%3A17%3A00Z&sr=b&sp=r&sig=dA7BEMIZg3WcePcckBOb4QjfxK%2B4rIfxBs2%2F%2BNwoPjQ%3D\",\"questions\":[\"Is Non-infective Arthritis covered?\",\"I renewed my policy yesterday, and I have been a customer for the last 6 years. Can I raise a claim for Hydrocele?\",\"Is abortion covered?\"]}"
+}
+2025-07-31 19:29:06,556 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:29:06",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 19.6617,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "Body too large or empty"
+}
+2025-07-31 19:29:40,655 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:29:40",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 20.8851,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/indian_constitution.pdf?sv=2023-01-03&st=2025-07-28T06%3A42%3A00Z&se=2026-11-29T06%3A42%3A00Z&sr=b&sp=r&sig=5Gs%2FOXqP3zY00lgciu4BZjDV5QjTDIx7fgnfdz6Pu24%3D\",\"questions\":[\"If my car is stolen, what case will it be in law?\",\"If I am arrested without a warrant, is that legal?\",\"If someone denies me a job because of my caste, is that allowed?\",\"If the government takes my land for a project, can I stop it?\",\"If my child is forced to work in a factory, is that legal?\",\"If I am stopped from speaking at a protest, is that against my rights?\",\"If a religious place stops me from entering because I'm a woman, is that constitutional?\",\"If I change my religion, can the government stop me?\",\"If the police torture someone in custody, what right is being violated?\",\"If I'm denied admission to a public university because I'm from a backward community, can I do something?\"]}"
+}
+2025-07-31 19:30:52,947 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 19:30:52",
+  "client_ip": "20.244.56.156",
+  "method": "POST",
+  "url": "https://inns-nw-understanding-retired.trycloudflare.com/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 59.2743,
+  "user_agent": "axios/1.10.0",
+  "content_type": "application/json",
+  "authorization": "Bearer ***",
+  "request_body": "Body too large or empty"
+}
+2025-07-31 22:31:18,264 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 22:31:18",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0065,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 22:31:25,551 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 22:31:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/docs",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 22:31:27,469 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 22:31:27",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/openapi.json",
+  "status_code": 200,
+  "process_time": 0.0095,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 22:32:49,124 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 22:32:49",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/docs",
+  "status_code": 200,
+  "process_time": 0.0015,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 22:32:49,353 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 22:32:49",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/openapi.json",
+  "status_code": 200,
+  "process_time": 0.006,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 22:33:05,929 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 22:33:05",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/hostfile/list_cached_pdfs",
+  "status_code": 200,
+  "process_time": 0.001,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-07-31 22:33:41,174 - INFO - REQUEST: {
+  "timestamp": "2025-07-31 22:33:41",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/hostfile/download_pdf/515f4f14a724226a7fb15e44f7d8f32c.pdf",
+  "status_code": 200,
+  "process_time": 0.0362,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}

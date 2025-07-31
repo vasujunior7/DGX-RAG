@@ -18,3 +18,12 @@ python-multipart>=0.0.6
 pathlib
 typing
 logging
+
+
+langchain-text-splitters 
+sentence-transformers
+faiss-cpu 
+langchain-google-genai
+python-dotenv
+PyMuPDF
+langchain-anthropic

@@ -1,0 +1,124 @@
+{
+  "documents": [
+    {
+      "file_path": "https://hackrx.blob.core.windows.net/assets/hackrx_6/policies/EDLHLGA23009V012223.pdf?sv=2023-01-03&st=2025-07-30T06%3A46%3A49Z&se=2025-09-01T06%3A46%3A00Z&sr=c&sp=rl&sig=9szykRKdGYj0BVm1skP%2BX8N9%2FRENEn2k7MQPUp33jyQ%3D",
+      "chunk_count": 1,
+      "loaded_at": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "What is the maximum distance covered under the Air Ambulance benefit, and how is reimbursement calculated if the distance exceeds this limit?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "Under what conditions will Air Ambulance expenses be reimbursed under this policy?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "What are the exclusions listed for Air Ambulance coverage in this add-on?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "Does the policy cover routine medical care for expectant mothers, and what does it include?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "What options does the insured have for the duration of Well Mother cover during pregnancy?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "Are infertility treatments covered under the Well Mother or Well Baby add-ons?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "What is included under Healthy Baby Expenses or Well Baby Care after birth?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "Does the policy cover preventive care services and immunizations for a newborn, and for how long?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "Are air ambulance expenses payable through cashless claims or reimbursement only?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "question",
+      "content": "Can the insured claim transportation costs if the destination hospital has similar capabilities as the origin hospital?",
+      "timestamp": 1753980545.540394
+    },
+    {
+      "type": "answer",
+      "question": "What is the maximum distance covered under the Air Ambulance benefit, and how is reimbursement calculated if the distance exceeds this limit?",
+      "content": "The maximum distance covered is 150 kms. If the distance traveled exceeds 150 kms, the insurance will pay proportionately only for the first 150 kms of the total distance traveled.",
+      "timestamp": 1753980551.332409
+    },
+    {
+      "type": "answer",
+      "question": "Under what conditions will Air Ambulance expenses be reimbursed under this policy?",
+      "content": "Based on the context, Air Ambulance expenses will be covered when an insured person needs emergency transfer to a hospital or between hospitals, limited to 150 km distance (or proportionate amount for longer distances), and subject to the sum insured stated in the Policy Schedule.",
+      "timestamp": 1753980551.332409
+    },
+    {
+      "type": "answer",
+      "question": "What are the exclusions listed for Air Ambulance coverage in this add-on?",
+      "content": "From the given context, there are no specific exclusions listed for Air Ambulance coverage. The only limitations mentioned are the Sum Insured cap and that coverage is restricted to 150 kms of travel distance (with proportionate payment for distances beyond 150 kms).",
+      "timestamp": 1753980551.332409
+    },
+    {
+      "type": "answer",
+      "question": "Does the policy cover routine medical care for expectant mothers, and what does it include?",
+      "content": "Based on the provided context, there is no mention of coverage for routine medical care for expectant mothers. The given text only discusses air ambulance coverage and its terms. To answer about maternity coverage, we would need to see other sections of the policy document.",
+      "timestamp": 1753980551.332409
+    },
+    {
+      "type": "answer",
+      "question": "What options does the insured have for the duration of Well Mother cover during pregnancy?",
+      "content": "From the given context, there is no information about Well Mother cover during pregnancy. The provided text only discusses Air Ambulance coverage and its terms. Therefore, I cannot provide an answer about Well Mother cover options from this context.",
+      "timestamp": 1753980551.332409
+    },
+    {
+      "type": "answer",
+      "question": "Are infertility treatments covered under the Well Mother or Well Baby add-ons?",
+      "content": "From the given context which only discusses air ambulance coverage, I cannot determine if infertility treatments are covered under Well Mother or Well Baby add-ons as this information is not mentioned in the provided text.",
+      "timestamp": 1753980551.332409
+    },
+    {
+      "type": "answer",
+      "question": "What is included under Healthy Baby Expenses or Well Baby Care after birth?",
+      "content": "The given context does not contain any information about Healthy Baby Expenses or Well Baby Care after birth. The context only discusses Air Ambulance Coverage. Without additional context about baby care benefits, I cannot provide specific details about what is included in those coverages.",
+      "timestamp": 1753980551.332409
+    },
+    {
+      "type": "answer",
+      "question": "Does the policy cover preventive care services and immunizations for a newborn, and for how long?",
+      "content": "Based on the given context, there is no mention of preventive care services or immunizations for newborns. The provided text only discusses air ambulance coverage. To answer about newborn coverage, we would need to see other sections of the insurance policy.",
+      "timestamp": 1753980551.332409
+    },
+    {
+      "type": "answer",
+      "question": "Are air ambulance expenses payable through cashless claims or reimbursement only?",
+      "content": "From the given context, the payment method (cashless vs reimbursement) for air ambulance services is not specified. Based on general insurance practices, such services are typically handled through reimbursement since they are emergency services requiring immediate arrangement.",
+      "timestamp": 1753980551.332409
+    },
+    {
+      "type": "answer",
+      "question": "Can the insured claim transportation costs if the destination hospital has similar capabilities as the origin hospital?",
+      "content": "Based on the context, the policy specifically states that air ambulance transfer must be to a hospital with \"adequate emergency facilities,\" implying that transfers between hospitals with similar capabilities would not be covered as there's no medical necessity for such transfer.",
+      "timestamp": 1753980551.332409
+    }
+  ],
+  "session_info": {
+    "total_chunks": 1,
+    "model_loaded": true,
+    "api_key_provided": true
+  }
+}

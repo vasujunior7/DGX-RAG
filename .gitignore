@@ -48,13 +48,13 @@ Thumbs.db
 .env.test.local
 .env.production.local
 
-# Large files and cached data (allow some AURA files)
-cached_pdfs/
-*.pdf
+# Large files and cached data (allow cached_pdfs and AURA files)
+# cached_pdfs/  # Allow cached_pdfs to be pushed
+# *.pdf  # Allow PDF files to be pushed
 *.zip
 vector_store_index/
 # *.faiss  # Allow FAISS files for AURA model
-*.pkl
+# *.pkl  # Allow pkl files for AURA model
 
 # API Keys and secrets
 config_with_keys.py

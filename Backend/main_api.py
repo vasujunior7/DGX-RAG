@@ -4,6 +4,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi import Request
 from .api.v1.api import router as v1_router
 from .api.v2.api import router as v2_router
+from .api.hostfile.api import router as hostfile_router
 from utils.middleware import RequestLoggingMiddleware
 from utils.logging_config import setup_logging, get_app_logger
 
@@ -27,6 +28,7 @@ app.add_middleware(RequestLoggingMiddleware)
 # Include the v1 router with prefix
 app.include_router(v1_router, prefix="/api/v1", tags=["v1"])
 app.include_router(v2_router, prefix="/api/v2", tags=["v2"])
+app.include_router(hostfile_router, prefix="/api/hostfile", tags=["hostfile"])
 
 # Log application startup
 app_logger.info("HackRX API application started")
