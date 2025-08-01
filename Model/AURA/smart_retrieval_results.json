@@ -1,0 +1,72 @@
+{
+  "test_summary": {
+    "total_questions": 3,
+    "total_old_tokens": 3000,
+    "total_new_tokens": 600,
+    "total_savings": 2400,
+    "efficiency_percentage": "80.0%"
+  },
+  "detailed_results": [
+    {
+      "question": "What is the maximum distance covered under the Air Ambulance benefit, and how is reimbursement calculated if the distance exceeds this limit?",
+      "question_complexity": "medium",
+      "question_keywords": {
+        "coverage": [
+          "cover",
+          "covered",
+          "benefit"
+        ],
+        "claims": [
+          "reimburs"
+        ]
+      },
+      "old_chunks": 5,
+      "new_chunks": 1,
+      "estimated_old_tokens": 1000,
+      "estimated_new_tokens": 200,
+      "token_savings": 800,
+      "efficiency_improvement": "80.0%"
+    },
+    {
+      "question": "Under what conditions will Air Ambulance expenses be reimbursed under this policy?",
+      "question_complexity": "medium",
+      "question_keywords": {
+        "conditions": [
+          "condition"
+        ],
+        "claims": [
+          "reimburs"
+        ],
+        "policy": [
+          "policy"
+        ]
+      },
+      "old_chunks": 5,
+      "new_chunks": 1,
+      "estimated_old_tokens": 1000,
+      "estimated_new_tokens": 200,
+      "token_savings": 800,
+      "efficiency_improvement": "80.0%"
+    },
+    {
+      "question": "What are the exclusions listed for Air Ambulance coverage in this add-on?",
+      "question_complexity": "medium",
+      "question_keywords": {
+        "coverage": [
+          "cover",
+          "coverage"
+        ],
+        "exclusions": [
+          "exclusion"
+        ]
+      },
+      "old_chunks": 5,
+      "new_chunks": 1,
+      "estimated_old_tokens": 1000,
+      "estimated_new_tokens": 200,
+      "token_savings": 800,
+      "efficiency_improvement": "80.0%"
+    }
+  ],
+  "test_timestamp": "2025-08-02 01:27:30"
+}

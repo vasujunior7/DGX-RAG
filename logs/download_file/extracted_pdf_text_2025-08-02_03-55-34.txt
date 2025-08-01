@@ -1,0 +1,9 @@
+PDF Download Log
+================
+Timestamp: 2025-08-02T03:55:34.263561
+URL: https://hackrx.blob.core.windows.net/assets/principia_newton.pdf?sv=2023-01-03&st=2025-07-28T07%3A20%3A32Z&se=2026-07-29T07%3A20%3A00Z&sr=b&sp=r&sig=V5I1QYyigoxeUMbnUKsdEaST99F5%2FDfo7wpKg9XXF5w%3D
+Cached Filename: 02297f35889d63ee13da6e119bc6846e.pdf
+Text Length: 1755903 characters
+Text Preview (first 500 chars):
+Text content available
+================

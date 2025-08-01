@@ -1,0 +1,9 @@
+PDF Download Log
+================
+Timestamp: 2025-08-02T02:13:36.775191
+URL: https://hackrx.blob.core.windows.net/assets/hackrx_6/policies/EDLHLGA23009V012223.pdf?sv=2023-01-03&st=2025-07-30T06%3A46%3A49Z&se=2025-09-01T06%3A46%3A00Z&sr=c&sp=rl&sig=9szykRKdGYj0BVm1skP%2BX8N9%2FRENEn2k7MQPUp33jyQ%3D
+Cached Filename: c73598e2f6e0b909fd911c41467695c2.pdf
+Text Length: 6727 characters
+Text Preview (first 500 chars):
+Text content available
+================
