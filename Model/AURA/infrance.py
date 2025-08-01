@@ -13,6 +13,7 @@ from pdf_stream_reader import fetch_pdf_text_from_url
 from legal_chunker.chunker import parallel_smart_legal_chunk
 from legal_chunker.embed_and_index import embed_and_index
 from legal_chunker.llm_answer import get_llm_answer
+from legal_chunker.smart_retrieve import SmartRetriever, retrieve_smart_chunks
 
 load_dotenv()
 
@@ -25,6 +26,7 @@ class SampleModelPaller:
         self.index = None
         self.chunks = None
         self.documents = []  # Store documents sent to model
+        self.smart_retriever = None  # Smart retrieval system
         print("SampleModel initialized with API key:", "✓ Provided" if self.api_key else "✗ Missing")
         if force_regenerate:
             print("🔄 Force regenerate mode: Will create fresh chunks and index")
@@ -67,10 +69,12 @@ class SampleModelPaller:
             faiss.write_index(self.index, index_path)
             print("✅ Preprocessing complete (fresh files saved).")
         
-        # Load embedding model
+        # Load embedding model and smart retriever
         if self.model is None:
             print("🧠 Loading embedding model...")
             self.model = SentenceTransformer('all-MiniLM-L6-v2')
+            print("🎯 Initializing smart retrieval system...")
+            self.smart_retriever = SmartRetriever('all-MiniLM-L6-v2')
         
         # Store document info
         self.documents.append({
@@ -111,11 +115,26 @@ class SampleModelPaller:
         return results
     
     def _fast_rag_pipeline(self, question: str, k: int = 5) -> str:
-        """Single question RAG pipeline"""
-        query_emb = self.model.encode([question], convert_to_numpy=True)
-        D, I = self.index.search(query_emb, k)
-        top_chunks = [self.chunks[i] for i in I[0] if i >= 0]
-        answer = get_llm_answer(top_chunks, question, self.api_key)
+        """Enhanced RAG pipeline with smart chunk selection"""
+        # Use smart retrieval for optimized token usage
+        relevant_chunks, explanation = self.smart_retriever.smart_retrieve(
+            question, self.index, self.chunks, base_k=20
+        )
+        
+        print(f"🎯 Smart retrieval: {len(relevant_chunks)} chunks selected (complexity: {explanation['question_complexity']})")
+        print(f"   Keywords found: {list(explanation['question_keywords'].keys())}")
+        
+        # Get answer from Claude with fewer, more relevant chunks
+        answer = get_llm_answer(relevant_chunks, question, self.api_key)
+        
+        # Store explanation for debugging/explainability
+        self.documents.append({
+            "type": "retrieval_explanation",
+            "question": question,
+            "explanation": explanation,
+            "timestamp": time.time()
+        })
+        
         return answer
     
     def _batch_rag_pipeline(self, questions: List[str], k: int = 5, max_workers: int = 5) -> List[str]:
