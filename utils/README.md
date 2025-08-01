@@ -1,6 +1,6 @@
-# 🛠️ Utils
+# 🛠️ Utils - API Key Management System
 
-This directory contains utility functions, middleware, and configuration modules that support the core functionality of the HackRX API, with enhanced features for V1/V2 API compatibility.
+This directory contains utility functions, middleware, and configuration modules that support the core functionality of the HackRX API, with enhanced features for V1/V2 API compatibility and comprehensive API key management.
 
 ## 📁 Structure
 
@@ -8,12 +8,354 @@ This directory contains utility functions, middleware, and configuration modules
 utils/
 ├── __init__.py              # Package initialization
 ├── logging_config.py        # Enhanced logging configuration and setup
-├── middleware.py            # Custom middleware implementations (V1/V2 compatible)
-├── auth.py                  # Authentication and authorization utilities
-├── validators.py            # Request/response validation utilities
-├── performance.py           # Performance monitoring and metrics
-└── __pycache__/            # Python bytecode cache
+├── load_env.py             # 🔑 Comprehensive API key manager (NEW)
+├── validate_keys.py        # 🔍 API key validation utility (NEW)
+├── demo_keys.py           # 📖 API key usage examples (NEW)
+├── auth.py                # 🔐 Authentication utilities
+└── README.md             # This documentation
 ```
+
+---
+
+# 🔑 API Key Management System
+
+This directory contains a comprehensive API key management system for the HackRX project, ensuring secure and organized handling of all API credentials.
+
+## 📁 Files Overview
+
+| File               | Purpose                                             |
+| ------------------ | --------------------------------------------------- |
+| `load_env.py`      | Main API key manager with comprehensive key loading |
+| `validate_keys.py` | Validation utility to test API key functionality    |
+| `demo_keys.py`     | Demonstration script showing usage examples         |
+| `auth.py`          | Authentication utilities for FastAPI endpoints      |
+
+## 🔑 API Key Manager Features
+
+### Comprehensive Key Loading
+
+- **LLM Providers**: OpenAI, Anthropic, Google/Gemini, Groq, Hugging Face, Cohere, Together AI, Replicate
+- **Services**: LangChain, Azure, AWS, Pinecone, Weaviate, Chroma
+- **Databases**: PostgreSQL, MongoDB, Redis, SQLite
+- **Authentication**: API keys, JWT secrets, encryption keys
+- **Monitoring**: Sentry, DataDog, New Relic
+
+### Security Features
+
+- Environment variable loading from `.env` files
+- JSON config file support with active/inactive keys
+- Masked key display for security
+- Legacy compatibility mode
+
+## 🚀 Quick Start
+
+### 1. Setup Environment Variables
+
+```bash
+# Copy the example file
+cp .env.example .env
+
+# Edit with your actual API keys
+nano .env
+```
+
+### 2. Basic Usage
+
+```python
+from utils.load_env import api_key_manager
+
+# Get a specific API key
+openai_key = api_key_manager.get_key('OPENAI_API_KEY')
+
+# Get all LLM provider keys
+llm_keys = api_key_manager.get_llm_keys()
+
+# Validate required keys
+required = ['GROQ_API_KEY', 'ANTHROPIC_API_KEY']
+validation = api_key_manager.validate_required_keys(required)
+```
+
+### 3. Legacy Compatibility
+
+```python
+# Old way (still works)
+from utils.load_env import env_vars, OPENAI_API_KEY
+
+# New way (recommended)
+from utils.load_env import api_key_manager
+api_key = api_key_manager.get_key('OPENAI_API_KEY')
+```
+
+## 🛠️ Validation & Testing
+
+### Basic Validation
+
+```bash
+# Check key status
+python utils/demo_keys.py
+
+# Validate key formats
+python utils/validate_keys.py
+
+# Test actual API connectivity
+python utils/validate_keys.py --test-llm
+
+# Verbose output
+python utils/validate_keys.py --verbose
+
+# Save validation report
+python utils/validate_keys.py --output validation_report.json
+```
+
+### Integration Testing
+
+```python
+from utils.validate_keys import APIKeyValidator
+
+validator = APIKeyValidator(verbose=True)
+results = validator.validate_all_keys(test_connectivity=True)
+validator.print_summary(results)
+```
+
+## 📊 Key Categories
+
+### 🤖 LLM Providers
+
+| Provider     | Environment Variable  | Get Key From                             |
+| ------------ | --------------------- | ---------------------------------------- |
+| OpenAI       | `OPENAI_API_KEY`      | https://platform.openai.com/api-keys     |
+| Anthropic    | `ANTHROPIC_API_KEY`   | https://console.anthropic.com/           |
+| Google AI    | `GOOGLE_API_KEY`      | https://makersuite.google.com/app/apikey |
+| Groq         | `GROQ_API_KEY`        | https://console.groq.com/                |
+| Hugging Face | `HUGGINGFACE_API_KEY` | https://huggingface.co/settings/tokens   |
+
+### 🔧 Services
+
+| Service      | Environment Variable   | Purpose                  |
+| ------------ | ---------------------- | ------------------------ |
+| LangChain    | `LANGCHAIN_API_KEY`    | Tracing and monitoring   |
+| Azure OpenAI | `AZURE_OPENAI_API_KEY` | Enterprise OpenAI access |
+| AWS          | `AWS_ACCESS_KEY_ID`    | Cloud services           |
+| Pinecone     | `PINECONE_API_KEY`     | Vector database          |
+
+### 🗄️ Databases
+
+| Database   | Environment Variable | Example                               |
+| ---------- | -------------------- | ------------------------------------- |
+| PostgreSQL | `DATABASE_URL`       | `postgresql://user:pass@host:5432/db` |
+| MongoDB    | `MONGODB_URI`        | `mongodb://localhost:27017/db`        |
+| Redis      | `REDIS_URL`          | `redis://localhost:6379/0`            |
+
+## 🔒 Security Best Practices
+
+### Environment Variables
+
+- Always use `.env` files for local development
+- Never commit `.env` files to version control
+- Use environment variables in production
+- Rotate API keys regularly
+
+### Key Validation
+
+```python
+# Always validate keys before use
+api_key = api_key_manager.get_key('OPENAI_API_KEY')
+if not api_key:
+    raise ValueError("OpenAI API key not configured")
+```
+
+### Error Handling
+
+```python
+try:
+    # Use API key
+    client = SomeAPIClient(api_key=api_key)
+except Exception as e:
+    logger.error(f"API key validation failed: {e}")
+    # Handle gracefully
+```
+
+## 🏗️ Integration Examples
+
+### FastAPI Dependency
+
+```python
+from utils.load_env import api_key_manager
+from fastapi import Depends, HTTPException
+
+def get_openai_client():
+    api_key = api_key_manager.get_key('OPENAI_API_KEY')
+    if not api_key:
+        raise HTTPException(400, "OpenAI API key not configured")
+    return OpenAI(api_key=api_key)
+
+@app.post("/generate")
+async def generate(client = Depends(get_openai_client)):
+    # Use client safely
+    pass
+```
+
+### LangChain Integration
+
+```python
+from utils.load_env import api_key_manager
+from langchain_anthropic import ChatAnthropic
+
+def create_llm():
+    api_key = api_key_manager.get_key('ANTHROPIC_API_KEY')
+    if not api_key:
+        raise ValueError("Anthropic API key required")
+
+    return ChatAnthropic(
+        anthropic_api_key=api_key,
+        model="claude-3-sonnet-20240229"
+    )
+```
+
+### Startup Validation
+
+```python
+from utils.load_env import api_key_manager
+
+def validate_environment():
+    """Validate environment at application startup"""
+    required_keys = [
+        'GROQ_API_KEY',
+        'ANTHROPIC_API_KEY',
+        'DATABASE_URL'
+    ]
+
+    validation = api_key_manager.validate_required_keys(required_keys)
+    missing_keys = [k for k, v in validation.items() if not v]
+
+    if missing_keys:
+        raise EnvironmentError(
+            f"Missing required API keys: {', '.join(missing_keys)}"
+        )
+
+    print("✅ Environment validation passed")
+
+# Call during app startup
+validate_environment()
+```
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **Keys not loading**
+
+   ```bash
+   # Check if .env file exists
+   ls -la .env
+
+   # Verify file format
+   python utils/demo_keys.py
+   ```
+
+2. **API connectivity issues**
+
+   ```bash
+   # Test actual API calls
+   python utils/validate_keys.py --test-llm
+   ```
+
+3. **Permission errors**
+   ```bash
+   # Check file permissions
+   chmod 600 .env
+   ```
+
+### Debug Mode
+
+```python
+# Enable verbose logging
+import os
+os.environ['SILENT_LOAD'] = 'false'
+
+from utils.load_env import api_key_manager
+api_key_manager.print_key_status()
+```
+
+## 📈 Advanced Usage
+
+### Custom Key Validation
+
+```python
+def validate_custom_api_key(api_key: str) -> bool:
+    """Custom validation logic"""
+    if not api_key or len(api_key) < 20:
+        return False
+    # Add your custom validation
+    return True
+
+# Use in your application
+api_key = api_key_manager.get_key('CUSTOM_API_KEY')
+if not validate_custom_api_key(api_key):
+    raise ValueError("Invalid custom API key")
+```
+
+### Dynamic Key Loading
+
+```python
+# Load keys at runtime
+def load_runtime_keys():
+    """Load additional keys at runtime"""
+    runtime_keys = {
+        'RUNTIME_KEY': os.getenv('RUNTIME_KEY'),
+        'DYNAMIC_KEY': get_key_from_vault()
+    }
+    api_key_manager._api_keys.update(runtime_keys)
+```
+
+### Health Check Endpoint
+
+```python
+@app.get("/health/keys")
+async def health_check_keys():
+    """Health check for API keys"""
+    llm_keys = api_key_manager.get_llm_keys()
+    service_keys = api_key_manager.get_service_keys()
+
+    return {
+        "llm_providers": len(llm_keys),
+        "services": len(service_keys),
+        "status": "healthy" if llm_keys else "degraded"
+    }
+```
+
+## 📚 Reference
+
+### Available Methods
+
+| Method                         | Description                | Returns           |
+| ------------------------------ | -------------------------- | ----------------- |
+| `get_key(name)`                | Get specific API key       | `Optional[str]`   |
+| `get_all_keys()`               | Get all loaded keys        | `Dict[str, Any]`  |
+| `get_llm_keys()`               | Get LLM provider keys only | `Dict[str, str]`  |
+| `get_service_keys()`           | Get service keys only      | `Dict[str, str]`  |
+| `validate_required_keys(keys)` | Validate required keys     | `Dict[str, bool]` |
+| `print_key_status()`           | Print status report        | `None`            |
+
+### Environment Variables
+
+See `.env.example` for complete list of supported environment variables.
+
+---
+
+💡 **Pro Tip**: Use `python utils/validate_keys.py --summary` for a quick status overview of all your API keys!
+
+---
+
+# 🛠️ Original Utils Documentation
+
+├── middleware.py # Custom middleware implementations (V1/V2 compatible)
+├── auth.py # Authentication and authorization utilities
+├── validators.py # Request/response validation utilities
+├── performance.py # Performance monitoring and metrics
+└── **pycache**/ # Python bytecode cache
+
+````
 
 ## 🚀 Components
 
@@ -41,7 +383,7 @@ def get_performance_logger() -> logging.Logger:
 
 def log_api_metrics(endpoint: str, version: str, duration: float) -> None:
     """Log API performance metrics (V2 enhanced)"""
-```
+````
 
 **Enhanced Log Types:**
 

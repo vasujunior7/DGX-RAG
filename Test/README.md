@@ -1,6 +1,6 @@
-# 🧪 Test Suite
+# 🧪 Test Suite - API v2 Load Testing
 
-This directory contains comprehensive test files, scripts, and examples for the HackRX API, supporting both V1 and V2 API endpoints with enhanced testing capabilities.
+This directory contains comprehensive test files, scripts, and examples for the HackRX API, supporting both V1 and V2 API endpoints with enhanced testing capabilities and advanced load testing tools.
 
 ## 📁 Files Structure
 
@@ -8,15 +8,183 @@ This directory contains comprehensive test files, scripts, and examples for the 
 Test/
 ├── test_auth.py              # Comprehensive authentication system tests
 ├── quick_test.py             # Quick authentication verification
-├── comprehensive_test.py     # Full API functionality tests (V1/V2)
-├── example_usage.py          # Example usage scripts and demonstrations
-├── test_v2_features.py       # V2-specific feature tests
-├── performance_test.py       # Performance and load testing
-├── integration_test.py       # End-to-end integration tests
-├── test_request.json         # Sample request data for V1 API
-├── test_request_v2.json      # Sample request data for V2 API
-└── README.md                 # This documentation
+├── load_test.py              # 🆕 Comprehensive API v2 load testing script
+├── simple_test.py            # 🆕 Quick API v2 test script
+├── run_tests.bat             # 🆕 Windows batch testing runner
+├── test_runner.ps1           # 🆕 PowerShell testing runner with advanced options
+├── request.json              # 🆕 Structured test requests in JSON format
+└── README.md                # This comprehensive testing documentation
 ```
+
+---
+
+# 🚀 API v2 Load Testing Suite (NEW)
+
+## 📋 Quick Start Guide
+
+### 🏃 Simple Test (Fastest)
+
+```bash
+# Quick API v2 test
+python Test/simple_test.py
+
+# Windows batch script
+Test/run_tests.bat
+```
+
+### 🏋️ Comprehensive Load Test
+
+```bash
+# Basic load test
+python Test/load_test.py
+
+# With verbose output
+python Test/load_test.py --verbose
+
+# Multiple repeats for consistency testing
+python Test/load_test.py --repeat 5
+
+# Custom server testing
+python Test/load_test.py --server http://your-server.com
+```
+
+### 💻 PowerShell (Windows)
+
+```powershell
+# Simple test
+.\Test\test_runner.ps1 -TestType simple
+
+# Load test with verbose output
+.\Test\test_runner.ps1 -TestType load -Verbose
+
+# Stress test (10 repeats)
+.\Test\test_runner.ps1 -TestType stress
+```
+
+## 📊 Test Payload Overview
+
+The load test sends requests to process **4 different documents** with **18 total questions**:
+
+1. **Legal Constitution** (10 questions) - Rights, laws, constitutional matters
+2. **Insurance Claims** (1 question) - HDFC claim scenarios
+3. **Medical Insurance** (4 questions) - Coverage, claims, procedures
+4. **Policy Terms** (3 questions) - Terms, conditions, coverage details
+
+## 🛠️ Advanced Features
+
+### `load_test.py` Features
+
+- ✅ **Server health checks** before testing
+- ✅ **Response time measurement** and statistics
+- ✅ **Multiple test repeats** for consistency
+- ✅ **JSON result logging** with timestamps
+- ✅ **Comprehensive error handling** and reporting
+- ✅ **API key authentication** support
+- ✅ **Custom timeout** configurations
+- ✅ **Detailed performance metrics**
+
+### Example Output
+
+```
+🚀 HackRX API v2 Load Test
+========================================
+🌐 Server: http://localhost:8000
+🔑 API Key: Not provided
+⏱️  Timeout: 300s
+🔁 Repeats: 1
+
+🏥 Testing server health...
+✅ Server is healthy!
+
+📋 Test Payload Summary:
+   📄 Documents: 4
+   ❓ Total Questions: 18
+
+📤 Sending request to API v2...
+⏱️  Response Time: 42.15s
+📊 Status Code: 200
+✅ Request completed successfully!
+📝 Received 18 answers
+
+📊 TEST SUMMARY
+============================================================
+📈 Total Tests: 1
+✅ Successful: 1
+❌ Failed: 0
+📊 Success Rate: 100.0%
+⏱️  Average Response Time: 42.15s
+
+💾 Results saved to: load_test_results_20250801_143022.json
+🎉 All tests passed!
+```
+
+## 🔧 Configuration Options
+
+### Command Line Arguments
+
+| Argument    | Description                | Default                 |
+| ----------- | -------------------------- | ----------------------- |
+| `--server`  | Server URL                 | `http://localhost:8000` |
+| `--api-key` | API key for authentication | None                    |
+| `--verbose` | Enable detailed output     | False                   |
+| `--timeout` | Request timeout (seconds)  | 300                     |
+| `--repeat`  | Number of test repeats     | 1                       |
+
+### Usage Examples
+
+```bash
+# Basic test
+python Test/load_test.py
+
+# Production server test
+python Test/load_test.py --server https://api.hackrx.com --api-key your-key
+
+# Stress testing
+python Test/load_test.py --repeat 10 --timeout 600 --verbose
+
+# Quick validation
+python Test/simple_test.py
+```
+
+## 🐛 Troubleshooting
+
+### Common Issues & Solutions
+
+**Connection Error**
+
+```
+🌐 Connection error - is the server running?
+💡 Try: python main.py
+```
+
+**Timeout Error**
+
+```bash
+# Increase timeout for heavy processing
+python Test/load_test.py --timeout 600
+```
+
+**Authentication Error**
+
+```bash
+# Add API key
+python Test/load_test.py --api-key your-api-key-here
+```
+
+---
+
+# 🔐 Authentication Testing (Existing)
+
+├── comprehensive_test.py # Full API functionality tests (V1/V2)
+├── example_usage.py # Example usage scripts and demonstrations
+├── test_v2_features.py # V2-specific feature tests
+├── performance_test.py # Performance and load testing
+├── integration_test.py # End-to-end integration tests
+├── test_request.json # Sample request data for V1 API
+├── test_request_v2.json # Sample request data for V2 API
+└── README.md # This documentation
+
+````
 
 ## 🔧 Test Categories
 
@@ -81,7 +249,7 @@ python main.py
 
 # Install test dependencies (if any)
 pip install requests pytest pytest-asyncio
-```
+````
 
 ### Authentication Tests
 

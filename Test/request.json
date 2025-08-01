@@ -1,0 +1,42 @@
+{
+  "requests": [
+    {
+      "documents": "http://localhost:8000/api/hostfile/download_file/f15345ba5ce7155ebb1fc8f231da2654.pdf",
+      "questions": [
+        "If my car is stolen, what case will it be in law?",
+        "If I am arrested without a warrant, is that legal?",
+        "If someone denies me a job because of my caste, is that allowed?",
+        "If the government takes my land for a project, can I stop it?",
+        "If my child is forced to work in a factory, is that legal?",
+        "If I am stopped from speaking at a protest, is that against my rights?",
+        "If a religious place stops me from entering because I'm a woman, is that constitutional?",
+        "If I change my religion, can the government stop me?",
+        "If the police torture someone in custody, what right is being violated?",
+        "If I'm denied admission to a public university because I'm from a backward community, can I do something?"
+      ]
+    },
+    {
+      "documents": "http://localhost:8000/api/hostfile/download_file/d6cf54e2e41ddc58c1eadbcdb3ea24ef.pdf",
+      "questions": [
+        "I have raised a claim for hospitalization for Rs 200,000 with HDFC, and it's approved. My total expenses are Rs 250,000. Can I raise the remaining Rs 50,000 with you?"
+      ]
+    },
+    {
+      "documents": "http://localhost:8000/api/hostfile/download_file/515f4f14a724226a7fb15e44f7d8f32c.pdf",
+      "questions": [
+        "When will my root canal claim of Rs 25,000 be settled?",
+        "I have done an IVF for Rs 56,000. Is it covered?",
+        "I did a cataract treatment of Rs 100,000. Will you settle the full Rs 100,000?",
+        "Give me a list of documents to be uploaded for hospitalization for heart surgery."
+      ]
+    },
+    {
+      "documents": "http://localhost:8000/api/hostfile/download_file/6635d94cf9023c83521982b3043ec70c.pdf",
+      "questions": [
+        "What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?",
+        "What is the waiting period for pre-existing diseases (PED) to be covered?",
+        "Does this policy cover maternity expenses, and what are the conditions?"
+      ]
+    }
+  ]
+}

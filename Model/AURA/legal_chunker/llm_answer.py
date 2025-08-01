@@ -3,7 +3,7 @@ from langchain_anthropic import ChatAnthropic
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(r"C:\Users\saumi\Desktop\CODES\HackRX\.env")    
 
 def get_llm_answer(context_chunks: List[str], question: str, anthropic_api_key: str = None) -> str:
     """
@@ -11,7 +11,8 @@ def get_llm_answer(context_chunks: List[str], question: str, anthropic_api_key: 
     Returns the LLM's answer.
     """
     if anthropic_api_key is None:
-        anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+        # anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+        anthropic_api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not anthropic_api_key:
         raise ValueError("Anthropic API key must be provided or set as ANTHROPIC_API_KEY environment variable.")
 
