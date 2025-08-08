@@ -1,103 +1,249 @@
-# 🛠️ Utils - API Key Management System
+# 🛠️ Utils - Comprehensive API Key & Authentication Management
 
-This directory contains utility functions, middleware, and configuration modules that support the core functionality of the HackRX API, with enhanced features for V1/V2 API compatibility and comprehensive API key management.
+Core utilities directory containing advanced API key management, authentication systems, and configuration tools supporting 46+ environment variables for multi-model AI integration in the HackRX RAG system.
 
-## 📁 Structure
+## 📁 Infrastructure Overview
 
 ```
 utils/
-├── __init__.py              # Package initialization
-├── logging_config.py        # Enhanced logging configuration and setup
-├── load_env.py             # 🔑 Comprehensive API key manager (NEW)
-├── validate_keys.py        # 🔍 API key validation utility (NEW)
-├── demo_keys.py           # 📖 API key usage examples (NEW)
-├── auth.py                # 🔐 Authentication utilities
-└── README.md             # This documentation
+├── 🔑 API Key Management
+│   ├── load_env.py             # APIKeyManager - 46+ environment variables
+│   ├── validate_keys.py        # API key validation and testing utility
+│   └── README.md              # This comprehensive documentation
+├── � Authentication & Security
+│   ├── auth.py                # FastAPI authentication middleware
+│   └── logging_config.py      # Production-ready logging configuration
+└── 📋 Package Files
+    └── __init__.py            # Package initialization
 ```
 
 ---
 
-# 🔑 API Key Management System
+## 🔑 APIKeyManager - Multi-Provider Support
 
-This directory contains a comprehensive API key management system for the HackRX project, ensuring secure and organized handling of all API credentials.
+### 🚀 **Comprehensive Provider Support (46+ Variables)**
 
-## 📁 Files Overview
+Our APIKeyManager supports the most extensive range of AI and service providers:
 
-| File               | Purpose                                             |
-| ------------------ | --------------------------------------------------- |
-| `load_env.py`      | Main API key manager with comprehensive key loading |
-| `validate_keys.py` | Validation utility to test API key functionality    |
-| `demo_keys.py`     | Demonstration script showing usage examples         |
-| `auth.py`          | Authentication utilities for FastAPI endpoints      |
-
-## 🔑 API Key Manager Features
-
-### Comprehensive Key Loading
-
-- **LLM Providers**: OpenAI, Anthropic, Google/Gemini, Groq, Hugging Face, Cohere, Together AI, Replicate
-- **Services**: LangChain, Azure, AWS, Pinecone, Weaviate, Chroma
-- **Databases**: PostgreSQL, MongoDB, Redis, SQLite
-- **Authentication**: API keys, JWT secrets, encryption keys
-- **Monitoring**: Sentry, DataDog, New Relic
-
-### Security Features
-
-- Environment variable loading from `.env` files
-- JSON config file support with active/inactive keys
-- Masked key display for security
-- Legacy compatibility mode
-
-## 🚀 Quick Start
-
-### 1. Setup Environment Variables
-
+#### 🤖 **Core LLM Providers**
 ```bash
-# Copy the example file
-cp .env.example .env
+# Primary AI Models
+ANTHROPIC_API_KEY=              # Claude 3.5 Sonnet, Claude 3 Opus/Haiku  
+OPENAI_API_KEY=                 # GPT-4, GPT-3.5, ChatGPT
+GOOGLE_API_KEY=                 # Gemini Pro, Gemini Ultra
+GROQ_API_KEY=                   # Fast inference LLM models
 
-# Edit with your actual API keys
-nano .env
+# Additional AI Providers  
+HUGGINGFACE_API_KEY=            # Open source models, datasets
+COHERE_API_KEY=                 # Command models, embeddings
+TOGETHER_API_KEY=               # Open source LLMs
+REPLICATE_API_KEY=              # Model deployment platform
+PERPLEXITY_API_KEY=             # Search-augmented AI
+AI21_API_KEY=                   # Jurassic models
 ```
 
-### 2. Basic Usage
+#### � **Development & Services**
+```bash
+# Framework & Tools
+LANGCHAIN_API_KEY=              # LangChain platform services
+LANGSMITH_API_KEY=              # LangSmith debugging/monitoring
+LLAMAPARSE_API_KEY=             # Advanced document parsing
 
+# Vector Databases
+PINECONE_API_KEY=               # Pinecone vector database
+WEAVIATE_API_KEY=               # Weaviate vector search
+CHROMA_API_KEY=                 # ChromaDB vector store
+QDRANT_API_KEY=                 # Qdrant vector engine
+```
+
+#### ☁️ **Cloud & Infrastructure**
+```bash
+# Cloud Providers
+AZURE_OPENAI_KEY=               # Azure OpenAI Service
+AWS_ACCESS_KEY_ID=              # Amazon Web Services
+GCP_SERVICE_ACCOUNT_KEY=        # Google Cloud Platform
+IBM_API_KEY=                    # IBM Watson services
+
+# Databases
+MONGODB_URI=                    # MongoDB connection string
+POSTGRESQL_URL=                 # PostgreSQL database
+REDIS_URL=                      # Redis caching
+SUPABASE_KEY=                   # Supabase backend
+```
+
+#### 📊 **Monitoring & Analytics**
+```bash
+# Error Tracking & Monitoring
+SENTRY_DSN=                     # Error tracking
+DATADOG_API_KEY=               # Application monitoring  
+NEW_RELIC_LICENSE_KEY=         # Performance monitoring
+WANDB_API_KEY=                  # ML experiment tracking
+```
+
+### 💡 **Quick Start Examples**
+
+#### Basic Usage
 ```python
-from utils.load_env import api_key_manager
+from utils.load_env import APIKeyManager
 
-# Get a specific API key
-openai_key = api_key_manager.get_key('OPENAI_API_KEY')
+# Initialize manager
+api_manager = APIKeyManager()
+
+# Get specific keys
+claude_key = api_manager.get_key('ANTHROPIC_API_KEY')
+openai_key = api_manager.get_key('OPENAI_API_KEY')
 
 # Get all LLM provider keys
-llm_keys = api_key_manager.get_llm_keys()
+llm_keys = api_manager.get_llm_keys()
+print(f"Available LLM providers: {len(llm_keys)}")
 
-# Validate required keys
-required = ['GROQ_API_KEY', 'ANTHROPIC_API_KEY']
-validation = api_key_manager.validate_required_keys(required)
+# Validate key status
+status = api_manager.get_key_status()
+print(f"Active keys: {status['active_count']}")
 ```
 
-### 3. Legacy Compatibility
-
+#### Advanced Configuration
 ```python
-# Old way (still works)
-from utils.load_env import env_vars, OPENAI_API_KEY
+# Custom validation
+required_keys = [
+    'ANTHROPIC_API_KEY',
+    'OPENAI_API_KEY', 
+    'GROQ_API_KEY'
+]
 
-# New way (recommended)
-from utils.load_env import api_key_manager
-api_key = api_key_manager.get_key('OPENAI_API_KEY')
+validation_result = api_manager.validate_required_keys(required_keys)
+if validation_result['all_present']:
+    print("✅ All required API keys are configured")
+else:
+    print(f"❌ Missing keys: {validation_result['missing']}")
+
+# Environment validation
+env_status = api_manager.validate_environment()
+print(f"Environment health: {env_status['status']}")
 ```
 
-## 🛠️ Validation & Testing
+## 🧪 Validation & Testing Tools
 
-### Basic Validation
+### � **API Key Validator** (`validate_keys.py`)
 
 ```bash
-# Check key status
-python utils/demo_keys.py
-
-# Validate key formats
+# Run comprehensive key validation
 python utils/validate_keys.py
 
-# Test actual API connectivity
+# Test specific provider
+python utils/validate_keys.py --provider anthropic
+
+# Validate and test connectivity
+python utils/validate_keys.py --test-connection
+```
+
+### 📊 **Validation Features**
+- **Format Validation** - Checks key format patterns
+- **Connectivity Testing** - Tests actual API endpoints  
+- **Provider Detection** - Identifies available providers
+- **Security Scanning** - Validates key security practices
+
+## 🔐 Authentication System
+
+### 🛡️ **FastAPI Authentication** (`auth.py`)
+
+```python
+from utils.auth import authenticate_request
+
+# In your FastAPI endpoints
+@app.post("/protected-endpoint")
+async def protected_route(token: str = Depends(authenticate_request)):
+    # Your protected logic here
+    pass
+```
+
+### ⚙️ **Authentication Features**
+- **Bearer Token Support** - Standard HTTP Bearer tokens
+- **Flexible Development Mode** - Easy testing with any token
+- **Request Validation** - Comprehensive request validation
+- **Security Headers** - Automatic security header injection
+
+## 📊 Production Logging
+
+### 🎯 **Advanced Logging** (`logging_config.py`)
+
+```python
+from utils.logging_config import setup_logging
+
+# Initialize production logging
+logger = setup_logging("my-component")
+
+# Use structured logging
+logger.info("API request processed", extra={
+    "endpoint": "/hackrx/run",
+    "response_time": "2.3s",
+    "status": "success"
+})
+```
+
+### 📈 **Logging Features**
+- **Structured Logging** - JSON-formatted logs for analysis
+- **Automatic Rotation** - 10MB max files, 5 backups
+- **Performance Tracking** - Request/response timing
+- **Error Context** - Detailed error traces
+
+## 🚀 Environment Setup Guide
+
+### 1. **Initial Setup**
+```bash
+# Copy template
+cp .env.example .env
+
+# Edit with your keys
+nano .env  # or your preferred editor
+```
+
+### 2. **Key Priority Configuration**
+```bash
+# Primary LLM (choose one minimum)
+ANTHROPIC_API_KEY=sk-ant-...         # Recommended for legal/complex reasoning
+OPENAI_API_KEY=sk-...                # General purpose, widely compatible  
+GOOGLE_API_KEY=AI...                 # Good for multi-modal tasks
+GROQ_API_KEY=gsk_...                 # Fastest inference
+
+# Framework support
+LANGCHAIN_API_KEY=ls__...            # Enhanced LangChain features
+```
+
+### 3. **Validation & Testing**
+```bash
+# Validate setup
+python utils/validate_keys.py
+
+# Test API connectivity  
+python Test/test_anthropic.py
+
+# Run comprehensive tests
+python Test/simple_test.py
+```
+
+## 🎯 Best Practices
+
+### ✅ **Security Best Practices**
+- Never commit actual API keys to version control
+- Use `.env` files for local development
+- Set proper file permissions on `.env` (600)
+- Rotate API keys regularly
+- Monitor API usage and costs
+
+### 🔧 **Development Workflow**
+1. Copy `.env.example` to `.env`
+2. Add minimum required keys (1-2 LLM providers)
+3. Run `python utils/validate_keys.py`
+4. Test with `python Test/simple_test.py`
+5. Gradually add more providers as needed
+
+### 📊 **Production Configuration**
+- Use environment variables in production (not `.env` files)
+- Implement key rotation policies
+- Monitor API usage and rate limits
+- Set up proper logging and alerting
+- Use secrets management services for cloud deployments
 python utils/validate_keys.py --test-llm
 
 # Verbose output

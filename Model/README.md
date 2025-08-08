@@ -1,53 +1,247 @@
-# 🤖 Model
+# 🤖 AI Models - Multi-Model RAG Architecture
 
-This directory contains AI/ML models and inference components for document processing and question-answering capabilities, supporting both V1 and V2 API endpoints with enhanced features.
+Advanced AI model directory featuring specialized legal and insurance AI systems with multi-model LLM integration including Anthropic Claude, OpenAI GPT, Google Gemini, and Groq for comprehensive document processing and analysis.
 
-## 📁 Structure
+## 📁 Model Architecture
 
 ```
 Model/
-├── sample_model.py          # Sample LLM model implementation
-├── gemini_basic.py         # Google Gemini LLM integration (production-ready)
-├── __pycache__/            # Python bytecode cache
-└── README.md               # This documentation
+├── ⚖️ AURA - Legal AI Specialist
+│   ├── infrance.py              # Legal document inference engine
+│   ├── legal_chunker/           # Legal text analysis system
+│   │   ├── llm_answer.py       # Anthropic Claude integration  
+│   │   └── __pycache__/        # Compiled modules
+│   └── __pycache__/            # Compiled legal AI modules
+├── 🛡️ SAM_model - Insurance AI Specialist  
+│   ├── src/                    # Core SAM architecture
+│   │   ├── config.py           # SAM configuration
+│   │   ├── legal_query_rag.py  # RAG for legal queries
+│   │   ├── llm_generator.py    # LLM generation engine
+│   │   ├── embeddings.py       # Text embeddings  
+│   │   ├── retrieval.py        # Document retrieval
+│   │   ├── vector_db.py        # Vector database management
+│   │   └── evaluation.py       # Model evaluation metrics
+│   ├── embeddings_cache/       # Pre-computed embeddings
+│   │   ├── *.faiss             # FAISS index files
+│   │   └── *.pkl               # Pickle embedding files
+│   ├── processed_documents/    # Cached processed documents
+│   ├── inference.py           # Main SAM inference engine
+│   ├── setup.py               # SAM installation script
+│   └── requirements.txt       # SAM-specific dependencies
+├── 🚀 Core LLM Integration
+│   └── gemini_basic.py        # Google Gemini integration
+└── 📚 Documentation
+    └── README.md              # This comprehensive guide
 ```
 
-## 🚀 Components
+## ⚖️ AURA - Legal AI Specialist
 
-### `sample_model.py`
+**Advanced Legal Document Analysis and Reasoning System**
 
-- **Sample model implementation** for testing and development
-- **Simple interface** for document loading and inference
-- **Mock responses** for rapid prototyping and testing
-- **V1/V2 compatible** interface
+### 🎯 **Core Capabilities**
+- **📜 Legal Document Processing** - Contracts, policies, regulations, case law
+- **🔍 Legal Research** - Precedent analysis and case law lookup
+- **⚖️ Compliance Analysis** - Regulatory compliance checking
+- **💼 Contract Review** - Terms, conditions, and risk assessment
+- **🧠 Legal Reasoning** - Claude-powered sophisticated legal analysis
 
-**Class: `SampleModel`**
+### 🔧 **Architecture Components**
+
+#### `infrance.py` - Legal Inference Engine
+```python
+class AURALegalProcessor:
+    def __init__(self, anthropic_key: str):
+        # Initialize with Anthropic Claude
+        
+    def analyze_legal_document(self, document_url: str, questions: List[str]):
+        # Legal document analysis with specialized prompting
+        
+    def case_law_research(self, legal_query: str):
+        # Case law and precedent research
+        
+    def compliance_check(self, document: str, regulations: List[str]):
+        # Regulatory compliance analysis
+```
+
+#### `legal_chunker/llm_answer.py` - Anthropic Integration
+- **🤖 Claude 3.5 Sonnet Integration** - Advanced reasoning capabilities
+- **📋 Legal Context Processing** - Specialized legal document chunking
+- **🔐 Secure Authentication** - Production-ready API key management
+- **⚡ Error Handling** - Robust error handling with fallback systems
+
+### 💡 **Usage Examples**
 
 ```python
-class SampleModel:
-    def __init__(self, api_key: str = None)
-    def load_document(self, file_path: str) -> None
-    def load_documents(self, file_paths: List[str]) -> None  # V2 feature
-    def inference(self, question: str) -> str
-    def batch_inference(self, questions: List[str]) -> List[str]  # V2 feature
+from Model.AURA.infrance import AURALegalProcessor
+
+# Initialize AURA Legal AI
+aura = AURALegalProcessor(anthropic_key="your_key")
+
+# Legal document analysis
+result = aura.analyze_legal_document(
+    document_url="https://example.com/contract.pdf",
+    questions=[
+        "What are the termination clauses?",
+        "Are there any penalty provisions?",
+        "What dispute resolution mechanisms are included?"
+    ]
+)
+
+# Case law research
+precedents = aura.case_law_research(
+    "employment contract termination without cause"
+)
 ```
 
-**Features:**
+## 🛡️ SAM - Insurance AI Specialist
 
-- ✅ API key initialization (mock)
-- ✅ Single document loading simulation
-- ✅ **NEW**: Multiple document loading for V2 API
-- ✅ Question answering with sample responses
-- ✅ **NEW**: Batch processing capabilities
-- ✅ Console logging for debugging
-- ✅ Thread-safe operations
+**Specialized Insurance Policy Analysis and Claims Processing Model**
 
-### `gemini_basic.py`
+### 🎯 **Advanced Features**
+- **📋 Policy Analysis** - Comprehensive insurance policy understanding
+- **💰 Claims Processing** - Automated claims evaluation and settlement
+- **🔍 Coverage Assessment** - Gap analysis and coverage optimization
+- **📊 Risk Evaluation** - Risk scoring and assessment
+- **⚡ High-Performance Caching** - FAISS-powered embeddings cache
 
-- **Google Gemini LLM integration** (production implementation)
-- **Multi-format document loading** (PDF, DOCX, TXT)
-- **Real AI inference** using Google's Generative AI
-- **Enhanced V2 features** with batch processing and metadata
+### 🏗️ **SAM Architecture**
+
+#### Core Engine - `inference.py`
+```python
+class SAMInferenceEngine:
+    def __init__(self):
+        self.embeddings_cache = FAISSEmbeddingsCache()
+        self.retrieval_system = DocumentRetrieval()
+        self.llm_generator = LLMGenerator()
+        
+    def analyze_policy(self, policy_url: str, questions: List[str]):
+        # High-performance policy analysis with caching
+        
+    def process_claim(self, claim_data: dict):
+        # Automated claims processing and evaluation
+```
+
+#### Performance Optimization
+- **💾 Embeddings Cache** - Pre-computed document embeddings in `embeddings_cache/`
+  ```
+  embeddings_cache/
+  ├── policy_doc1.pdf_embeddings.pkl.faiss  # FAISS indices
+  ├── policy_doc1.pdf_embeddings.pkl.pkl    # Pickle embeddings
+  └── ...
+  ```
+- **📄 Document Cache** - Processed documents in `processed_documents/`
+- **🔄 FAISS Integration** - Sub-second similarity search
+- **⚡ Vector Database** - Optimized vector storage and retrieval
+
+#### Advanced RAG Pipeline
+```python
+# SAM RAG Components
+src/
+├── legal_query_rag.py     # RAG for insurance legal queries
+├── embeddings.py          # Advanced text embeddings
+├── retrieval.py           # Document retrieval system
+├── vector_db.py           # Vector database management
+├── llm_generator.py       # Multi-model LLM generation
+└── evaluation.py          # Performance evaluation metrics
+```
+
+### 💡 **Usage Examples**
+
+```python
+from Model.SAM_model.inference import SAMInferenceEngine
+
+# Initialize SAM Insurance AI
+sam = SAMInferenceEngine()
+
+# Policy analysis
+analysis = sam.analyze_policy(
+    policy_url="https://example.com/policy.pdf",
+    questions=[
+        "What is the coverage amount?",
+        "What are the exclusions?",
+        "What is the claim settlement process?",
+        "Are pre-existing conditions covered?"
+    ]
+)
+
+# Claims processing
+claim_result = sam.process_claim({
+    "policy_number": "POL123456",
+    "claim_type": "hospitalization",
+    "amount": 50000,
+    "documents": ["hospital_bill.pdf", "discharge_summary.pdf"]
+})
+```
+
+## 🚀 Multi-Model LLM Integration
+
+### 🤖 **Supported AI Models**
+
+#### Google Gemini (`gemini_basic.py`)
+```python
+from Model.gemini_basic import GeminiModel
+
+gemini = GeminiModel(api_key="your_google_api_key")
+response = gemini.inference(
+    document_url="https://example.com/document.pdf",
+    question="Analyze this document"
+)
+```
+
+#### Model Capabilities Matrix
+
+| Model | Strength | Use Case | Integration |
+|-------|----------|----------|-------------|
+| **🤖 Anthropic Claude** | Legal reasoning, complex analysis | AURA Legal AI | `legal_chunker/llm_answer.py` |
+| **🧠 OpenAI GPT** | General intelligence, versatile | General document processing | Multi-model pipeline |
+| **🚀 Google Gemini** | Multi-modal, fast inference | Document understanding | `gemini_basic.py` |
+| **⚡ Groq** | Ultra-fast inference | Real-time responses | Speed-optimized pipeline |
+
+## 🔧 Configuration & Setup
+
+### 📋 **Environment Requirements**
+
+```bash
+# Core AI model keys (choose minimum 1-2)
+ANTHROPIC_API_KEY=sk-ant-...        # For AURA Legal AI
+OPENAI_API_KEY=sk-...               # General processing
+GOOGLE_API_KEY=AI...                # Gemini integration  
+GROQ_API_KEY=gsk_...                # Fast inference
+
+# Performance optimization
+CUDA_VISIBLE_DEVICES=0              # GPU acceleration
+FAISS_USE_CUDA=true                 # FAISS GPU support
+```
+
+### 🚀 **Installation & Setup**
+
+```bash
+# Install model dependencies
+pip install -r Model/SAM_model/requirements.txt
+
+# Setup SAM model
+cd Model/SAM_model
+python setup.py install
+
+# Validate model installation
+python Model/SAM_model/test_installation.py
+```
+
+### 🧪 **Model Testing**
+
+```bash
+# Test AURA Legal AI
+python Model/AURA/test_aura.py
+
+# Test SAM Insurance AI  
+python Model/SAM_model/test_module.py
+
+# Test Gemini integration
+python Model/test_gemini.py
+
+# Comprehensive model testing
+python Test/test_dependencies.py
+```
 
 **Class: `GeminiBasicLLM`**
 

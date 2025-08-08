@@ -1,51 +1,104 @@
-# 🧪 Test Suite - API v2 Load Testing
+# 🧪 HackRX Testing Suite - Comprehensive API Testing Infrastructure
 
-This directory contains comprehensive test files, scripts, and examples for the HackRX API, supporting both V1 and V2 API endpoints with enhanced testing capabilities and advanced load testing tools.
+Advanced testing suite for HackRX multi-model RAG system, supporting AURA Legal AI, SAM Insurance AI, and the main HackRX API with comprehensive load testing, performance monitoring, and multi-platform execution support.
 
-## 📁 Files Structure
+## 📁 Testing Infrastructure
 
 ```
 Test/
-├── test_auth.py              # Comprehensive authentication system tests
-├── quick_test.py             # Quick authentication verification
-├── load_test.py              # 🆕 Comprehensive API v2 load testing script
-├── simple_test.py            # 🆕 Quick API v2 test script
-├── run_tests.bat             # 🆕 Windows batch testing runner
-├── test_runner.ps1           # 🆕 PowerShell testing runner with advanced options
-├── request.json              # 🆕 Structured test requests in JSON format
-└── README.md                # This comprehensive testing documentation
+├── 🎯 Core Testing Scripts
+│   ├── simple_test.py           # Quick API validation with current endpoint format
+│   ├── load_test.py             # Advanced load testing (300+ lines) with metrics
+│   ├── test_aura.py             # AURA Legal AI testing
+│   ├── test_anthropic.py        # Anthropic API authentication testing
+│   └── test_dependencies.py     # Environment and dependency validation
+├── 🚀 Execution Runners
+│   ├── run_tests.bat           # Windows batch testing with interactive menu
+│   ├── run_load_test.bat       # Dedicated load testing batch script
+│   ├── test_runner.ps1         # PowerShell runner with advanced parameters
+│   └── api-keys.ps1            # PowerShell API key management script
+├── 📊 Test Data & Configuration
+│   ├── request.json            # Sample request payloads for testing
+│   ├── test_request.json       # Additional test scenarios
+│   └── requirements_test.txt   # Testing-specific Python dependencies
+└── 📚 Documentation
+    └── README.md               # This comprehensive testing guide
 ```
 
 ---
 
-# 🚀 API v2 Load Testing Suite (NEW)
+## 🎯 Quick Start Testing
 
-## 📋 Quick Start Guide
-
-### 🏃 Simple Test (Fastest)
+### ⚡ Instant API Validation
 
 ```bash
-# Quick API v2 test
+# 1. Quick API test with current endpoint format
 python Test/simple_test.py
 
-# Windows batch script
+# 2. Windows batch testing (interactive)
 Test/run_tests.bat
+
+# 3. PowerShell testing with options
+powershell -ExecutionPolicy Bypass -File Test/test_runner.ps1
 ```
 
-### 🏋️ Comprehensive Load Test
+### 🏋️ Advanced Load Testing
 
 ```bash
-# Basic load test
+# Basic load test with performance metrics
 python Test/load_test.py
 
-# With verbose output
-python Test/load_test.py --verbose
+# Load test with multiple repetitions
+python Test/load_test.py --repeat 10
 
-# Multiple repeats for consistency testing
-python Test/load_test.py --repeat 5
+# Comprehensive testing with JSON logging
+python Test/load_test.py --verbose --output results.json
+```
 
-# Custom server testing
-python Test/load_test.py --server http://your-server.com
+---
+
+## 🚀 API Testing Features
+
+### 📊 Current API Format Support
+
+Our testing suite supports the **latest V2 API format**:
+
+```json
+{
+    "documents": "https://example.com/document.pdf",
+    "questions": [
+        "What is the grace period for premium payment?",
+        "What are the waiting periods for pre-existing conditions?",
+        "Does this policy cover maternity expenses?"
+    ]
+}
+```
+
+**Endpoint**: `POST /hackrx/run`  
+**Authentication**: `Bearer token` (any random string for development)
+
+### ⚖️ AURA Legal AI Testing
+
+```bash
+# Test AURA Legal AI capabilities
+python Test/test_aura.py
+
+# Legal document analysis
+curl -X POST "http://localhost:8000/aura/legal-query" \
+  -H "Authorization: Bearer test_key_123" \
+  -d '{"document": "legal_contract.pdf", "questions": ["What are the termination clauses?"]}'
+```
+
+### 🛡️ SAM Insurance AI Testing
+
+```bash
+# Test SAM Insurance AI
+python Test/test_sam.py  # (if available)
+
+# Insurance policy analysis
+curl -X POST "http://localhost:8000/sam/policy-analysis" \
+  -H "Authorization: Bearer test_key_123" \
+  -d '{"policy": "insurance_policy.pdf", "analysis_type": "comprehensive"}'
 ```
 
 ### 💻 PowerShell (Windows)
