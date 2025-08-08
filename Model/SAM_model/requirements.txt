@@ -1,0 +1,43 @@
+# Core dependencies for Legal Query RAG system
+langchain>=0.1.0
+langchain-openai>=0.0.5
+openai>=1.0.0
+
+# Document processing
+pypdf>=3.0.0
+python-docx>=0.8.11
+unstructured>=0.10.0
+
+# Vector database and search
+faiss-cpu>=1.7.4
+numpy>=1.24.0
+
+# Text processing and embeddings
+sentence-transformers>=2.2.2
+transformers>=4.30.0
+
+# Re-ranking (CrossEncoder is part of sentence-transformers)
+# No additional package needed - CrossEncoder comes with sentence-transformers
+
+# Async and parallel processing
+asyncio
+aiofiles>=23.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pathlib
+
+# Logging and monitoring
+logging
+
+
+tqdm>=4.65.0
+
+# Optional: Advanced vector databases (uncomment if needed)
+# pinecone-client>=2.2.0
+# weaviate-client>=3.20.0
+
+# Optional: Enhanced document processing (uncomment if needed)
+# pytesseract>=0.3.10  # For OCR
+# Pillow>=10.0.0       # For image processing

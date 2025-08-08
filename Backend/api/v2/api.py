@@ -16,6 +16,11 @@ from sample_model import SampleModel , SampleModelPaller
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model', 'AURA'))
 from AURA.infrance import SampleModelPaller
 
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model', 'SAM_model'))
+from SAM_model.inference import LegalRAGInference
+
+
 # Import logging and auth from utils
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 from utils.logging_config import get_app_logger
