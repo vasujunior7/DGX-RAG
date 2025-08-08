@@ -62,7 +62,7 @@ def run_fastapi_server():
     """Run the FastAPI server"""
     print("🚀 Starting FastAPI server on http://localhost:8000")
     try:
-    uvicorn.run(
+     uvicorn.run(
         "Backend.main_api:app", 
         host="0.0.0.0", 
         port=8000, 

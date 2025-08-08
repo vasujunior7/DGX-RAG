@@ -4293,3 +4293,1767 @@
   "authorization": null,
   "request_body": "Body too large or empty"
 }
+2025-08-08 16:18:32,996 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:18:32",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0008,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:18:33,760 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:18:33",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/docs",
+  "status_code": 200,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:18:33,819 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:18:33",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/openapi.json",
+  "status_code": 200,
+  "process_time": 0.0027,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:19:02,994 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:19:02",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.001,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:19:25,047 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:19:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0016,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:19:32,993 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:19:32",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:20:02,994 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:20:02",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0008,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:21:18,748 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:21:18",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:21:19,802 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:21:19",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/docs",
+  "status_code": 200,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:21:19,861 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:21:19",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/openapi.json",
+  "status_code": 200,
+  "process_time": 0.0026,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:21:24,088 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:21:24",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0016,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:21:25,046 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:21:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:21:44,044 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:21:44",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0009,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:21:55,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:21:55",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:22:14,046 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:22:14",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.001,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:22:25,046 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:22:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0013,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:22:25,051 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:22:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:22:25,052 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:22:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0003,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:22:44,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:22:44",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0009,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:22:55,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:22:55",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:23:14,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:23:14",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:23:25,047 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:23:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0013,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:23:25,054 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:23:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0008,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:23:25,058 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:23:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0019,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:23:30,737 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:23:30",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0006,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:23:55,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:23:55",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0008,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:24:00,740 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:24:00",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0013,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:24:25,049 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:24:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0016,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:24:25,055 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:24:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0016,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:24:25,059 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:24:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0017,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:24:30,738 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:24:30",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0006,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:24:48,314 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:24:48",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0016,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:25:18,314 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:25:18",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0016,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:25:25,050 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:25:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0021,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:25:25,059 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:25:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:25:25,062 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:25:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:25:48,313 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:25:48",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0015,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:26:18,313 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:26:18",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0015,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:26:25,047 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:26:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0014,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:26:25,056 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:26:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0013,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:26:25,060 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:26:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0014,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:26:48,312 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:26:48",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0016,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:27:18,314 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:27:18",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:27:25,055 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:27:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0019,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:27:25,064 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:27:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0019,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:27:25,068 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:27:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0014,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:27:49,046 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:27:49",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0014,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:28:19,045 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:28:19",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:28:25,045 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:28:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:28:25,051 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:28:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0014,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:28:25,055 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:28:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:29:12,939 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:29:12",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0006,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:29:25,046 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:29:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0013,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:29:25,058 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:29:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0043,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:29:25,059 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:29:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0038,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:29:25,060 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:29:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0008,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:29:25,064 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:29:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0013,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:29:40,950 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:29:40",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:29:51,136 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:29:51",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/help",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:29:53,432 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:29:53",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0046,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:30:10,953 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:30:10",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0014,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:30:25,048 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:30:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0018,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:30:25,057 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:30:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0037,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:30:25,059 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:30:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0046,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:30:25,065 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:30:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0018,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:30:25,069 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:30:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0017,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:30:40,954 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:30:40",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0022,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:31:10,950 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:31:10",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0006,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:31:25,044 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:31:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:31:25,046 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:31:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:31:25,046 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:31:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.001,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:31:25,048 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:31:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0004,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:31:25,048 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:31:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0004,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:31:41,042 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:31:41",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0006,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:32:11,083 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:32:11",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0018,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:32:25,044 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:32:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0008,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:32:25,049 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:32:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0015,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:32:25,050 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:32:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:32:25,052 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:32:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0008,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:32:25,054 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:32:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:32:41,044 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:32:41",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0008,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:32:54,597 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:32:54",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "curl/8.5.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:33:25,054 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:33:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0022,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:33:25,056 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:33:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0039,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:33:25,078 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:33:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0021,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:33:25,079 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:33:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0027,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:33:25,081 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:33:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0009,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:33:25,082 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:33:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:34:55,309 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:34:55",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:34:56,384 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:34:56",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/docs",
+  "status_code": 200,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:34:56,442 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:34:56",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/openapi.json",
+  "status_code": 200,
+  "process_time": 0.0034,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:35:01,396 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:35:01",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 0.0003,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:35:17,913 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:35:17",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 16.5134,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\"],\"options\":{\"enable_batch_processing\":false,\"max_tokens\":2000,\"temperature\":0.1}}"
+}
+2025-08-08 16:35:19,099 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:35:19",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:35:25,055 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:35:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0053,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:35:25,057 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:35:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0061,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:35:25,067 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:35:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.001,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:35:25,072 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:35:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:35:25,074 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:35:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0009,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:35:26,046 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:35:26",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0017,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:43:25,071 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:43:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0028,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:43:27,538 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:43:27",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:43:28,651 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:43:28",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/docs",
+  "status_code": 200,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:43:28,706 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:43:28",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/openapi.json",
+  "status_code": 200,
+  "process_time": 0.0026,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:43:58,045 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:43:58",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0016,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:25,047 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0014,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:28,046 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:28",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0015,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:37,027 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:37",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/docs",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:37,090 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:37",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/openapi.json",
+  "status_code": 200,
+  "process_time": 0.0003,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:43,702 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:43",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/",
+  "status_code": 200,
+  "process_time": 0.0059,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:46,323 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:46",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/docs",
+  "status_code": 200,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:46,381 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:46",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/openapi.json",
+  "status_code": 200,
+  "process_time": 0.0003,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:48,946 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:48",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/docs",
+  "status_code": 200,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:49,000 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:49",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/openapi.json",
+  "status_code": 200,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:53,324 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:53",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/help",
+  "status_code": 200,
+  "process_time": 0.0009,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:44:58,045 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:44:58",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0013,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:45:25,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:45:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:45:28,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:45:28",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:45:58,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:45:58",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:46:03,432 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:46:03",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "curl/8.5.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:46:08,504 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:46:08",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0006,
+  "user_agent": "curl/8.5.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:46:18,408 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:46:18",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 0.0001,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:46:18,411 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:46:18",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 422,
+  "process_time": 0.0009,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"document_url\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"message\":\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\"}"
+}
+2025-08-08 16:46:25,049 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:46:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0025,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:46:25,323 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:46:25",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:46:25,330 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:46:25",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 422,
+  "process_time": 0.0015,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"document_url\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"message\":\"What is the waiting period for pre-existing diseases (PED) to be covered?\"}"
+}
+2025-08-08 16:46:28,045 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:46:28",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0013,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:47:25,050 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:47:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0031,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:47:25,051 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:47:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0037,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:47:29,436 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:47:29",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 422,
+  "process_time": 0.0005,
+  "user_agent": "curl/8.5.0",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\n    \"documents\": [\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\"],\n    \"questions\": [\"What is the grace period for premium payment?\"],\n    \"options\": {\n      \"enable_batch_processing\": false,\n      \"max_tokens\": 2000,\n      \"temperature\": 0.1\n    }\n  }"
+}
+2025-08-08 16:48:17,475 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:48:17",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 13.0886,
+  "user_agent": "curl/8.5.0",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\n    \"documents\": \"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\n    \"questions\": [\"What is the grace period for premium payment?\"]\n  }"
+}
+2025-08-08 16:48:25,049 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:48:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0027,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:48:25,051 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:48:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0044,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:48:39,839 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:48:39",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:48:47,487 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:48:47",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 7.6455,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?\"]}"
+}
+2025-08-08 16:49:25,050 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:49:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0031,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:49:25,051 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:49:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0035,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:50:25,050 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:50:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0029,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:50:25,052 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:50:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0043,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:51:25,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:51:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0009,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:51:25,043 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:51:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0012,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:52:25,049 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:52:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0037,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:52:25,051 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:52:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0047,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:53:25,050 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:53:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0027,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:53:25,053 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:53:25",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v2/",
+  "status_code": 200,
+  "process_time": 0.0048,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:53:46,020 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:53:46",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 0.0001,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 16:53:53,035 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 16:53:53",
+  "client_ip": "127.0.0.1",
+  "method": "POST",
+  "url": "http://localhost:8000/api/v2/hackrx/run",
+  "status_code": 200,
+  "process_time": 7.0138,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "{\"documents\":\"https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D\",\"questions\":[\"What is the waiting period for pre-existing diseases (PED) to be covered?\"]}"
+}

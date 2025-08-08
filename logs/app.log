@@ -535,3 +535,163 @@
 2025-08-08 16:11:42,689 - app - INFO - V1 root endpoint accessed
 2025-08-08 16:12:01,517 - app - INFO - V1 root endpoint accessed
 2025-08-08 16:12:02,697 - app - INFO - Root endpoint accessed - serving HTML guide
+2025-08-08 16:18:27,539 - app - INFO - HackRX API application started
+2025-08-08 16:18:32,996 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:19:02,994 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:19:25,046 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:19:32,993 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:20:02,993 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:21:13,723 - app - INFO - HackRX API application started
+2025-08-08 16:21:18,748 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:21:24,087 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:21:25,045 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:21:44,043 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:21:55,043 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:22:14,045 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:22:25,046 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:22:25,050 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:22:25,051 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:22:44,043 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:22:55,043 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:23:14,043 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:23:25,046 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:23:25,054 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:23:25,057 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:23:30,736 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:23:55,043 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:24:00,739 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:24:25,048 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:24:25,054 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:24:25,058 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:24:30,737 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:24:48,313 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:25:18,313 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:25:25,049 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:25:25,058 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:25:25,061 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:25:48,312 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:26:18,312 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:26:25,046 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:26:25,056 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:26:25,059 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:26:48,311 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:27:18,313 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:27:25,053 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:27:25,063 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:27:25,067 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:27:49,045 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:28:19,044 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:28:25,045 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:28:25,050 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:28:25,054 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:29:12,938 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:29:25,046 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:29:25,056 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:29:25,057 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:29:25,060 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:29:25,063 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:29:40,949 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:29:51,136 - app - INFO - Help endpoint accessed
+2025-08-08 16:29:53,428 - app - INFO - Root endpoint accessed - serving HTML guide
+2025-08-08 16:30:10,953 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:30:25,047 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:30:25,055 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:30:25,056 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:30:25,064 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:30:25,068 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:30:40,953 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:31:10,950 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:31:25,043 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:31:25,045 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:31:25,046 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:31:25,047 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:31:25,048 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:31:41,042 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:32:11,083 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:32:25,043 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:32:25,048 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:32:25,049 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:32:25,052 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:32:25,054 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:32:41,043 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:32:54,596 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:33:25,053 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:33:25,054 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:33:25,076 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:33:25,077 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:33:25,080 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:33:25,082 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:34:50,083 - app - INFO - HackRX API application started
+2025-08-08 16:34:55,308 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:35:01,400 - app - INFO - Authentication disabled - allowing request
+2025-08-08 16:35:01,401 - app - INFO - HackRX endpoint called with 1 questions - API Key: Authentication Disabled
+2025-08-08 16:35:01,401 - app - INFO - Document URL: https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D
+2025-08-08 16:35:15,166 - app - INFO - Document loaded successfully
+2025-08-08 16:35:15,166 - app - INFO - Batching question 1/1: What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?
+2025-08-08 16:35:17,911 - app - INFO - Inference completed successfully
+2025-08-08 16:35:17,912 - app - INFO - Answer for question 1: According to the policy, the Grace Period is thirty days following the premium due date, during which you can pay the premium to keep your policy active without losing benefits related to waiting periods and pre-existing disease coverage....
+2025-08-08 16:35:17,912 - app - INFO - Successfully processed all 1 questions
+2025-08-08 16:35:19,098 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:35:25,054 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:35:25,054 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:35:25,066 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:35:25,072 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:35:25,074 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:35:26,045 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:43:22,209 - app - INFO - HackRX API application started
+2025-08-08 16:43:25,070 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:43:27,538 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:43:58,045 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:44:25,046 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:44:28,045 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:44:43,696 - app - INFO - Root endpoint accessed - serving HTML guide
+2025-08-08 16:44:53,324 - app - INFO - Help endpoint accessed
+2025-08-08 16:44:58,044 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:45:25,042 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:45:28,042 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:45:58,042 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:46:03,432 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:46:08,504 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:46:18,411 - app - INFO - Authentication disabled - allowing request
+2025-08-08 16:46:25,048 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:46:25,329 - app - INFO - Authentication disabled - allowing request
+2025-08-08 16:46:28,044 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:47:25,048 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:47:25,048 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:47:29,436 - app - INFO - Authentication disabled - allowing request
+2025-08-08 16:48:04,387 - app - INFO - Authentication disabled - allowing request
+2025-08-08 16:48:04,387 - app - INFO - HackRX endpoint called with 1 questions - API Key: Authentication Disabled
+2025-08-08 16:48:04,387 - app - INFO - Document URL: https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D
+2025-08-08 16:48:13,293 - app - INFO - Document loaded successfully
+2025-08-08 16:48:13,294 - app - INFO - Batching question 1/1: What is the grace period for premium payment?
+2025-08-08 16:48:17,474 - app - INFO - Inference completed successfully
+2025-08-08 16:48:17,474 - app - INFO - Answer for question 1: According to the context, the Grace Period is thirty days following the premium due date, during which you can pay the premium to keep your policy active without losing any benefits. However, no coverage is provided during periods when premium is not received....
+2025-08-08 16:48:17,474 - app - INFO - Successfully processed all 1 questions
+2025-08-08 16:48:25,047 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:48:25,048 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:48:39,843 - app - INFO - Authentication disabled - allowing request
+2025-08-08 16:48:39,843 - app - INFO - HackRX endpoint called with 1 questions - API Key: Authentication Disabled
+2025-08-08 16:48:39,843 - app - INFO - Document URL: https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D
+2025-08-08 16:48:44,503 - app - INFO - Document loaded successfully
+2025-08-08 16:48:44,503 - app - INFO - Batching question 1/1: What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?
+2025-08-08 16:48:47,487 - app - INFO - Inference completed successfully
+2025-08-08 16:48:47,487 - app - INFO - Answer for question 1: According to the policy, the Grace Period is thirty days following the premium due date, during which the policyholder can pay the premium to continue the policy without losing benefits related to waiting periods and pre-existing disease coverage....
+2025-08-08 16:48:47,487 - app - INFO - Successfully processed all 1 questions
+2025-08-08 16:49:25,048 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:49:25,049 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:50:25,048 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:50:25,050 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:51:25,043 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:51:25,043 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:52:25,048 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:52:25,048 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:53:25,049 - app - INFO - V1 root endpoint accessed
+2025-08-08 16:53:25,051 - app - INFO - V2 root endpoint accessed
+2025-08-08 16:53:46,022 - app - INFO - Authentication disabled - allowing request
+2025-08-08 16:53:46,022 - app - INFO - HackRX endpoint called with 1 questions - API Key: Authentication Disabled
+2025-08-08 16:53:46,022 - app - INFO - Document URL: https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D
+2025-08-08 16:53:50,535 - app - INFO - Document loaded successfully
+2025-08-08 16:53:50,535 - app - INFO - Batching question 1/1: What is the waiting period for pre-existing diseases (PED) to be covered?
+2025-08-08 16:53:53,034 - app - INFO - Inference completed successfully
+2025-08-08 16:53:53,034 - app - INFO - Answer for question 1: Based on the context, pre-existing diseases have a waiting period of 36 months (3 years) of continuous coverage from the policy inception date, after which they will be covered provided they were declared at the time of application and accepted by the insurer....
+2025-08-08 16:53:53,034 - app - INFO - Successfully processed all 1 questions
