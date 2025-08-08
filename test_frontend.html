@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Connection Test</title>
+</head>
+<body>
+    <h1>HackRX Frontend Connection Test</h1>
+    <button onclick="testConnection()">Test API Connection</button>
+    <div id="result"></div>
+
+    <script>
+        async function testConnection() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Testing...';
+            
+            try {
+                // Test the no-cors approach
+                const response = await fetch('http://localhost:8000/api/v1/', {
+                    method: 'GET',
+                    mode: 'no-cors'
+                });
+                
+                resultDiv.innerHTML = '<span style="color: green;">✅ SUCCESS: Server is reachable!</span>';
+                console.log('Connection test successful');
+                
+            } catch (error) {
+                resultDiv.innerHTML = '<span style="color: red;">❌ FAILED: ' + error.message + '</span>';
+                console.error('Connection test failed:', error);
+            }
+        }
+        
+        // Auto-test on load
+        window.onload = () => {
+            setTimeout(testConnection, 1000);
+        };
+    </script>
+</body>
+</html> 

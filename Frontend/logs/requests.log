@@ -1,0 +1,180 @@
+2025-08-08 14:39:19,487 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:39:19",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 405,
+  "process_time": 0.0003,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:39:26,478 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:39:26",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 405,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:39:27,096 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:39:27",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 405,
+  "process_time": 0.0003,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:39:27,389 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:39:27",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 405,
+  "process_time": 0.0003,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:39:27,732 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:39:27",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 405,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:39:56,196 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:39:56",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 405,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:39:57,736 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:39:57",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 405,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:39:58,311 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:39:58",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 405,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:39:58,681 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:39:58",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 405,
+  "process_time": 0.0005,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:40:19,273 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:40:19",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0006,
+  "user_agent": "curl/8.5.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:40:41,366 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:40:41",
+  "client_ip": "127.0.0.1",
+  "method": "OPTIONS",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0002,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:40:41,372 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:40:41",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0009,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:40:46,539 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:40:46",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0007,
+  "user_agent": "curl/8.5.0",
+  "content_type": "unknown",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:42:57,606 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:42:57",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0032,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}
+2025-08-08 14:43:20,206 - INFO - REQUEST: {
+  "timestamp": "2025-08-08 14:43:20",
+  "client_ip": "127.0.0.1",
+  "method": "GET",
+  "url": "http://localhost:8000/api/v1/",
+  "status_code": 200,
+  "process_time": 0.0009,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "content_type": "application/json",
+  "authorization": null,
+  "request_body": "Body too large or empty"
+}

@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi import Request
+from fastapi.middleware.cors import CORSMiddleware
 from .api.v1.api import router as v1_router
 from .api.v2.api import router as v2_router
 from .api.hostfile.api import router as hostfile_router
@@ -20,6 +21,15 @@ app = FastAPI(
     title="HackRX API",
     description="API for HackRX project with LLM integration",
     version="1.0.0"
+)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins for development
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods including OPTIONS
+    allow_headers=["*"],  # Allow all headers
 )
 
 # Add request logging middleware

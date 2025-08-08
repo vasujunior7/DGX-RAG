@@ -3,176 +3,551 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HackRX - Document Processing Platform</title>
+    <meta name="description" content="HackRX - Advanced AI-Powered Document Processing Platform with RAG Technology" />
+    <meta name="keywords" content="AI, Document Processing, RAG, Machine Learning, NLP" />
+    <meta name="author" content="HackRX Team" />
+    <meta name="theme-color" content="#667eea" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <title>HackRX - Advanced Document Processing Platform</title>
     <style>
+      :root {
+        /* Modern Color Palette */
+        --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        --warning-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        --danger-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        
+        /* Neutral Colors */
+        --white: #ffffff;
+        --black: #000000;
+        --gray-50: #f9fafb;
+        --gray-100: #f3f4f6;
+        --gray-200: #e5e7eb;
+        --gray-300: #d1d5db;
+        --gray-400: #9ca3af;
+        --gray-500: #6b7280;
+        --gray-600: #4b5563;
+        --gray-700: #374151;
+        --gray-800: #1f2937;
+        --gray-900: #111827;
+        
+        /* Brand Colors */
+        --primary-50: #eff6ff;
+        --primary-100: #dbeafe;
+        --primary-200: #bfdbfe;
+        --primary-300: #93c5fd;
+        --primary-400: #60a5fa;
+        --primary-500: #3b82f6;
+        --primary-600: #2563eb;
+        --primary-700: #1d4ed8;
+        --primary-800: #1e40af;
+        --primary-900: #1e3a8a;
+        
+        /* Spacing */
+        --space-1: 0.25rem;
+        --space-2: 0.5rem;
+        --space-3: 0.75rem;
+        --space-4: 1rem;
+        --space-5: 1.25rem;
+        --space-6: 1.5rem;
+        --space-8: 2rem;
+        --space-10: 2.5rem;
+        --space-12: 3rem;
+        --space-16: 4rem;
+        --space-20: 5rem;
+        
+        /* Borders */
+        --border-radius-sm: 0.375rem;
+        --border-radius-md: 0.5rem;
+        --border-radius-lg: 0.75rem;
+        --border-radius-xl: 1rem;
+        --border-radius-2xl: 1.5rem;
+        --border-radius-3xl: 2rem;
+        
+        /* Shadows */
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        
+        /* Glass Morphism */
+        --glass-bg: rgba(255, 255, 255, 0.08);
+        --glass-border: rgba(255, 255, 255, 0.18);
+        --glass-backdrop: blur(20px);
+        
+        /* Transitions */
+        --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+        --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
 
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
       body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: var(--primary-gradient);
         min-height: 100vh;
-        color: #333;
+        color: var(--gray-800);
+        line-height: 1.6;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
       }
 
+      /* Animated Background */
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+          radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+          radial-gradient(circle at 40% 80%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
+        animation: backgroundShift 20s ease-in-out infinite;
+        z-index: -2;
+      }
+
+      @keyframes backgroundShift {
+        0%, 100% {
+          transform: scale(1) rotate(0deg);
+          opacity: 0.3;
+        }
+        50% {
+          transform: scale(1.1) rotate(180deg);
+          opacity: 0.5;
+        }
+      }
+
+      /* Container System */
       .container {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 var(--space-6);
+        position: relative;
+        z-index: 1;
       }
 
+      /* Modern Glass Card */
+      .glass-card {
+        background: var(--glass-bg);
+        backdrop-filter: var(--glass-backdrop);
+        -webkit-backdrop-filter: var(--glass-backdrop);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--border-radius-3xl);
+        box-shadow: var(--shadow-2xl);
+        transition: all var(--transition-normal);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .glass-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        z-index: 1;
+      }
+
+      .glass-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-2xl), 0 0 40px rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* Header Section */
       .header {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 30px;
+        padding: var(--space-16) 0 var(--space-12);
         text-align: center;
-        margin-bottom: 30px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        position: relative;
       }
 
-      .header h1 {
-        font-size: 3em;
-        margin-bottom: 10px;
-        background: linear-gradient(45deg, #667eea, #764ba2);
+      .header-content {
+        padding: var(--space-12) var(--space-8);
+        position: relative;
+        z-index: 2;
+      }
+
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-4);
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: var(--space-6);
+        background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #e0f2fe 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+        animation: logoGlow 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes logoGlow {
+        from {
+          filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+        }
+        to {
+          filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.6));
+        }
+      }
+
+      .logo-icon {
+        font-size: 4rem;
+        background: var(--success-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: iconPulse 2s ease-in-out infinite;
+      }
+
+      @keyframes iconPulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+
+      .header-subtitle {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: var(--space-8);
+        letter-spacing: 0.5px;
+      }
+
+      .header-description {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.8);
+        max-width: 600px;
+        margin: 0 auto var(--space-8);
+        line-height: 1.7;
+      }
+
+      /* Status Indicator */
+      .status-container {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-3);
+        padding: var(--space-3) var(--space-6);
+        background: var(--glass-bg);
+        backdrop-filter: var(--glass-backdrop);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--border-radius-2xl);
+        font-weight: 500;
+        color: var(--white);
+        transition: all var(--transition-normal);
+      }
+
+      .status-indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--primary-400);
+        position: relative;
+        animation: statusPulse 2s ease-in-out infinite;
+      }
+
+      .status-indicator::after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: inherit;
+        opacity: 0.3;
+        animation: statusRipple 2s ease-in-out infinite;
+      }
+
+      @keyframes statusPulse {
+        0%, 100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.7;
+          transform: scale(1.2);
+        }
+      }
+
+      @keyframes statusRipple {
+        0% {
+          transform: scale(0.8);
+          opacity: 0.8;
+        }
+        100% {
+          transform: scale(2);
+          opacity: 0;
+        }
+      }
+
+      .status-indicator.online {
+        background: #10b981;
+      }
+
+      .status-indicator.offline {
+        background: #ef4444;
+      }
+
+      .status-indicator.loading {
+        background: #f59e0b;
+      }
+
+      /* Main Layout */
+      .main-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-8);
+        margin-bottom: var(--space-12);
+        align-items: start;
+      }
+
+      /* Card Headers */
+      .card-header {
+        padding: var(--space-8) var(--space-8) var(--space-6);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+      }
+
+      .card-title {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--white);
+        margin: 0;
+      }
+
+      .card-icon {
+        font-size: 1.5rem;
+        background: var(--success-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
       }
 
-      .header p {
-        font-size: 1.2em;
-        color: #666;
-        margin-bottom: 20px;
+      /* Card Body */
+      .card-body {
+        padding: var(--space-8);
       }
 
-      .main-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        margin-bottom: 30px;
-      }
-
-      .card {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 30px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-      }
-
-      .card h2 {
-        color: #2c3e50;
-        margin-bottom: 20px;
-        font-size: 1.8em;
-      }
-
+      /* Form Styling */
       .form-group {
-        margin-bottom: 20px;
+        margin-bottom: var(--space-6);
       }
 
-      .form-group label {
+      .form-label {
         display: block;
-        margin-bottom: 8px;
-        font-weight: 600;
-        color: #2c3e50;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: var(--space-2);
+        letter-spacing: 0.025em;
       }
 
-      .form-group input,
-      .form-group textarea {
+      .form-input {
         width: 100%;
-        padding: 12px 16px;
-        border: 2px solid #e1e8ed;
-        border-radius: 10px;
-        font-size: 16px;
-        transition: border-color 0.3s, box-shadow 0.3s;
+        padding: var(--space-4) var(--space-5);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: var(--border-radius-xl);
+        color: var(--white);
+        font-size: 1rem;
+        font-weight: 400;
+        transition: all var(--transition-normal);
+        backdrop-filter: blur(10px);
       }
 
-      .form-group input:focus,
-      .form-group textarea:focus {
+      .form-input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .form-input:focus {
         outline: none;
-        border-color: #3498db;
-        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        border-color: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+        transform: translateY(-1px);
       }
 
-      .questions-container {
-        max-height: 300px;
-        overflow-y: auto;
+      .form-input:hover:not(:focus) {
+        border-color: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.07);
       }
 
-      .question-item {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 10px;
-        align-items: center;
-      }
-
-      .question-item input {
-        flex: 1;
-      }
-
+      /* Button System */
       .btn {
-        background: linear-gradient(45deg, #3498db, #2980b9);
-        color: white;
-        border: none;
-        padding: 12px 24px;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        justify-content: center;
+        gap: var(--space-2);
+        padding: var(--space-4) var(--space-6);
+        border: none;
+        border-radius: var(--border-radius-xl);
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all var(--transition-normal);
+        position: relative;
+        overflow: hidden;
+        user-select: none;
+        white-space: nowrap;
+      } 
+
+      .btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left var(--transition-slow);
       }
 
-      .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+      .btn:hover::before {
+        left: 100%;
       }
 
       .btn:active {
-        transform: translateY(0);
+        transform: translateY(1px);
+      }
+
+      .btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      .btn:disabled:hover::before {
+        left: -100%;
+      }
+
+      /* Button Variants */
+      .btn-primary {
+        background: var(--primary-gradient);
+        color: var(--white);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-xl);
       }
 
       .btn-secondary {
-        background: #e74c3c;
+        background: var(--danger-gradient);
+        color: var(--white);
+        box-shadow: var(--shadow-lg);
       }
 
       .btn-secondary:hover {
-        box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-xl);
       }
 
-      .btn-add {
-        background: #27ae60;
-        margin-top: 10px;
+      .btn-success {
+        background: var(--warning-gradient);
+        color: var(--white);
+        box-shadow: var(--shadow-lg);
       }
 
-      .btn-add:hover {
-        box-shadow: 0 8px 25px rgba(39, 174, 96, 0.3);
+      .btn-success:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-xl);
       }
 
-      .loading {
-        display: none;
+      .btn-ghost {
+        background: transparent;
+        color: var(--white);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .btn-ghost:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.5);
+        transform: translateY(-2px);
+      }
+
+      /* Loading States */
+      .loading-container {
         text-align: center;
-        padding: 20px;
+        padding: var(--space-8);
+        display: none;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all var(--transition-normal);
       }
 
-      .loading.show {
+      .loading-container.show {
         display: block;
+        opacity: 1;
+        transform: translateY(0);
       }
 
-      .spinner {
-        border: 4px solid #f3f3f3;
-        border-top: 4px solid #3498db;
+      .loading-spinner {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto var(--space-4);
+        position: relative;
+      }
+
+      .loading-spinner::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 3px solid rgba(255, 255, 255, 0.2);
+        border-top: 3px solid var(--white);
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
         animation: spin 1s linear infinite;
-        margin: 0 auto 10px;
+      }
+
+      .loading-spinner::after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        border: 2px solid transparent;
+        border-top: 2px solid rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        animation: spin 1.5s linear infinite reverse;
       }
 
       @keyframes spin {
@@ -184,489 +559,1931 @@
         }
       }
 
-      .results {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 30px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        display: none;
+      .loading-text {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.1rem;
+        font-weight: 500;
+        animation: loadingPulse 2s ease-in-out infinite;
       }
 
-      .results.show {
+      @keyframes loadingPulse {
+        0%, 100% {
+          opacity: 0.7;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      /* Questions Container */
+      .questions-container {
+        max-height: 400px;
+        overflow-y: auto;
+        padding: var(--space-2);
+        border-radius: var(--border-radius-lg);
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .questions-container::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .questions-container::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+      }
+
+      .questions-container::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 3px;
+      }
+
+      .questions-container::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      .question-item {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        margin-bottom: var(--space-4);
+        padding: var(--space-3);
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: var(--border-radius-lg);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all var(--transition-normal);
+        animation: questionSlideIn 0.3s ease-out;
+      }
+
+      @keyframes questionSlideIn {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .question-item:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-1px);
+      }
+
+      .question-item .form-input {
+        flex: 1;
+        margin: 0;
+        background: transparent;
+        border: none;
+        padding: var(--space-2) var(--space-3);
+      }
+
+      .question-item .form-input:focus {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .question-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: var(--success-gradient);
+        border-radius: 50%;
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+      }
+
+      .btn-remove {
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        border-radius: 50%;
+        background: var(--danger-gradient);
+        flex-shrink: 0;
+        font-size: 1.1rem;
+      }
+
+      /* Results Section */
+      .results-container {
+        margin-top: var(--space-12);
+        display: none;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all var(--transition-slow);
+      }
+
+      .results-container.show {
         display: block;
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .results-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: var(--space-6);
+        padding: 0 var(--space-2);
+      }
+
+      .results-title {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--white);
+      }
+
+      .results-actions {
+        display: flex;
+        gap: var(--space-3);
       }
 
       .answer-item {
-        background: #f8f9fa;
-        border-left: 4px solid #3498db;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 0 10px 10px 0;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 4px solid;
+        border-left-color: var(--primary-400);
+        border-radius: var(--border-radius-xl);
+        padding: var(--space-6);
+        margin-bottom: var(--space-6);
+        transition: all var(--transition-normal);
+        animation: answerSlideIn 0.5s ease-out;
       }
 
-      .answer-item h4 {
-        color: #2c3e50;
-        margin-bottom: 10px;
+      @keyframes answerSlideIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
-      .answer-item p {
-        line-height: 1.6;
-        color: #555;
+      .answer-item:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
       }
 
-      .error {
-        background: #e74c3c;
-        color: white;
-        padding: 15px;
-        border-radius: 10px;
-        margin-bottom: 20px;
+      .answer-question {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: var(--space-4);
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-3);
+      }
+
+      .answer-text {
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.7;
+        font-size: 1rem;
+        padding-left: var(--space-8);
+      }
+
+      .answer-meta {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
+        margin-top: var(--space-4);
+        padding-top: var(--space-4);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      /* Message System */
+      .message {
+        padding: var(--space-4) var(--space-6);
+        border-radius: var(--border-radius-xl);
+        margin-bottom: var(--space-4);
         display: none;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all var(--transition-normal);
+        position: relative;
+        overflow: hidden;
       }
 
-      .error.show {
+      .message.show {
         display: block;
+        opacity: 1;
+        transform: translateY(0);
       }
 
-      .success {
-        background: #27ae60;
-        color: white;
-        padding: 15px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        display: none;
+      .message::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: currentColor;
       }
 
-      .success.show {
-        display: block;
+      .message-success {
+        background: rgba(16, 185, 129, 0.2);
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        color: #10b981;
       }
 
+      .message-error {
+        background: rgba(239, 68, 68, 0.2);
+        border: 1px solid rgba(239, 68, 68, 0.3);
+        color: #ef4444;
+      }
+
+      .message-warning {
+        background: rgba(245, 158, 11, 0.2);
+        border: 1px solid rgba(245, 158, 11, 0.3);
+        color: #f59e0b;
+      }
+
+      .message-info {
+        background: rgba(59, 130, 246, 0.2);
+        border: 1px solid rgba(59, 130, 246, 0.3);
+        color: #3b82f6;
+      }
+
+      /* Footer */
       .footer {
-        background: rgba(44, 62, 80, 0.95);
-        backdrop-filter: blur(10px);
-        color: white;
+        margin-top: var(--space-16);
+        padding: var(--space-8);
         text-align: center;
-        padding: 20px;
-        border-radius: 20px;
-        margin-top: 30px;
+        background: var(--glass-bg);
+        backdrop-filter: var(--glass-backdrop);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--border-radius-3xl);
+        color: rgba(255, 255, 255, 0.8);
       }
 
-      .footer a {
-        color: #3498db;
+      .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-6);
+        margin-top: var(--space-4);
+        flex-wrap: wrap;
+      }
+
+      .footer-link {
+        color: rgba(255, 255, 255, 0.9);
         text-decoration: none;
+        padding: var(--space-2) var(--space-4);
+        border-radius: var(--border-radius-lg);
+        transition: all var(--transition-normal);
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
       }
 
-      .footer a:hover {
-        text-decoration: underline;
+      .footer-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--white);
+        transform: translateY(-1px);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .container {
+          padding: 0 var(--space-4);
+        }
+        
+        .main-layout {
+          gap: var(--space-6);
+        }
       }
 
       @media (max-width: 768px) {
-        .main-content {
+        .main-layout {
           grid-template-columns: 1fr;
+          gap: var(--space-6);
         }
 
-        .header h1 {
-          font-size: 2em;
+        .header {
+          padding: var(--space-12) 0 var(--space-8);
         }
 
+        .header-content {
+          padding: var(--space-8) var(--space-4);
+        }
+
+        .logo {
+          font-size: 2.5rem;
+        }
+
+        .logo-icon {
+          font-size: 3rem;
+        }
+
+        .header-subtitle {
+          font-size: 1.2rem;
+        }
+
+        .header-description {
+          font-size: 1rem;
+        }
+
+        .card-header {
+          padding: var(--space-6) var(--space-6) var(--space-4);
+        }
+
+        .card-body {
+          padding: var(--space-6);
+        }
+
+        .card-title {
+          font-size: 1.3rem;
+        }
+
+        .results-header {
+          flex-direction: column;
+          align-items: stretch;
+          gap: var(--space-4);
+        }
+
+        .results-actions {
+          justify-content: center;
+        }
+
+        .footer-links {
+          flex-direction: column;
+          gap: var(--space-3);
+        }
+      }
+
+      @media (max-width: 480px) {
         .container {
-          padding: 10px;
+          padding: 0 var(--space-3);
+        }
+
+        .header {
+          padding: var(--space-8) 0 var(--space-6);
+        }
+
+        .logo {
+          font-size: 2rem;
+          flex-direction: column;
+          gap: var(--space-2);
+        }
+
+        .logo-icon {
+          font-size: 2.5rem;
+        }
+
+        .btn {
+          padding: var(--space-3) var(--space-4);
+          font-size: 0.9rem;
+        }
+
+        .question-item {
+          flex-direction: column;
+          align-items: stretch;
+          gap: var(--space-2);
+        }
+
+        .question-number {
+          align-self: flex-start;
+        }
+
+        .answer-question {
+          font-size: 1.1rem;
+        }
+
+        .answer-text {
+          padding-left: 0;
         }
       }
 
-      .status-indicator {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        background: #27ae60;
-        border-radius: 50%;
-        margin-right: 8px;
-        animation: pulse 2s infinite;
-      }
-
-      @keyframes pulse {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0.5;
-        }
-        100% {
-          opacity: 1;
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
         }
       }
 
-      .api-status {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 10px 20px;
-        border-radius: 25px;
-        display: inline-block;
-        margin-top: 10px;
+      /* Dark mode support */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --glass-bg: rgba(255, 255, 255, 0.05);
+          --glass-border: rgba(255, 255, 255, 0.1);
+        }
+      }
+
+      /* High contrast mode */
+      @media (prefers-contrast: high) {
+        .glass-card {
+          border-width: 2px;
+        }
+        
+        .form-input {
+          border-width: 2px;
+        }
+        
+        .btn {
+          border: 2px solid transparent;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <h1>🚀 HackRX</h1>
-        <p>AI-Powered Document Processing Platform</p>
-        <div class="api-status">
-          <span class="status-indicator"></span>
-          API Status: <span id="api-status">Checking...</span>
+      <!-- Header Section -->
+      <header class="header">
+        <div class="header-content glass-card">
+          <div class="logo">
+            <i class="fas fa-rocket logo-icon"></i>
+            <span>HackRX</span>
         </div>
+          <p class="header-subtitle">Advanced AI-Powered Document Processing</p>
+          <p class="header-description">
+            Transform your documents into intelligent insights using cutting-edge RAG technology. 
+            Upload any document and ask questions to get precise, context-aware answers powered by advanced AI models.
+          </p>
+          <div class="status-container">
+            <div class="status-indicator" id="status-indicator"></div>
+            <span>API Status: <span id="api-status-text">Checking...</span></span>
+      </div>
+        </div>
+      </header>
+
+      <!-- Message System -->
+      <div id="success-message" class="message message-success">
+        <i class="fas fa-check-circle"></i>
+        <span id="success-text"></span>
+      </div>
+      
+      <div id="error-message" class="message message-error">
+        <i class="fas fa-exclamation-circle"></i>
+        <span id="error-text"></span>
+      </div>
+      
+      <div id="warning-message" class="message message-warning">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span id="warning-text"></span>
       </div>
 
-      <div id="error-message" class="error"></div>
-      <div id="success-message" class="success"></div>
-
-      <div class="main-content">
-        <div class="card">
-          <h2>📄 Document & Questions</h2>
-          <form id="document-form">
+      <!-- Main Content -->
+      <main class="main-layout">
+        <!-- Document Processing Card -->
+        <section class="glass-card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <i class="fas fa-file-alt card-icon"></i>
+              Document Processing
+            </h2>
+          </div>
+          <div class="card-body">
+            <form id="document-form" novalidate>
             <div class="form-group">
-              <label for="document-url">Document URL</label>
+                <label class="form-label">
+                  <i class="fas fa-cog"></i>
+                  API Version
+                </label>
+                <select id="api-version" class="form-input" style="cursor: pointer;">
+                  <option value="v1">Version 1 - Basic Processing</option>
+                  <option value="v2">Version 2 - Enhanced with Metadata</option>
+                </select>
+                <small class="form-help">
+                  V2 provides additional metadata and enhanced processing
+                </small>
+              </div>
+
+              <div class="form-group">
+                <label for="document-url" class="form-label">
+                  <i class="fas fa-link"></i>
+                  Document URL
+                </label>
               <input
                 type="url"
                 id="document-url"
+                  class="form-input"
                 placeholder="https://example.com/document.pdf"
                 required
+                  aria-describedby="url-help"
               />
+                <small id="url-help" class="form-help">
+                  Enter a direct link to your PDF, DOC, or TXT document
+                </small>
+                <button type="button" class="btn btn-ghost" onclick="loadSampleDocument()" style="margin-top: var(--space-2); font-size: 0.9rem; padding: var(--space-2) var(--space-4);">
+                  <i class="fas fa-clipboard"></i>
+                  Load Sample Document
+                </button>
             </div>
 
             <div class="form-group">
-              <label>Questions</label>
+                <label class="form-label">
+                  <i class="fas fa-question-circle"></i>
+                  Questions
+                </label>
               <div id="questions-container" class="questions-container">
-                <div class="question-item">
+                  <div class="question-item" data-question-index="0">
+                    <div class="question-number">1</div>
                   <input
                     type="text"
+                      class="form-input"
                     placeholder="What is the main topic of this document?"
                     required
+                      aria-label="Question 1"
                   />
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="removeQuestion(this)"
+                      class="btn btn-secondary btn-remove"
+                      onclick="removeQuestion(0)"
+                      aria-label="Remove question 1"
                   >
-                    ❌
+                      <i class="fas fa-times"></i>
                   </button>
                 </div>
               </div>
-              <button type="button" class="btn btn-add" onclick="addQuestion()">
-                ➕ Add Question
+                <button 
+                  type="button" 
+                  class="btn btn-success" 
+                  onclick="addQuestion()"
+                  id="add-question-btn"
+                >
+                  <i class="fas fa-plus"></i>
+                  Add Question
               </button>
             </div>
 
-            <button type="submit" class="btn" id="process-btn">
-              🔄 Process Document
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary" id="process-btn">
+                  <i class="fas fa-cogs"></i>
+                  <span>Process Document</span>
             </button>
+              </div>
           </form>
 
-          <div id="loading" class="loading">
-            <div class="spinner"></div>
-            <p>Processing your document...</p>
+            <!-- Loading State -->
+            <div id="loading-container" class="loading-container">
+              <div class="loading-spinner"></div>
+              <p class="loading-text">Processing your document...</p>
+              <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; margin-top: var(--space-2);">
+                This may take a few moments depending on document size
+              </p>
           </div>
         </div>
-
-        <div class="card">
-          <h2>📊 API Information</h2>
+        </section>
+        <!-- API Information Card -->
+        <section class="glass-card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <i class="fas fa-server card-icon"></i>
+              API Information
+            </h2>
+          </div>
+          <div class="card-body">
           <div class="form-group">
-            <label>Base URL</label>
+              <label for="base-url" class="form-label">
+                <i class="fas fa-globe"></i>
+                Base URL
+              </label>
             <input
               type="text"
               id="base-url"
+                class="form-input"
               value="http://localhost:8000"
+                aria-describedby="base-url-help"
+              />
+              <small id="base-url-help" class="form-help">
+                The base URL of your HackRX API server
+              </small>
+            </div>
+
+                        <div class="form-group">
+              <label class="form-label">
+                <i class="fas fa-route"></i>
+                Endpoint
+              </label>
+              <input
+                type="text"
+                class="form-input"
+                id="current-endpoint"
+                value="/api/v1/hackrx/run"
               readonly
+                aria-describedby="endpoint-help"
             />
+              <small id="endpoint-help" class="form-help">
+                Document processing endpoint (updates based on selected API version)
+              </small>
           </div>
 
           <div class="form-group">
-            <label>Endpoint</label>
-            <input type="text" value="/api/v1/hackrx/run" readonly />
+              <label class="form-label">
+                <i class="fas fa-exchange-alt"></i>
+                Method
+              </label>
+              <input
+                type="text"
+                class="form-input"
+                value="POST"
+                readonly
+                aria-describedby="method-help"
+              />
+              <small id="method-help" class="form-help">
+                HTTP method for API requests
+              </small>
           </div>
 
           <div class="form-group">
-            <label>Method</label>
-            <input type="text" value="POST" readonly />
+              <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+                <a href="http://localhost:8000" class="btn btn-ghost" target="_blank" rel="noopener">
+                  <i class="fas fa-book"></i>
+                  API Documentation
+                </a>
+                <button type="button" class="btn btn-ghost" onclick="testConnection()" id="test-connection-btn">
+                  <i class="fas fa-plug"></i>
+                  Test Connection
+                </button>
+                <button type="button" class="btn btn-ghost" onclick="validateApiKey()" id="validate-key-btn">
+                  <i class="fas fa-shield-alt"></i>
+                  Check Auth Status
+                </button>
+              </div>
           </div>
 
-          <div style="margin-top: 20px">
-            <a href="/docs" class="btn" target="_blank">📖 API Documentation</a>
-            <a href="/redoc" class="btn" target="_blank">📋 ReDoc</a>
+            <!-- API Features -->
+            <div class="form-group">
+              <label class="form-label">
+                <i class="fas fa-star"></i>
+                Features
+              </label>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-3); margin-top: var(--space-3);">
+                <div style="padding: var(--space-3); background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-lg); border: 1px solid rgba(255, 255, 255, 0.1);">
+                  <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2);">
+                    <i class="fas fa-brain" style="color: #10b981;"></i>
+                    <span style="font-weight: 500; color: var(--white);">AI-Powered</span>
+          </div>
+                  <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">Advanced NLP and RAG technology</p>
+        </div>
+                <div style="padding: var(--space-3); background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-lg); border: 1px solid rgba(255, 255, 255, 0.1);">
+                  <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2);">
+                    <i class="fas fa-file-pdf" style="color: #3b82f6;"></i>
+                    <span style="font-weight: 500; color: var(--white);">Multi-Format</span>
+      </div>
+                  <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">PDF, DOC, TXT support</p>
+                </div>
+                <div style="padding: var(--space-3); background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-lg); border: 1px solid rgba(255, 255, 255, 0.1);">
+                  <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2);">
+                    <i class="fas fa-bolt" style="color: #f59e0b;"></i>
+                    <span style="font-weight: 500; color: var(--white);">Real-time</span>
+                  </div>
+                  <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">Instant processing and responses</p>
+                </div>
+                <div style="padding: var(--space-3); background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-lg); border: 1px solid rgba(255, 255, 255, 0.1);">
+                  <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2);">
+                    <i class="fas fa-shield-alt" style="color: #ef4444;"></i>
+                    <span style="font-weight: 500; color: var(--white);">Secure</span>
+                  </div>
+                  <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">Enterprise-grade security</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Results Section -->
+      <section id="results-container" class="results-container">
+        <div class="glass-card">
+          <div class="results-header">
+            <h2 class="results-title">
+              <i class="fas fa-robot"></i>
+              AI Responses
+            </h2>
+            <div class="results-actions">
+              <button class="btn btn-ghost" onclick="exportResults()" id="export-btn">
+                <i class="fas fa-download"></i>
+                Export Results
+          </button>
+              <button class="btn btn-success" onclick="clearResults()" id="clear-btn">
+                <i class="fas fa-trash-alt"></i>
+                Clear Results
+          </button>
+        </div>
+          </div>
+          <div class="card-body">
+            <div id="answers-container">
+              <!-- Dynamic content will be inserted here -->
+      </div>
+
+            <!-- Results Summary -->
+            <div id="results-summary" style="margin-top: var(--space-6); padding: var(--space-4); background: rgba(255, 255, 255, 0.03); border-radius: var(--border-radius-lg); border: 1px solid rgba(255, 255, 255, 0.1); display: none;">
+              <h3 style="color: var(--white); margin-bottom: var(--space-3); display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-chart-line"></i>
+                Processing Summary
+              </h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-4);">
+                <div>
+                  <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">Questions Processed</div>
+                  <div style="font-size: 1.5rem; font-weight: 600; color: var(--white);" id="questions-count">0</div>
+                </div>
+                <div>
+                  <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">Processing Time</div>
+                  <div style="font-size: 1.5rem; font-weight: 600; color: var(--white);" id="processing-time">0s</div>
+                </div>
+                <div>
+                  <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">Document Size</div>
+                  <div style="font-size: 1.5rem; font-weight: 600; color: var(--white);" id="document-size">-</div>
+                </div>
+                <div>
+                  <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">Success Rate</div>
+                  <div style="font-size: 1.5rem; font-weight: 600; color: var(--white);" id="success-rate">100%</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="results" class="results">
-        <h2>🤖 AI Responses</h2>
-        <div id="answers-container"></div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div style="display: flex; align-items: center; justify-content: center; gap: var(--space-2); margin-bottom: var(--space-4);">
+            <i class="fas fa-rocket" style="font-size: 1.5rem; color: #10b981;"></i>
+            <span style="font-size: 1.2rem; font-weight: 600;">HackRX Platform</span>
+          </div>
+          <p>&copy; 2025 HackRX Platform | Built with ❤️ for intelligent document processing</p>
+          <div class="footer-links">
+            <a href="http://localhost:8000" class="footer-link" target="_blank" rel="noopener">
+              <i class="fas fa-book"></i>
+              API Documentation
+            </a>
+            <a href="https://github.com/vasujunior7/DGX-RAG" class="footer-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              GitHub Repository
+            </a>
+            <a href="http://localhost:8000/help" class="footer-link" target="_blank" rel="noopener">
+              <i class="fas fa-question-circle"></i>
+              Help & Support
+            </a>
+            <a href="#" class="footer-link" onclick="showAbout()">
+              <i class="fas fa-info-circle"></i>
+              About
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-        <div style="margin-top: 20px">
-          <button class="btn" onclick="exportResults()">
-            💾 Export Results
-          </button>
-          <button class="btn btn-add" onclick="clearResults()">
-            🗑️ Clear Results
+    <!-- About Modal (Hidden by default) -->
+    <div id="about-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000; backdrop-filter: blur(5px);">
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--glass-bg); backdrop-filter: var(--glass-backdrop); border: 1px solid var(--glass-border); border-radius: var(--border-radius-3xl); padding: var(--space-8); max-width: 500px; width: 90%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-6);">
+          <h2 style="color: var(--white); margin: 0;">About HackRX</h2>
+          <button onclick="hideAbout()" style="background: none; border: none; color: var(--white); font-size: 1.5rem; cursor: pointer;">
+            <i class="fas fa-times"></i>
           </button>
         </div>
-      </div>
-
-      <div class="footer">
-        <p>
-          &copy; 2025 HackRX Platform | Built with ❤️ for document processing
-        </p>
-        <p>
-          <a href="/docs">API Docs</a> |
-          <a href="https://github.com/vasujunior7/DGX-RAG">GitHub</a> |
-          <a href="/help">Help</a>
-        </p>
+        <div style="color: rgba(255, 255, 255, 0.9); line-height: 1.6;">
+          <p style="margin-bottom: var(--space-4);">
+            HackRX is an advanced AI-powered document processing platform that leverages cutting-edge Retrieval-Augmented Generation (RAG) technology to provide intelligent insights from your documents.
+          </p>
+          <p style="margin-bottom: var(--space-4);">
+            <strong>Key Features:</strong>
+          </p>
+          <ul style="margin-left: var(--space-4); margin-bottom: var(--space-4);">
+            <li>Multi-format document support (PDF, DOC, TXT)</li>
+            <li>Advanced natural language processing</li>
+            <li>Context-aware question answering</li>
+            <li>Real-time processing and responses</li>
+            <li>Modern, accessible user interface</li>
+          </ul>
+          <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+            Version 2.0 | Built with modern web technologies
+          </p>
+        </div>
       </div>
     </div>
 
     <script>
-      // Global variables
-      let currentResults = null;
+      // Enhanced Global State Management
+      class AppState {
+        constructor() {
+          this.currentResults = null;
+          this.questionCount = 1;
+          this.maxQuestions = 10;
+          this.isProcessing = false;
+          this.apiBaseUrl = 'http://localhost:8000';
+          this.processingStartTime = null;
+          this.apiConnected = false;
+          this.settings = this.loadSettings();
+        }
 
-      // Check API status on load
-      document.addEventListener("DOMContentLoaded", function () {
-        checkApiStatus();
-        setupFormHandlers();
-      });
-
-      // Check if API is running
-      async function checkApiStatus() {
-        try {
-          const baseUrl = document.getElementById("base-url").value;
-          const response = await fetch(`${baseUrl}/api/v1/`);
-
-          if (response.ok) {
-            document.getElementById("api-status").textContent = "Online";
-            document.querySelector(".status-indicator").style.background =
-              "#27ae60";
-          } else {
-            throw new Error("API not responding");
+        loadSettings() {
+          try {
+            const saved = localStorage.getItem('hackrx-settings');
+            return saved ? JSON.parse(saved) : {
+              baseUrl: 'http://localhost:8000',
+              autoSave: true,
+              theme: 'auto',
+              notifications: true
+            };
+          } catch (error) {
+            console.warn('Failed to load settings:', error);
+            return {
+              baseUrl: 'http://localhost:8000',
+              autoSave: true,
+              theme: 'auto',
+              notifications: true
+            };
           }
-        } catch (error) {
-          document.getElementById("api-status").textContent = "Offline";
-          document.querySelector(".status-indicator").style.background =
-            "#e74c3c";
-          showError(
-            "API is not accessible. Please make sure the server is running."
-          );
+        }
+
+        saveSettings() {
+          try {
+            localStorage.setItem('hackrx-settings', JSON.stringify(this.settings));
+          } catch (error) {
+            console.warn('Failed to save settings:', error);
+          }
+        }
+
+        updateSetting(key, value) {
+          this.settings[key] = value;
+          this.saveSettings();
         }
       }
 
-      // Setup form handlers
+      // Initialize global state
+      const appState = new AppState();
+
+      // Enhanced Message System
+      class MessageSystem {
+        static show(type, message, duration = 5000) {
+          const messageEl = document.getElementById(`${type}-message`);
+          const textEl = document.getElementById(`${type}-text`);
+          
+          if (!messageEl || !textEl) return;
+
+          textEl.textContent = message;
+          messageEl.classList.add('show');
+
+          // Auto-hide after duration
+          setTimeout(() => {
+            messageEl.classList.remove('show');
+          }, duration);
+
+          // Add accessibility announcement
+          this.announceToScreenReader(message);
+        }
+
+        static hide(type) {
+          const messageEl = document.getElementById(`${type}-message`);
+          if (messageEl) {
+            messageEl.classList.remove('show');
+          }
+        }
+
+        static hideAll() {
+          ['success', 'error', 'warning'].forEach(type => this.hide(type));
+        }
+
+        static announceToScreenReader(message) {
+          const announcement = document.createElement('div');
+          announcement.setAttribute('aria-live', 'polite');
+          announcement.setAttribute('aria-atomic', 'true');
+          announcement.className = 'sr-only';
+          announcement.textContent = message;
+          document.body.appendChild(announcement);
+          setTimeout(() => document.body.removeChild(announcement), 1000);
+        }
+      }
+
+      // Enhanced API Service
+      class ApiService {
+        constructor(baseUrl) {
+          this.baseUrl = baseUrl;
+          this.timeout = 30000; // 30 seconds
+          this.statusCache = null;
+          this.statusCacheTime = 0;
+        }
+
+        async makeRequest(endpoint, options = {}) {
+          const url = `${this.baseUrl}${endpoint}`;
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), this.timeout);
+
+          try {
+            // Use simple requests to avoid CORS preflight
+            const isSimpleRequest = !options.method || options.method === 'GET';
+            const headers = {};
+            
+            // Only add Content-Type for POST requests, and use simple content type
+            if (options.method === 'POST') {
+              headers['Content-Type'] = 'application/json';
+            }
+
+            const fetchOptions = {
+              method: options.method || 'GET',
+              signal: controller.signal,
+              mode: 'cors',
+              credentials: 'omit',
+              ...options
+            };
+
+            // Only add headers if we have them
+            if (Object.keys(headers).length > 0) {
+              fetchOptions.headers = headers;
+            }
+
+            const response = await fetch(url, fetchOptions);
+
+            clearTimeout(timeoutId);
+
+            if (!response.ok) {
+              let errorMessage;
+              try {
+                const errorData = await response.json();
+                errorMessage = errorData.detail || errorData.message || `HTTP ${response.status}: ${response.statusText}`;
+              } catch {
+                errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+              }
+              throw new Error(errorMessage);
+            }
+
+            return await response.json();
+          } catch (error) {
+            clearTimeout(timeoutId);
+            if (error.name === 'AbortError') {
+              throw new Error('Request timeout - please try again');
+            }
+            throw error;
+          }
+        }
+
+        async checkStatus() {
+          try {
+            // Cache status checks to reduce server load
+            const now = Date.now();
+            if (this.statusCache && (now - this.statusCacheTime) < 10000) { // 10 second cache
+              return { success: true, data: this.statusCache };
+            }
+
+            // Use simple GET request without any headers to avoid CORS preflight
+            const url = `${this.baseUrl}/api/v1/`;
+            const response = await fetch(url, {
+              method: 'GET',
+              mode: 'cors',
+              credentials: 'omit'
+            });
+
+            if (!response.ok) {
+              throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            const data = await response.json();
+            this.statusCache = data;
+            this.statusCacheTime = now;
+            return { success: true, data };
+          } catch (error) {
+            return { success: false, error: error.message };
+          }
+        }
+
+        async validateApiKey() {
+          try {
+            const url = `${this.baseUrl}/api/v1/auth/status`;
+            const response = await fetch(url, {
+              method: 'GET'
+            });
+
+            if (!response.ok) {
+              return { success: false, error: `HTTP ${response.status}: ${response.statusText}` };
+            }
+
+            const data = await response.json();
+            return { success: true, data };
+          } catch (error) {
+            return { success: false, error: error.message };
+          }
+        }
+
+        async processDocument(documentUrl, questions, apiVersion = 'v1') {
+          try {
+            const url = `${this.baseUrl}/api/${apiVersion}/hackrx/run`;
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), this.timeout);
+
+            const requestBody = {
+              documents: documentUrl,
+              questions: questions
+            };
+
+            // Add V2 specific options if using V2 API
+            if (apiVersion === 'v2') {
+              requestBody.options = {
+                enable_batch_processing: false,
+                max_tokens: 2000,
+                temperature: 0.1
+              };
+            }
+
+            // Use proper JSON content type - backend should handle CORS
+            const response = await fetch(url, {
+              method: 'POST',
+              signal: controller.signal,
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(requestBody)
+            });
+
+            clearTimeout(timeoutId);
+
+            if (!response.ok) {
+              let errorMessage;
+              try {
+                const errorData = await response.json();
+                errorMessage = errorData.detail || errorData.message || `HTTP ${response.status}: ${response.statusText}`;
+                
+                // Handle CORS/OPTIONS errors specifically
+                if (response.status === 405 && errorMessage.includes('Method Not Allowed')) {
+                  errorMessage = 'Server does not support CORS preflight. This is a backend configuration issue.';
+                }
+              } catch {
+                errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+              }
+              throw new Error(errorMessage);
+            }
+
+            const data = await response.json();
+            return { success: true, data };
+          } catch (error) {
+            if (error.name === 'AbortError') {
+              return { success: false, error: 'Request timeout - please try again' };
+            }
+            
+            // Handle network errors more gracefully
+            if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
+              return { success: false, error: 'Network error - please check if the API server is running on port 8000' };
+            }
+            
+            return { success: false, error: error.message };
+          }
+        }
+      }
+
+      // Initialize API service
+      let apiService = new ApiService(appState.settings.baseUrl);
+
+      // Enhanced UI Controller
+      class UIController {
+        static updateApiStatus(isOnline, message = '') {
+          const indicator = document.getElementById('status-indicator');
+          const statusText = document.getElementById('api-status-text');
+          
+          if (indicator && statusText) {
+            indicator.className = `status-indicator ${isOnline ? 'online' : 'offline'}`;
+            statusText.textContent = isOnline ? 'Online' : 'Offline';
+            
+            if (message) {
+              statusText.textContent += ` - ${message}`;
+            }
+          }
+        }
+
+        static setLoadingState(isLoading) {
+          const loadingContainer = document.getElementById('loading-container');
+          const processBtn = document.getElementById('process-btn');
+          
+          if (loadingContainer) {
+            loadingContainer.classList.toggle('show', isLoading);
+          }
+          
+          if (processBtn) {
+            processBtn.disabled = isLoading;
+            const icon = processBtn.querySelector('i');
+            const text = processBtn.querySelector('span');
+            
+            if (isLoading) {
+              if (icon) icon.className = 'fas fa-spinner fa-spin';
+              if (text) text.textContent = 'Processing...';
+            } else {
+              if (icon) icon.className = 'fas fa-cogs';
+              if (text) text.textContent = 'Process Document';
+            }
+          }
+          
+          appState.isProcessing = isLoading;
+        }
+
+        static updateQuestionNumbers() {
+          const questionItems = document.querySelectorAll('.question-item');
+          questionItems.forEach((item, index) => {
+            const numberEl = item.querySelector('.question-number');
+            const inputEl = item.querySelector('input');
+            const removeBtn = item.querySelector('.btn-remove');
+            
+            if (numberEl) numberEl.textContent = index + 1;
+            if (inputEl) inputEl.setAttribute('aria-label', `Question ${index + 1}`);
+            if (removeBtn) {
+              removeBtn.setAttribute('aria-label', `Remove question ${index + 1}`);
+              removeBtn.onclick = () => removeQuestion(index);
+            }
+            
+            item.setAttribute('data-question-index', index);
+          });
+          
+          appState.questionCount = questionItems.length;
+        }
+
+        static showResults(questions, answers, processingTime, metadata = null) {
+          const resultsContainer = document.getElementById('results-container');
+          const answersContainer = document.getElementById('answers-container');
+          const summaryContainer = document.getElementById('results-summary');
+          
+          if (!resultsContainer || !answersContainer) return;
+
+          // Store results
+          appState.currentResults = {
+            questions,
+            answers,
+            timestamp: new Date(),
+            processingTime,
+            documentUrl: document.getElementById('document-url').value,
+            metadata: metadata,
+            apiVersion: document.getElementById('api-version').value
+          };
+
+          // Clear previous results
+          answersContainer.innerHTML = '';
+
+          // Create answer items
+          questions.forEach((question, index) => {
+            const answerEl = document.createElement('div');
+            answerEl.className = 'answer-item';
+            answerEl.style.animationDelay = `${index * 0.1}s`;
+            
+            answerEl.innerHTML = `
+              <div class="answer-question">
+                <i class="fas fa-question-circle" style="color: var(--primary-400); flex-shrink: 0; margin-top: 2px;"></i>
+                <span>Q${index + 1}: ${this.escapeHtml(question)}</span>
+              </div>
+              <div class="answer-text">
+                <strong>Answer:</strong> ${this.escapeHtml(answers[index] || 'No answer provided')}
+              </div>
+              <div class="answer-meta">
+                <span><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString()}</span>
+                <span><i class="fas fa-hash"></i> Answer ${index + 1} of ${questions.length}</span>
+              </div>
+            `;
+            
+            answersContainer.appendChild(answerEl);
+          });
+
+          // Update summary
+          if (summaryContainer) {
+            document.getElementById('questions-count').textContent = questions.length;
+            document.getElementById('processing-time').textContent = `${processingTime.toFixed(1)}s`;
+            document.getElementById('success-rate').textContent = '100%';
+            summaryContainer.style.display = 'block';
+          }
+
+          // Show results with animation
+          resultsContainer.classList.add('show');
+          
+          // Smooth scroll to results
+          setTimeout(() => {
+            resultsContainer.scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start' 
+            });
+          }, 300);
+        }
+
+        static escapeHtml(text) {
+          const div = document.createElement('div');
+          div.textContent = text;
+          return div.innerHTML;
+        }
+
+        static hideResults() {
+          const resultsContainer = document.getElementById('results-container');
+          const summaryContainer = document.getElementById('results-summary');
+          
+          if (resultsContainer) {
+            resultsContainer.classList.remove('show');
+          }
+          
+          if (summaryContainer) {
+            summaryContainer.style.display = 'none';
+          }
+          
+          appState.currentResults = null;
+        }
+      }
+
+      // Core Application Functions
+      
+      // Initialize the application
+      function initializeApp() {
+        // Load saved settings
+        const savedBaseUrl = appState.settings.baseUrl;
+        if (savedBaseUrl) {
+          document.getElementById('base-url').value = savedBaseUrl;
+          apiService = new ApiService(savedBaseUrl);
+        }
+        
+        // Check API status
+        checkApiStatus();
+        
+        // Setup periodic status check (every 30 seconds)
+        setInterval(() => {
+          checkApiStatus();
+        }, 30000);
+        
+        // Setup form handlers
+        setupFormHandlers();
+        
+        // Setup API version handler
+        setupApiVersionHandler();
+        
+        // Setup keyboard shortcuts
+        setupKeyboardShortcuts();
+        
+        // Update question numbers
+        UIController.updateQuestionNumbers();
+        
+        // Setup auto-save
+        if (appState.settings.autoSave) {
+          setupAutoSave();
+        }
+        
+        console.log('HackRX Frontend initialized successfully');
+      }
+
+      // Setup form event handlers
       function setupFormHandlers() {
-        document
-          .getElementById("document-form")
-          .addEventListener("submit", handleFormSubmit);
+        const form = document.getElementById('document-form');
+        const baseUrlInput = document.getElementById('base-url');
+        
+        if (form) {
+          form.addEventListener('submit', handleFormSubmit);
+        }
+        
+        if (baseUrlInput) {
+          baseUrlInput.addEventListener('change', handleBaseUrlChange);
+          baseUrlInput.addEventListener('blur', handleBaseUrlChange);
+        }
+      }
+
+      // Setup keyboard shortcuts
+      function setupKeyboardShortcuts() {
+        document.addEventListener('keydown', (e) => {
+          // Ctrl/Cmd + Enter to submit form
+          if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+            e.preventDefault();
+            const form = document.getElementById('document-form');
+            if (form && !appState.isProcessing) {
+              form.dispatchEvent(new Event('submit'));
+            }
+          }
+          
+          // Escape to close modal
+          if (e.key === 'Escape') {
+            hideAbout();
+          }
+          
+          // Ctrl/Cmd + K to focus on first question
+          if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+            e.preventDefault();
+            const firstQuestion = document.querySelector('.question-item input');
+            if (firstQuestion) firstQuestion.focus();
+          }
+        });
+      }
+
+      // Setup auto-save functionality
+      function setupAutoSave() {
+        const form = document.getElementById('document-form');
+        if (!form) return;
+        
+        const inputs = form.querySelectorAll('input[type="url"], input[type="text"]');
+        inputs.forEach(input => {
+          input.addEventListener('input', debounce(saveFormData, 1000));
+        });
+      }
+
+      // Debounce utility function
+      function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+          const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+          };
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+        };
+      }
+
+      // Save form data to localStorage
+      function saveFormData() {
+        try {
+          const formData = {
+            documentUrl: document.getElementById('document-url').value,
+            questions: getQuestions(),
+            timestamp: new Date().toISOString()
+          };
+          localStorage.setItem('hackrx-form-data', JSON.stringify(formData));
+        } catch (error) {
+          console.warn('Failed to save form data:', error);
+        }
+      }
+
+      // Load form data from localStorage
+      function loadFormData() {
+        try {
+          const saved = localStorage.getItem('hackrx-form-data');
+          if (!saved) return;
+          
+          const formData = JSON.parse(saved);
+          
+          // Load document URL
+          if (formData.documentUrl) {
+            document.getElementById('document-url').value = formData.documentUrl;
+          }
+          
+          // Load questions
+          if (formData.questions && formData.questions.length > 0) {
+            // Clear existing questions
+            document.getElementById('questions-container').innerHTML = '';
+            
+            // Add saved questions
+            formData.questions.forEach((question, index) => {
+              if (index === 0) {
+                addQuestion(question);
+          } else {
+                addQuestion(question);
+              }
+            });
+          }
+        } catch (error) {
+          console.warn('Failed to load form data:', error);
+        }
+      }
+
+      // Check API status using a simple approach that avoids CORS issues
+      async function checkApiStatus() {
+        UIController.updateApiStatus(false, 'Checking...');
+        
+        try {
+          // Use a simple GET request with no-cors mode to avoid preflight
+          const testUrl = `${appState.settings.baseUrl}/api/v1/`;
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 5000);
+          
+          const response = await fetch(testUrl, {
+            method: 'GET',
+            signal: controller.signal,
+            mode: 'no-cors' // Avoids CORS preflight but can't read response
+          });
+          
+          clearTimeout(timeoutId);
+          
+          // If we get here without error, server is reachable
+          UIController.updateApiStatus(true);
+          
+          if (appState.settings.notifications && !appState.apiConnected) {
+            MessageSystem.show('success', 'API server is reachable', 3000);
+            appState.apiConnected = true;
+          }
+          
+        } catch (error) {
+          UIController.updateApiStatus(false, 'Connection failed');
+          
+          if (appState.apiConnected) {
+            MessageSystem.show('error', 'API server connection lost');
+          }
+          appState.apiConnected = false;
+        }
+      }
+
+      // Handle base URL change
+      function handleBaseUrlChange(event) {
+        const newBaseUrl = event.target.value.trim();
+        if (newBaseUrl && newBaseUrl !== appState.settings.baseUrl) {
+          appState.updateSetting('baseUrl', newBaseUrl);
+          apiService = new ApiService(newBaseUrl);
+          checkApiStatus();
+        }
       }
 
       // Handle form submission
       async function handleFormSubmit(event) {
         event.preventDefault();
 
-        const documentUrl = document.getElementById("document-url").value;
+        if (appState.isProcessing) {
+          MessageSystem.show('warning', 'Processing is already in progress');
+          return;
+        }
+        
+        MessageSystem.hideAll();
+        
+                const documentUrl = document.getElementById('document-url').value.trim();
         const questions = getQuestions();
-
-        if (questions.length === 0) {
-          showError("Please add at least one question.");
+        const apiVersion = document.getElementById('api-version').value;
+        
+        // Validation
+        if (!documentUrl) {
+          MessageSystem.show('error', 'Please enter a document URL');
+          document.getElementById('document-url').focus();
           return;
         }
 
+        if (questions.length === 0) {
+          MessageSystem.show('error', 'Please add at least one question');
+          return;
+        }
+
+        // URL validation
         try {
-          showLoading(true);
-          hideMessages();
-
-          const baseUrl = document.getElementById("base-url").value;
-          const response = await fetch(`${baseUrl}/api/v1/hackrx/run`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              documents: documentUrl,
-              questions: questions,
-            }),
-          });
-
-          const data = await response.json();
-
-          if (response.ok) {
-            displayResults(questions, data.answers);
-            showSuccess("Document processed successfully!");
+          new URL(documentUrl);
+        } catch {
+          MessageSystem.show('error', 'Please enter a valid URL');
+          document.getElementById('document-url').focus();
+          return;
+        }
+        
+        try {
+          UIController.setLoadingState(true);
+          appState.processingStartTime = Date.now();
+          
+          const result = await apiService.processDocument(documentUrl, questions, apiVersion);
+          
+          if (result.success) {
+            const processingTime = (Date.now() - appState.processingStartTime) / 1000;
+            UIController.showResults(questions, result.data.answers, processingTime, result.data.metadata);
+            
+            // Show enhanced success message for V2 API
+            if (apiVersion === 'v2' && result.data.metadata) {
+              MessageSystem.show('success', `Document processed with ${apiVersion.toUpperCase()} API in ${processingTime.toFixed(1)}s - Enhanced metadata available!`);
           } else {
-            throw new Error(data.detail || "Failed to process document");
+              MessageSystem.show('success', `Document processed successfully in ${processingTime.toFixed(1)}s`);
+            }
+            
+            // Save to history if auto-save is enabled
+            if (appState.settings.autoSave) {
+              saveToHistory(documentUrl, questions, result.data.answers);
+            }
+          } else {
+            throw new Error(result.error);
           }
         } catch (error) {
-          showError("Error: " + error.message);
+          MessageSystem.show('error', `Processing failed: ${error.message}`);
         } finally {
-          showLoading(false);
+          UIController.setLoadingState(false);
         }
       }
 
       // Get questions from form
       function getQuestions() {
-        const questionInputs = document.querySelectorAll(
-          "#questions-container input"
-        );
+        const questionInputs = document.querySelectorAll('#questions-container .question-item input');
         return Array.from(questionInputs)
-          .map((input) => input.value.trim())
-          .filter((question) => question.length > 0);
+          .map(input => input.value.trim())
+          .filter(question => question.length > 0);
       }
 
-      // Add new question input
-      function addQuestion() {
-        const container = document.getElementById("questions-container");
-        const questionItem = document.createElement("div");
-        questionItem.className = "question-item";
+      // Add new question
+      function addQuestion(questionText = '') {
+        const container = document.getElementById('questions-container');
+        const currentQuestions = container.querySelectorAll('.question-item');
+        
+        if (currentQuestions.length >= appState.maxQuestions) {
+          MessageSystem.show('warning', `Maximum ${appState.maxQuestions} questions allowed`);
+          return;
+        }
+        
+        const questionIndex = currentQuestions.length;
+        const questionItem = document.createElement('div');
+        questionItem.className = 'question-item';
+        questionItem.setAttribute('data-question-index', questionIndex);
 
         questionItem.innerHTML = `
-                <input type="text" placeholder="Enter your question here...">
-                <button type="button" class="btn btn-secondary" onclick="removeQuestion(this)">❌</button>
+          <div class="question-number">${questionIndex + 1}</div>
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Enter your question here..."
+            value="${questionText}"
+            required
+            aria-label="Question ${questionIndex + 1}"
+          />
+          <button
+            type="button"
+            class="btn btn-secondary btn-remove"
+            onclick="removeQuestion(${questionIndex})"
+            aria-label="Remove question ${questionIndex + 1}"
+          >
+            <i class="fas fa-times"></i>
+          </button>
             `;
 
         container.appendChild(questionItem);
-      }
-
-      // Remove question input
-      function removeQuestion(button) {
-        const container = document.getElementById("questions-container");
-        if (container.children.length > 1) {
-          button.parentElement.remove();
-        } else {
-          showError("You must have at least one question.");
+        UIController.updateQuestionNumbers();
+        
+        // Focus on new question input
+        const newInput = questionItem.querySelector('input');
+        if (newInput && !questionText) {
+          setTimeout(() => newInput.focus(), 100);
+        }
+        
+        // Setup auto-save for new input
+        if (appState.settings.autoSave) {
+          newInput.addEventListener('input', debounce(saveFormData, 1000));
         }
       }
 
-      // Display results
-      function displayResults(questions, answers) {
-        const resultsDiv = document.getElementById("results");
-        const answersContainer = document.getElementById("answers-container");
-
-        currentResults = { questions, answers, timestamp: new Date() };
-
-        answersContainer.innerHTML = "";
-
-        questions.forEach((question, index) => {
-          const answerDiv = document.createElement("div");
-          answerDiv.className = "answer-item";
-
-          answerDiv.innerHTML = `
-                    <h4>Q${index + 1}: ${question}</h4>
-                    <p><strong>Answer:</strong> ${
-                      answers[index] || "No answer provided"
-                    }</p>
-                `;
-
-          answersContainer.appendChild(answerDiv);
-        });
-
-        resultsDiv.classList.add("show");
-        resultsDiv.scrollIntoView({ behavior: "smooth" });
-      }
-
-      // Show/hide loading
-      function showLoading(show) {
-        const loading = document.getElementById("loading");
-        const button = document.getElementById("process-btn");
-
-        if (show) {
-          loading.classList.add("show");
-          button.disabled = true;
-          button.innerHTML = "⏳ Processing...";
-        } else {
-          loading.classList.remove("show");
-          button.disabled = false;
-          button.innerHTML = "🔄 Process Document";
+      // Remove question
+      function removeQuestion(index) {
+        const container = document.getElementById('questions-container');
+        const questionItems = container.querySelectorAll('.question-item');
+        
+        if (questionItems.length <= 1) {
+          MessageSystem.show('warning', 'You must have at least one question');
+          return;
+        }
+        
+        const itemToRemove = container.querySelector(`[data-question-index="${index}"]`);
+        if (itemToRemove) {
+          itemToRemove.style.animation = 'questionSlideOut 0.3s ease-out';
+          setTimeout(() => {
+            itemToRemove.remove();
+            UIController.updateQuestionNumbers();
+          }, 300);
         }
       }
 
-      // Show error message
-      function showError(message) {
-        const errorDiv = document.getElementById("error-message");
-        errorDiv.textContent = message;
-        errorDiv.classList.add("show");
+            // Test API connection
+      async function testConnection() {
+        const testBtn = document.getElementById('test-connection-btn');
+        if (!testBtn) return;
+        
+        const originalContent = testBtn.innerHTML;
+        testBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Testing...';
+        testBtn.disabled = true;
+        
+        try {
+          // Test with a simple no-cors request first
+          const testUrl = `${appState.settings.baseUrl}/api/v1/`;
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 5000);
+          
+          await fetch(testUrl, {
+            method: 'GET',
+            signal: controller.signal,
+            mode: 'no-cors'
+          });
+          
+          clearTimeout(timeoutId);
+          
+          MessageSystem.show('success', 'Connection test successful! Server is reachable.', 3000);
+          testBtn.innerHTML = '<i class="fas fa-check"></i> Connected';
+          
+          // Update the status as well
+          UIController.updateApiStatus(true);
+          appState.apiConnected = true;
+          
+        } catch (error) {
+          MessageSystem.show('error', `Connection test failed: ${error.message}`);
+          testBtn.innerHTML = '<i class="fas fa-times"></i> Failed';
+          
+          UIController.updateApiStatus(false, 'Test failed');
+          appState.apiConnected = false;
+        }
 
         setTimeout(() => {
-          errorDiv.classList.remove("show");
-        }, 5000);
-      }
-
-      // Show success message
-      function showSuccess(message) {
-        const successDiv = document.getElementById("success-message");
-        successDiv.textContent = message;
-        successDiv.classList.add("show");
-
-        setTimeout(() => {
-          successDiv.classList.remove("show");
-        }, 3000);
-      }
-
-      // Hide all messages
-      function hideMessages() {
-        document.getElementById("error-message").classList.remove("show");
-        document.getElementById("success-message").classList.remove("show");
+          testBtn.innerHTML = originalContent;
+          testBtn.disabled = false;
+        }, 2000);
       }
 
       // Export results
       function exportResults() {
-        if (!currentResults) {
-          showError("No results to export.");
+        if (!appState.currentResults) {
+          MessageSystem.show('error', 'No results to export');
           return;
         }
 
         const exportData = {
-          document: document.getElementById("document-url").value,
-          processed_at: currentResults.timestamp.toISOString(),
-          qa_pairs: currentResults.questions.map((question, index) => ({
+          document_url: appState.currentResults.documentUrl,
+          processed_at: appState.currentResults.timestamp.toISOString(),
+          processing_time: appState.currentResults.processingTime,
+          questions_count: appState.currentResults.questions.length,
+          api_version: appState.currentResults.apiVersion || 'v1',
+          qa_pairs: appState.currentResults.questions.map((question, index) => ({
             question: question,
-            answer: currentResults.answers[index],
+            answer: appState.currentResults.answers[index] || 'No answer provided'
           })),
+          api_metadata: appState.currentResults.metadata || null,
+          export_metadata: {
+            platform: 'HackRX',
+            frontend_version: '2.0',
+            export_timestamp: new Date().toISOString(),
+            authenticated: false,
+            auth_status: 'Authentication disabled - Open access'
+          }
         };
-
+        
+        try {
         const blob = new Blob([JSON.stringify(exportData, null, 2)], {
-          type: "application/json",
+            type: 'application/json'
         });
 
         const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
+          const a = document.createElement('a');
         a.href = url;
         a.download = `hackrx-results-${Date.now()}.json`;
+          a.style.display = 'none';
+          
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
 
-        showSuccess("Results exported successfully!");
+          MessageSystem.show('success', 'Results exported successfully!');
+        } catch (error) {
+          MessageSystem.show('error', `Export failed: ${error.message}`);
+        }
       }
 
       // Clear results
       function clearResults() {
-        document.getElementById("results").classList.remove("show");
-        document.getElementById("answers-container").innerHTML = "";
-        currentResults = null;
-        showSuccess("Results cleared.");
-      }
-
-      // Update base URL
-      function updateBaseUrl() {
-        const baseUrl = document.getElementById("base-url").value;
-        localStorage.setItem("hackrx-base-url", baseUrl);
-        checkApiStatus();
-      }
-
-      // Load saved base URL
-      function loadSavedBaseUrl() {
-        const saved = localStorage.getItem("hackrx-base-url");
-        if (saved) {
-          document.getElementById("base-url").value = saved;
+        if (!appState.currentResults) {
+          MessageSystem.show('warning', 'No results to clear');
+          return;
+        }
+        
+        if (confirm('Are you sure you want to clear the current results?')) {
+          UIController.hideResults();
+          MessageSystem.show('success', 'Results cleared successfully');
         }
       }
 
-      // Load saved settings on page load
-      document.addEventListener("DOMContentLoaded", loadSavedBaseUrl);
+      // Save to history
+      function saveToHistory(documentUrl, questions, answers) {
+        try {
+          const historyItem = {
+            id: Date.now(),
+            documentUrl,
+            questions,
+            answers,
+            timestamp: new Date().toISOString()
+          };
+          
+          let history = JSON.parse(localStorage.getItem('hackrx-history') || '[]');
+          history.unshift(historyItem);
+          
+          // Keep only last 50 items
+          if (history.length > 50) {
+            history = history.slice(0, 50);
+          }
+          
+          localStorage.setItem('hackrx-history', JSON.stringify(history));
+        } catch (error) {
+          console.warn('Failed to save to history:', error);
+        }
+      }
+
+      // Show about modal
+      function showAbout() {
+        const modal = document.getElementById('about-modal');
+        if (modal) {
+          modal.style.display = 'block';
+          
+          // Focus management for accessibility
+          const closeBtn = modal.querySelector('button');
+          if (closeBtn) closeBtn.focus();
+          
+          // Prevent body scroll
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      // Hide about modal
+      function hideAbout() {
+        const modal = document.getElementById('about-modal');
+        if (modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      }
+
+      // Handle clicks outside modal to close it
+      document.addEventListener('click', (e) => {
+        const modal = document.getElementById('about-modal');
+        if (modal && e.target === modal) {
+          hideAbout();
+        }
+      });
+
+      // Performance monitoring
+      function trackPerformance() {
+        if ('performance' in window && 'measure' in performance) {
+          performance.mark('app-init-start');
+          
+          window.addEventListener('load', () => {
+            performance.mark('app-init-end');
+            performance.measure('app-init-time', 'app-init-start', 'app-init-end');
+            
+            const measure = performance.getEntriesByName('app-init-time')[0];
+            console.log(`App initialization time: ${measure.duration.toFixed(2)}ms`);
+          });
+        }
+      }
+
+      // Error boundary
+      window.addEventListener('error', (event) => {
+        console.error('Global error:', event.error);
+        MessageSystem.show('error', 'An unexpected error occurred. Please refresh the page.');
+      });
+
+      window.addEventListener('unhandledrejection', (event) => {
+        console.error('Unhandled promise rejection:', event.reason);
+        MessageSystem.show('error', 'An unexpected error occurred. Please try again.');
+      });
+
+      // Service Worker registration (if available)
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          // Service worker would be registered here for PWA functionality
+          console.log('Service Worker support detected');
+        });
+      }
+
+      // Add CSS animation for question removal
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes questionSlideOut {
+          from {
+            opacity: 1;
+            transform: translateX(0);
+            max-height: 100px;
+          }
+          to {
+            opacity: 0;
+            transform: translateX(-20px);
+            max-height: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+        }
+        
+        .sr-only {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+        
+        .form-help {
+          display: block;
+          font-size: 0.85rem;
+          color: rgba(255, 255, 255, 0.6);
+          margin-top: var(--space-2);
+          line-height: 1.4;
+        }
+        
+        /* Prevent layout shifts */
+        .status-indicator {
+          min-width: 12px;
+          min-height: 12px;
+        }
+        
+        /* Reduce CORS preflight requests */
+        .no-cors {
+          content-type: text/plain;
+        }
+      `;
+      document.head.appendChild(style);
+
+      // Initialize app when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+          trackPerformance();
+          initializeApp();
+          loadFormData();
+        });
+      } else {
+        trackPerformance();
+        initializeApp();
+        loadFormData();
+      }
+
+      // Load sample document and questions from API guide
+      function loadSampleDocument() {
+        document.getElementById('document-url').value = 'https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D';
+        
+        // Clear existing questions and add sample questions
+        document.getElementById('questions-container').innerHTML = '';
+        const sampleQuestions = [
+          'What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?',
+          'What is the waiting period for pre-existing diseases (PED) to be covered?',
+          'Does this policy cover maternity expenses, and what are the conditions?'
+        ];
+        
+        sampleQuestions.forEach((question, index) => {
+          addQuestion(question);
+        });
+        
+        MessageSystem.show('success', 'Sample document and questions loaded!', 3000);
+      }
+
+      // Update endpoint display when API version changes
+      function updateEndpointDisplay() {
+        const apiVersion = document.getElementById('api-version').value;
+        const endpointInput = document.getElementById('current-endpoint');
+        if (endpointInput) {
+          endpointInput.value = `/api/${apiVersion}/hackrx/run`;
+        }
+      }
+
+      // Setup API version change handler
+      function setupApiVersionHandler() {
+        const apiVersionSelect = document.getElementById('api-version');
+        if (apiVersionSelect) {
+          apiVersionSelect.addEventListener('change', updateEndpointDisplay);
+        }
+      }
+
+      // Check Auth Status function
+      async function validateApiKey() {
+        const validateBtn = document.getElementById('validate-key-btn');
+        if (!validateBtn) return;
+        
+        const originalContent = validateBtn.innerHTML;
+        validateBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Checking...';
+        validateBtn.disabled = true;
+        
+        try {
+          const result = await apiService.validateApiKey();
+          
+          if (result.success) {
+            const authEnabled = result.data.authentication_enabled;
+            const keyRequired = result.data.api_key_required;
+            
+            if (!authEnabled) {
+              MessageSystem.show('success', `✅ Authentication: DISABLED - No API key required! Open access enabled.`, 5000);
+              validateBtn.innerHTML = '<i class="fas fa-unlock"></i> Open Access';
+            } else {
+              MessageSystem.show('info', `🔐 Authentication: ENABLED - API key required (${result.data.total_active_keys} active keys)`, 5000);
+              validateBtn.innerHTML = '<i class="fas fa-lock"></i> Auth Required';
+            }
+          } else {
+            MessageSystem.show('error', `Auth Status Check Failed: ${result.error}`);
+            validateBtn.innerHTML = '<i class="fas fa-times"></i> Error';
+          }
+        } catch (error) {
+          MessageSystem.show('error', `Status Check Error: ${error.message}`);
+          validateBtn.innerHTML = '<i class="fas fa-times"></i> Error';
+        }
+        
+        setTimeout(() => {
+          validateBtn.innerHTML = originalContent;
+          validateBtn.disabled = false;
+        }, 3000);
+      }
+
+      // Expose global functions for inline event handlers
+      window.addQuestion = addQuestion;
+      window.removeQuestion = removeQuestion;
+      window.testConnection = testConnection;
+      window.validateApiKey = validateApiKey;
+      window.exportResults = exportResults;
+      window.clearResults = clearResults;
+      window.showAbout = showAbout;
+      window.hideAbout = hideAbout;
+      window.loadSampleDocument = loadSampleDocument;
+      
+      console.log('🚀 HackRX Frontend v2.0 loaded successfully!');
     </script>
   </body>
 </html>
