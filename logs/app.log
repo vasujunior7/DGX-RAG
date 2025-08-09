@@ -1924,3 +1924,62 @@ Domiciliary hospitalization is medical treatment provided at home when the patie
 2025-08-10 00:34:40,051 - app - INFO - V2 root endpoint accessed
 2025-08-10 00:34:40,052 - app - INFO - V2 root endpoint accessed
 2025-08-10 00:34:40,054 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:35:40,045 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:35:40,047 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:35:40,049 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:35:40,051 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:35:40,052 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:35:40,053 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:35:40,054 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:36:40,045 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:36:40,047 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:36:40,049 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:36:40,051 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:36:40,053 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:36:40,054 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:36:40,058 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:37:40,046 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:37:40,049 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:37:40,051 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:37:40,052 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:37:40,054 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:37:40,055 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:37:40,055 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:38:40,045 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:38:40,048 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:38:40,049 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:38:40,051 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:38:40,052 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:38:40,053 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:38:40,055 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:39:40,045 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:39:40,048 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:39:40,049 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:39:40,053 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:39:40,054 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:39:40,058 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:39:40,060 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:42:00,599 - app - INFO - HackRX API application started
+2025-08-10 00:42:05,036 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:42:10,390 - app - INFO - Root endpoint accessed - serving HTML guide
+2025-08-10 00:42:17,961 - app - INFO - Authentication disabled - allowing request
+2025-08-10 00:42:17,961 - app - INFO - HackRX endpoint called with 3 questions - API Key: Authentication Disabled
+2025-08-10 00:42:17,962 - app - INFO - Document URL: https://hackrx.blob.core.windows.net/assets/policy.pdf?sv=2023-01-03&st=2025-07-04T09%3A11%3A24Z&se=2027-07-05T09%3A11%3A00Z&sr=b&sp=r&sig=N4a9OU0w0QXO6AOIBiu4bpl7AXvEZogeT%2FjUHNO7HzQ%3D
+2025-08-10 00:42:17,962 - app - INFO - Created new model instance for request - Thread: Thread-1 (run_fastapi_server)
+2025-08-10 00:42:29,621 - app - INFO - Document loaded successfully
+2025-08-10 00:42:29,621 - app - INFO - Batching question 1/3: What is the grace period for premium payment under the National Parivar Mediclaim Plus Policy?
+2025-08-10 00:42:29,621 - app - INFO - Batching question 2/3: What is the waiting period for pre-existing diseases (PED) to be covered?
+2025-08-10 00:42:29,621 - app - INFO - Batching question 3/3: Does this policy cover maternity expenses, and what are the conditions?
+2025-08-10 00:42:31,482 - app - INFO - Inference completed successfully
+2025-08-10 00:42:31,482 - app - INFO - Answer for question 1: The grace period for premium payment under the National Parivar Mediclaim Plus Policy is thirty days....
+2025-08-10 00:42:31,482 - app - INFO - Answer for question 2: The waiting period for pre-existing diseases (PED) to be covered is thirty six (36) months of continuous coverage after the date of inception of the first policy with the company....
+2025-08-10 00:42:31,482 - app - INFO - Answer for question 3: Yes, this policy covers maternity expenses for female insured persons, including medical treatment expenses related to childbirth and lawful medical termination of pregnancy. The insured person must be between 18 and 45 years old, have been continuously covered for at least 24 months, and meet other specified conditions....
+2025-08-10 00:42:31,482 - app - INFO - Successfully processed all 3 questions
+2025-08-10 00:42:35,040 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:42:40,049 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:42:40,053 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:42:40,057 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:42:40,059 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:42:40,062 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:42:40,063 - app - INFO - V2 root endpoint accessed
+2025-08-10 00:42:40,064 - app - INFO - V2 root endpoint accessed

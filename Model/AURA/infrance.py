@@ -19,7 +19,7 @@ load_dotenv()
 
 class SampleModelPaller:
     def __init__(self, api_key: str = None, force_regenerate: bool = True):
-        self.api_key = api_key or os.getenv("ANTHROPIC_API_KEY")
+        self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         self.force_regenerate = force_regenerate
         self.model = None
         self.index = None

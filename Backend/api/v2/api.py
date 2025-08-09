@@ -89,7 +89,7 @@ async def verify_api_key(credentials: Optional[HTTPAuthorizationCredentials] = D
     
     app_logger.info(f"Valid API key used: {key_info.get('name', 'Unknown')}")
     return key_info
-app_logger.info("Parallel processing setup completed for HackRX API v2 with AURA Model (Anthropic Claude)")
+app_logger.info("Parallel processing setup completed for HackRX API v2 with AURA Model (OpenAI GPT-3.5)")
 
 # Define a basic GET endpoint
 @router.get("/")
