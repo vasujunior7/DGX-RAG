@@ -50,7 +50,7 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
             "user_agent": headers.get("user-agent", "unknown"),
             "content_type": headers.get("content-type", "unknown"),
             "authorization": "Bearer ***" if headers.get("authorization") else None,
-            "request_body": request_body if request_body and len(request_body) < 1000 else "Body too large or empty"
+            "request_body": request_body if request_body and len(request_body) < 10000 else "Body too large or empty"
         }
         
         # Log the request

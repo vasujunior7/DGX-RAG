@@ -4,17 +4,24 @@ from pydantic import BaseModel
 from typing import List, Optional
 import sys
 import os
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+import threading
 
 # Add the Model directory to the path so we can import SampleModel
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model'))
 from sample_model import SampleModel , SampleModelPaller
 
 # sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model', 'GOAT'))
-
 # from GOAT.inference import GOATModel
 
+# Using AURA model again
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model', 'AURA'))
 from AURA.infrance import SampleModelPaller
+
+# Commenting out SimpleModel - back to using AURA
+# sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'Model', 'simple_'))
+# from sample import SampleModel as SimpleModel
 
 # Import logging and auth from utils
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
@@ -40,7 +47,15 @@ class HackRXResponse(BaseModel):
 
 # Initialize the model (you can add proper API key later)
 # model = SampleModel(api_key="dummy_key")
-model = SampleModelPaller()
+# We'll create model instances dynamically for parallel processing
+# model = SampleModelPaller()
+
+# Thread pool for parallel processing
+executor = ThreadPoolExecutor(max_workers=10)  # Adjust based on your server capacity
+
+def create_model_instance():
+    """Create a new model instance for parallel processing"""
+    return SampleModelPaller()
 
 # Authentication dependency
 async def verify_api_key(credentials: Optional[HTTPAuthorizationCredentials] = Depends(security)):
@@ -74,7 +89,7 @@ async def verify_api_key(credentials: Optional[HTTPAuthorizationCredentials] = D
     
     app_logger.info(f"Valid API key used: {key_info.get('name', 'Unknown')}")
     return key_info
-app_logger.info("SampleModel initialized in v1 API")
+app_logger.info("Parallel processing setup completed for HackRX API v2 with AURA Model (Anthropic Claude)")
 
 # Define a basic GET endpoint
 @router.get("/")
@@ -98,9 +113,10 @@ def read_root():
 
 # Main HackRX endpoint
 @router.post("/hackrx/run", response_model=HackRXResponse)
-def hackrx_run(request: HackRXRequest, auth_info: dict = Depends(verify_api_key)):
+async def hackrx_run(request: HackRXRequest, auth_info: dict = Depends(verify_api_key)):
     """
-    Process documents and answer questions using the SampleModel
+    Process documents and answer questions using the SampleModel with parallel processing
+    Each request gets its own model instance enabling concurrent processing
     Requires valid API key in Authorization header
     """
     try:
@@ -117,7 +133,11 @@ def hackrx_run(request: HackRXRequest, auth_info: dict = Depends(verify_api_key)
         app_logger.info(f"HackRX endpoint called with {len(request.questions)} questions - API Key: {key_name}")
         app_logger.info(f"Document URL: {request.documents}")
         
-        # Load the document using SampleModel
+        # Create a new model instance for this request (enables parallel processing)
+        model = create_model_instance()
+        app_logger.info(f"Created new model instance for request - Thread: {threading.current_thread().name}")
+        
+        # Load the document using the new model instance
         model.load_document(request.documents)
         app_logger.info("Document loaded successfully")
         
@@ -128,7 +148,9 @@ def hackrx_run(request: HackRXRequest, auth_info: dict = Depends(verify_api_key)
             app_logger.info(f"Batching question {i+1}/{len(request.questions)}: {question}")
             question_batch.append(question)
 
-        answers = model.inference(question_batch)
+        # Run inference in thread pool to enable parallel processing
+        loop = asyncio.get_event_loop()
+        answers = await loop.run_in_executor(executor, model.inference, question_batch)
         app_logger.info("Inference completed successfully")
         
         for i, answer in enumerate(answers):
@@ -141,7 +163,7 @@ def hackrx_run(request: HackRXRequest, auth_info: dict = Depends(verify_api_key)
         return HackRXResponse(answers=answers)
         
     except HTTPException:
-        # Re-raise HTTP exceptions (like authentication errors)
+        # Re-raise HTTP E/exceptions (like authentication errors)
         raise
     except Exception as e:
         app_logger.error(f"Error in hackrx_run: {str(e)}")
@@ -150,7 +172,7 @@ def hackrx_run(request: HackRXRequest, auth_info: dict = Depends(verify_api_key)
 # Authentication status endpoint
 @router.get("/auth/status")
 def auth_status():
-    """Get current authentication configuration status"""
+    """Get current autheE/ntication configuration status"""
     return {
         "authentication_enabled": auth_manager.is_authentication_enabled(),
         "api_key_required": auth_manager.is_api_key_required(),

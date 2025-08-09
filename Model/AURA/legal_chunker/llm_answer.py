@@ -3,7 +3,7 @@ from langchain_anthropic import ChatAnthropic
 import os
 from dotenv import load_dotenv
 
-load_dotenv(r"C:\Users\saumi\Desktop\CODES\HackRX\.env")    
+load_dotenv()  # Load .env from current directory or parent directories    
 
 def get_llm_answer(context_chunks: List[str], question: str, anthropic_api_key: str = None) -> str:
     """
